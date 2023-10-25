@@ -31,7 +31,7 @@ const PulseCircle: FC<PulseCircleProps> = ({ flow }) => {
         flow == "right" ? "flex-row-reverse" : ""
       } w-fit flex  items-center justify-center gap-4`}
     >
-      <div className="w-[3rem] h-[2px] bg-textPrimary" />
+      <div className="w-[3rem] h-[2px] bg-grey1" />
       <div
         ref={pulseCircleRed}
         className=" relative w-4 h-4 rounded-full bg-primary"

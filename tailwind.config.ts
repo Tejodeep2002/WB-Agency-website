@@ -20,10 +20,12 @@ const config: Config = {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         tertiary: "var(--color-tertiary)",
-        textPrimary: "var(--text-primary)",
+        grey1: "var(--color-grey)",
         background: "var(--color-background)",
         background2: "var(--color-background2)",
+        holo:"-webkit-text-stroke:5px black, -webkit-text-fill-color:transparent"
       },
+      
       
     },
   },

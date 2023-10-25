@@ -45,8 +45,8 @@ const Hero = () => {
 
               <section id="" className="w-full flex flex-col gap-12 text-white">
                 <section className="w-full h-fit flex gap-2 items-center  ">
-                  <PulseCircle/>
-                  <h2 className="text-2xl text-textPrimary">Innovation Ideas</h2>
+                  <PulseCircle />
+                  <h2 className="text-2xl text-grey1">Innovation Ideas</h2>
                 </section>
                 <h1>
                   We Offer you <span className="text-primary"> A Digital</span>{" "}
@@ -69,7 +69,7 @@ const Hero = () => {
             </section>
           </section>
           {/* right */}
-          <section className="w-1/2 h-full" >
+          <section className="w-1/2 h-full">
             <Image
               src={"/assets/heroMain.jpg"}
               width={"2166"}

@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full h-28  flex items-center justify-center  bg-gray-100 bg-transparent drop-shadow-md shadow-white ">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full h-28 flex items-center justify-center  bg-gray-100 bg-transparent drop-shadow-md shadow-white ">
       <section className="w-full max-w-[100rem]   flex justify-between items-center ">
         <h2 className=" font-bold text-2xl text-white">GaaGa</h2>
         <nav>
