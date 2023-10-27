@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer base {
   :root {
@@ -12,10 +11,11 @@
     --color-background: #111319;
     --color-background2: #15171c;
     --color-background3: #1d1e22;
-
+    
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0px;
   padding: 0px;
