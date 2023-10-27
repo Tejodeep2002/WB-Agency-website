@@ -24,12 +24,15 @@ const config: Config = {
         background: "var(--color-background)",
         background2: "var(--color-background2)",
         background3: "var(--color-background3)",
-        holo:"-webkit-text-stroke:5px black, -webkit-text-fill-color:transparent"
+        holo: "-webkit-text-stroke:5px black, -webkit-text-fill-color:transparent",
       },
-      
-      
     },
   },
   plugins: [],
+  purge:[
+    './src/**/*.html',
+    './src/**/*.tsx',
+    './src/**/*.jsx',
+  ]
 };
 export default config;
