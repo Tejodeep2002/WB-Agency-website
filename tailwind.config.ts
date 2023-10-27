@@ -23,6 +23,7 @@ const config: Config = {
         grey1: "var(--color-grey)",
         background: "var(--color-background)",
         background2: "var(--color-background2)",
+        background3: "var(--color-background3)",
         holo:"-webkit-text-stroke:5px black, -webkit-text-fill-color:transparent"
       },
       

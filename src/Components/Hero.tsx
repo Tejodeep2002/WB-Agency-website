@@ -38,7 +38,7 @@ const Hero = () => {
                     <div className="w-[3px] h-12 bg-tertiary"></div>
                   </div>
                   <div className="w-full h-fit  mt-10 ">
-                    <h4 className=" rotate-[270deg] text-secondary">SCROLL</h4>
+                    <h5 className=" rotate-[270deg] text-secondary">SCROLL</h5>
                   </div>
                 </section>
               </section>
