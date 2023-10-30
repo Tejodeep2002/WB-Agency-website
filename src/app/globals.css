@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -7,14 +8,14 @@
     --color-primary: #dd4242;
     --color-secondary: white;
     --color-tertiary: #b0b0b0;
-    --color-grey: #717171;
+    --color-subHeading: #717171;
+    --color-paragraph: #b5b5b5;
     --color-background: #111319;
     --color-background2: #15171c;
     --color-background3: #1d1e22;
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -28,12 +29,19 @@ body {
   /* background-color: aliceblue; */
 }
 
+p {
+  color: var(--color-paragraph);
+  font-size: 16px;
+  line-height: 26.24px;
+  font-weight: 400;
+}
+
 h1 {
   color: var(--color-secondary);
   font-weight: 600;
-  font-size: 3.75rem /* 60px */;
+  /* font-size: 3.75rem 60px; */
   line-height: 70px;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {

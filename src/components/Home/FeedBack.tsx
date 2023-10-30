@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import PulseCircle from "./Miscellaneous/PulseCircle";
+import PulseCircle from "../common/PulseCircle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,7 +18,7 @@ const FeedBack = () => {
             <span className="text-2xl leading-7 text-grey1 flex gap-4">
               <PulseCircle />
               Client Feedback
-              <PulseCircle flow="right" />
+              <PulseCircle flowDirection="right" />
             </span>
             <h2 className="text-6xl mb-10">Happy Words From Happy Customer</h2>
           </section>

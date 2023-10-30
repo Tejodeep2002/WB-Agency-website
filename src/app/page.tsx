@@ -1,21 +1,23 @@
-import FeedBack from "@/Components/FeedBack";
-import Footer from "@/Components/Footer";
-import Gallery from "@/Components/Gallery";
-import Hero from "@/Components/Hero";
-import MidSection from "@/Components/MidSection";
-import Services from "@/Components/Services";
-import TagLine from "@/Components/TagLine";
+import FeedBack from "@/components/Home/FeedBack";
+import Footer from "@/components/common/Footer";
+import Gallery from "@/components/Home/Gallery";
+import Hero from "@/components/Home/Hero";
+import Banner from "@/components/Home/Banner";
+import Services from "@/components/Home/Services";
+import TagLine from "@/components/Home/TagLine";
+import Header from "@/components/common/Header";
 
 export default function Home() {
   return (
-    <main className="relative w-full h-full overflow-x-hidden ">
+    <main className="main relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 ">
+      <Header />
       <Hero />
-      <MidSection/>
+      <Banner />
       <Gallery />
-      <TagLine/>
-      <Services/>
-      <FeedBack/>
-      <Footer/>
+      <TagLine />
+      <Services />
+      <FeedBack />
+      <Footer />
     </main>
   );
 }

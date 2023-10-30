@@ -1,21 +1,47 @@
-import React from "react";
-import PulseCircle from "./Miscellaneous/PulseCircle";
+"use client";
+import React, { useRef } from "react";
+import PulseCircle from "../common/PulseCircle";
 import Image from "next/image";
 import Link from "next/link";
+import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
 
 const Services = () => {
+  const services = useRef<HTMLDivElement>(null);
+  gsap.registerPlugin(ScrollTrigger);
+  useIsomorphicLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(services.current, {
+        x: -100,
+        duration: 1,
+        opacity: 0,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: services.current,
+          scroller: "main",
+          start: "top 90%",
+          
+        },
+      });
+    });
+    return () => ctx.revert();
+  }, []);
   return (
-    <section className="w-full h-auto ">
+    <section
+    ref={services}
+    className="w-full h-auto ">
       <div
         className="bg-fixed w-full h-auto  object-cover "
         // style={{ backgroundImage: "url('/assets/bg.jpg')" }}
       >
         <section className="w-full h-auto py-36 ">
           <section className="flex flex-col gap-4 items-center">
-            <span className="text-2xl leading-7 text-grey1 flex gap-4">
+            <span className="text-2xl leading-7 text-subHeading flex gap-4">
               <PulseCircle />
               Services
-              <PulseCircle flow="right" />
+              <PulseCircle flowDirection="right" />
             </span>
             <h2 className="text-6xl mb-10">What We Have to Offer</h2>
           </section>
