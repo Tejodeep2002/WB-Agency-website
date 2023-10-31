@@ -5,7 +5,7 @@ import React, { FC, useLayoutEffect, useRef } from "react";
 
 interface PulseCircleProps {
   flowDirection?: string;
-  scale?:string;
+  scale?: string;
 }
 
 const PulseCircle: FC<PulseCircleProps> = ({ flowDirection }) => {
@@ -46,15 +46,13 @@ const PulseCircle: FC<PulseCircleProps> = ({ flowDirection }) => {
       } w-fit flex  items-center justify-center gap-4`}
     >
       {flowDirection === "bottom" ? (
-        <div
-        
-        className=" pulseLine w-[2px] h-[3rem] bg-subHeading" />
+        <div className=" pulseLine w-[2px] h-[3rem] bg-subHeading" />
       ) : (
-        <div className="w-[3rem] h-[2px] bg-subHeading" />
+        <div className="w-[2rem] lg:w-[3rem] h-[2px] bg-subHeading" />
       )}
       <div
         // ref={pulseCircleRed}
-        className="pulseCircleRed relative w-4 h-4 rounded-full bg-primary"
+        className="pulseCircleRed relative w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-primary"
       />
     </div>
   );

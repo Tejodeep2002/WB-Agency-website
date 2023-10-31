@@ -42,11 +42,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <section ref={hero} className=" w-full min-h-screen mb-10 border ">
-      <section className="border w-full max-w-[110rem] h-full px-3 lg:px-10  mx-auto  ">
+    <section ref={hero} className=" w-full min-h-screen mb-10  ">
+      <section className=" w-full max-w-[110rem] h-full px-3 lg:px-10  mx-auto  ">
         <section className=" w-full h-full flex">
           {/* left */}
-          <section className=" w-full lg:w-1/2 h-fit flex z-10">
+          <section className=" w-full lg:w-1/2 h-fit flex z-10 ">
+            <div className="absolute lg:hidden  w-full h-full bg-background2 blur-lg opacity-80"></div>
             <section className="w-full lg:w-[40rem] h-auto mt-40 lg:mt-72 flex gap-5 lg:gap-16 ">
               <section
                 id="social"
@@ -83,7 +84,7 @@ const Hero = () => {
 
               <section
                 id=""
-                className="w-full h-auto flex flex-col gap-4 lg:gap-9 text-white"
+                className="w-full h-auto flex flex-col gap-2 lg:gap-9 text-white"
               >
                 <div className="hero1 w-full h-fit flex gap-6 items-center    ">
                   <PulseCircle />
@@ -91,7 +92,7 @@ const Hero = () => {
                     Innovation Ideas
                   </span>
                 </div>
-                <h1 className="hero1 text-4xl sm:text-[40px]">
+                <h1 className="hero1">
                   We Offer you <span className="text-primary"> A Digital </span>
                   Platform .
                 </h1>
@@ -112,16 +113,16 @@ const Hero = () => {
             </section>
           </section>
           {/* right */}
-          {/* <section className=" w-full lg:w-1/2 h-full">
+          <section className="absolute right-0 w-full sm:w-1/2 h-full">
             <Image
               src={"/assets/heroMain.jpg"}
               width={"2166"}
               height={"1900"}
               alt=""
-              className="absolute w-1/2 h-screen"
+              className=" w-full h-screen"
               priority
             />
-          </section> */}
+          </section>
         </section>
       </section>
     </section>

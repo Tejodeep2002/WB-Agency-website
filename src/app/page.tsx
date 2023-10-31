@@ -16,7 +16,7 @@ export default function Home() {
       <Gallery />
       <TagLine />
       <Services />
-      <FeedBack />
+      <FeedBack /> 
       <Footer />
     </main>
   );

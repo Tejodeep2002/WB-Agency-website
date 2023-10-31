@@ -39,24 +39,24 @@ p {
 h1 {
   color: var(--color-secondary);
   font-weight: 600;
-  /* font-size: 3.75rem 60px; */
-  line-height: 70px;
+  font-size: 30px;
+  line-height: 36px;
   text-align: left;
 }
 
 h2 {
   color: var(--color-secondary);
   font-weight: 600;
-  font-size: 3.75rem;
-  line-height: 70px;
+  font-size: 30px;
+  line-height: 41px;
   text-align: center;
 }
 
 h3 {
   color: var(--color-secondary);
   font-weight: 600;
-  font-size: 50px;
-  line-height: 58px;
+  font-size: 36px;
+  line-height: 41.76px;
   text-align: center;
 }
 
@@ -66,6 +66,108 @@ h4 {
   font-size: 36px;
   line-height: 41.76px;
   text-align: left;
+}
+
+.HoverImage {
+  /* position: absolute; */
+  top: 0px;
+  width: 100%;
+  /* visibility: hidden; */
+  /* transform: scale(.75); */
+  /* opacity: 0; */
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .HoverImage:hover{
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+
+} */
+
+@media (min-width: 640px) {
+  h1 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 70px;
+    text-align: left;
+  }
+  h2 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: px;
+    text-align: center;
+  }
+  h3 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+  }
+  h4 {
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41.76px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: left;
+  }
+  h2 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+  }
+  h3 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+  }
+  h4 {
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41.76px;
+    text-align: left;
+  }
+  .HoverImage {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    visibility: hidden;
+    transform: scale(0.75);
+    opacity: 0;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, backdrop-filter;
+    transition-duration: 700ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .HoverImage1:hover + .HoverImage {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .stroke-text {

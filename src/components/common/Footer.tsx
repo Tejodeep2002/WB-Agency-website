@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <section className="w-full h-auto text-tertiary">
       <section className="w-full h-auto pt-[70px] pb-[100px]">
-        <section className="w-full max-w-[100rem] mx-auto flex">
+        <section className="w-full max-w-[100rem] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-0">
           {/* left */}
-          <section className=" w-1/2 h-auto">
+          <section className="w-full lg:w-1/2 h-auto px-5">
             <div className="w-full max-w-[580px] h-auto flex flex-col gap-12">
               <Image
                 src={
@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
           </section>
           {/* mid */}
-          <section className=" w-1/4 h-auto">
+          <section className="w-full lg:w-1/4 h-auto px-5">
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Contact
             </section>
@@ -67,7 +67,7 @@ const Footer = () => {
             </section>
           </section>
           {/* right */}
-          <section className=" w-1/4 h-auto">
+          <section className="w-full lg:w-1/4 h-auto px-5">
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Services
             </section>
@@ -94,11 +94,11 @@ const Footer = () => {
         </section>
       </section>
       <section className="w-full h-auto border-t">
-        <section className="w-full max-w-[100rem] h-auto py-4 mx-auto flex justify-between ">
+        <section className="w-full max-w-[100rem] h-auto py-4 mx-auto flex flex-col gap-2 lg:flex-row lg:gap-2 item-center justify-between ">
           {/* left */}
-          <section className="w-fit h-auto">
-            <ul className="flex gap-12 ">
-              <li>
+          <section className="w-fit h-auto hidden lg:flex ">
+            <ul className="w-fit  flex gap-12 items-center py-auto">
+              <li >
                 <Link href={""}>Home</Link>
               </li>
               <li>
@@ -113,8 +113,8 @@ const Footer = () => {
             </ul>
           </section>
           {/* mid */}
-          <section className="w-fit">
-            <ul className="flex gap-6">
+          <section className="w-full lg:w-fit ">
+            <ul className="w-fit flex gap-6 mx-auto">
               <li>
                 <Link
                   href={""}

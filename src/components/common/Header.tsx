@@ -7,9 +7,9 @@ const Header = () => {
   const [sideBarHidden, setSideBarHidden] = useState<boolean>(false);
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-20 w-full h-28 flex items-center justify-center">
-        <div className="absolute  w-full h-28 bg-black opacity-80 shadow-xl backdrop-blur-md z-0 "></div>
-        <section className="w-full  max-w-[110rem] px-10 flex justify-between items-center z-10 ">
+      <header className="fixed top-0 left-0 right-0 z-20 w-full h-16 lg:h-28 flex items-center justify-center ">
+        <div className="absolute  w-full h-full  bg-background3 opacity-80 shadow-xl backdrop-blur-md z-0 "></div>
+        <section className="w-full  max-w-[110rem] px-10  flex justify-between items-center z-10 ">
           <h2 className=" font-bold text-2xl text-white">GaaGa</h2>
           <nav className="hidden xl:block">
             <ul className="flex gap-10 text-sm font-medium leading-[25px] tracking-[2.8px] uppercase ">
@@ -77,7 +77,7 @@ const Header = () => {
               <span className="hidden md:block">Menu</span>
             </button>
 
-            <button className="w-fit h-fit py-4 px-7 border border-secondary text-secondary hover:text-primary hover:border-primary transition ease-in-out duration-500">
+            <button className="hidden w-fit h-fit py-4 px-7 border border-secondary text-secondary hover:text-primary hover:border-primary transition ease-in-out duration-500">
               Lets start
             </button>
           </section>
