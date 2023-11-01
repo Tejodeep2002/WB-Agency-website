@@ -114,7 +114,7 @@ const Gallery = () => {
                   />
                 </span>
               </section> */}
-              <section className="w-full h-auto grid  md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-5">
+              <section className="w-full h-auto grid  md:grid-cols-2 xl:grid-cols-4 gap-2 md:gap-5">
                 <div className="galleryContent1 relative w-full max-w-1/2 h-96 lg:h-full col-span-1  md:col-span-2 flex justify-center items-center bg-background">
                   <div className="w-full max-w-lg h-auto pr-6 flex flex-col gap-10">
                     <h2 className="text-left text-[50px] before:absolute before:content-[''] before:w-24 before:h-24 before:rounded-full before:bg-primary before:-z-20 -z-10">

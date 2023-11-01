@@ -42,13 +42,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <section ref={hero} className=" w-full min-h-screen mb-10  ">
-      <section className=" w-full max-w-[110rem] h-full px-3 lg:px-10  mx-auto  ">
+    <section ref={hero} className=" w-full min-h-screen mb-14 ">
+      <section className=" w-full max-w-[110rem] h-full px-3 sm:px-5 md:px-14 xl:px-20 mx-auto   ">
         <section className=" w-full h-full flex">
           {/* left */}
-          <section className=" w-full lg:w-1/2 h-fit flex z-10 ">
-            <div className="absolute lg:hidden  w-full h-full bg-background2 blur-lg opacity-80"></div>
-            <section className="w-full lg:w-[40rem] h-auto mt-40 lg:mt-72 flex gap-5 lg:gap-16 ">
+          <section className=" w-full xl:w-1/2 h-fit flex z-10 ">
+            <div className="absolute xl:hidden  w-full h-full bg-background2 blur-lg opacity-80"></div>
+            <section className="w-full xl:w-[40rem] h-auto mt-40 lg:mt-72 flex gap-5 sm:gap-8 lg:gap-16 ">
               <section
                 id="social"
                 className="w-10 h-auto flex flex-col items-center gap-20 "
@@ -92,11 +92,11 @@ const Hero = () => {
                     Innovation Ideas
                   </span>
                 </div>
-                <h1 className="hero1">
+                <h1 className="hero1 lg:w-[35rem]">
                   We Offer you <span className="text-primary"> A Digital </span>
                   Platform .
                 </h1>
-                <p className="hero1 mt-4">
+                <p className="hero1 md:w-[35rem] mt-4 ">
                   Vulputate enim nulla aliquet porttitor lacus luctus accumsan
                   tortor posuere. Nisl purus in mollis nunc sed id sempe egestas
                   quis ips.
@@ -113,7 +113,7 @@ const Hero = () => {
             </section>
           </section>
           {/* right */}
-          <section className="absolute right-0 w-full sm:w-1/2 h-full">
+          <section className="absolute right-0 w-full xl:w-1/2 h-full">
             <Image
               src={"/assets/heroMain.jpg"}
               width={"2166"}

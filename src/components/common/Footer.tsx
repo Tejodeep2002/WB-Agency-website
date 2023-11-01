@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <section className="w-full h-auto text-tertiary">
       <section className="w-full h-auto pt-[70px] pb-[100px]">
-        <section className="w-full max-w-[100rem] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-0">
+        <section className="w-full max-w-[100rem] mx-auto flex flex-row flex-wrap lg:flex-row gap-10 lg:gap-0">
           {/* left */}
-          <section className="w-full lg:w-1/2 h-auto px-5">
+          <section className="w-full md:w-full lg:w-1/2 h-auto px-5">
             <div className="w-full max-w-[580px] h-auto flex flex-col gap-12">
               <Image
                 src={
@@ -44,8 +44,10 @@ const Footer = () => {
               </div>
             </div>
           </section>
+
+
           {/* mid */}
-          <section className="w-full lg:w-1/4 h-auto px-5">
+          <section className="w-full md:w-[40%] lg:w-1/4 h-auto px-5">
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Contact
             </section>
@@ -66,8 +68,10 @@ const Footer = () => {
               </ul>
             </section>
           </section>
+
+
           {/* right */}
-          <section className="w-full lg:w-1/4 h-auto px-5">
+          <section className="w-full md:w-[40%] lg:w-1/4 h-auto px-5">
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Services
             </section>
@@ -142,7 +146,7 @@ const Footer = () => {
             </ul>
           </section>
           {/* right */}
-          <section>
+          <section className=" text-center">
             <p>Copyright ©WedesignTech All Rights Reserved.</p>
           </section>
         </section>

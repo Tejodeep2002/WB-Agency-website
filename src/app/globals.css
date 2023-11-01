@@ -93,14 +93,14 @@ h4 {
   h1 {
     color: var(--color-secondary);
     font-weight: 600;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 70px;
     text-align: left;
   }
   h2 {
     color: var(--color-secondary);
     font-weight: 600;
-    font-size: 60px;
+    font-size: 40px;
     line-height: px;
     text-align: center;
   }

@@ -37,12 +37,12 @@ const Services = () => {
         className="bg-fixed w-full h-auto  object-cover "
         // style={{ backgroundImage: "url('/assets/bg.jpg')" }}
       >
-        <section className="w-full h-auto py-10 lg:py-36">
+        <section className="w-full h-auto py-10 xl:py-36">
           <Heading heading={"Services"} subHeading={"What We Have to Offer"} />
-          <section className="w-full h-auto lg:h-[38rem]  lg:mt-10 ">
-            <section className="w-full h-full flex flex-col lg:flex-row gap-24 lg:gap-0  text-secondary border-tertiary ">
-              <section className="w-full lg:w-1/4 px-5 lg:px-0 flex flex-col gap-16 items-center border-r border-grey1 group  ">
-                <div className="w-full h-fit  lg:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
+          <section className="w-full h-auto xl:h-[38rem] xl:mt-10 ">
+            <section className="w-full h-full flex flex-col md:flex-row md:flex-wrap  lg:gap-0  text-secondary border-tertiary ">
+              <section className="w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+                <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
                     className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] group-hover:text-primary text-left transition ease-in-out duration-500"
@@ -57,8 +57,8 @@ const Services = () => {
                     </p>
                   </span>
                 </div>
-                <div className="relative w-full h-full  md:pt-[66.66%]">
-                  <div className="absolute hidden  top-0 left-0 bottom-0 right-0 lg:flex items-center px-16 mx-auto">
+                <div className="relative w-full h-full  xl:pt-[66.66%]">
+                  <div className="absolute hidden  top-0 left-0 bottom-0 right-0 xl:flex items-center px-16 mx-auto">
                     <span className="flex gap-5">
                       <PulseCircle />
                       Know more
@@ -69,12 +69,12 @@ const Services = () => {
                     width={"1080"}
                     height={"1080"}
                     alt={""}
-                    className="lg:absolute w-full lg:scale-75 lg:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
+                    className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
                   />
                 </div>
               </section>
-              <section className="w-full lg:w-1/4 px-5 lg:px-0 flex flex-col gap-16 items-center border-r border-grey1 group  ">
-                <div className="w-full h-fit  lg:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
+              <section className="w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+                <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
                     className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] group-hover:text-primary text-left transition ease-in-out duration-500"
@@ -89,8 +89,8 @@ const Services = () => {
                     </p>
                   </span>
                 </div>
-                <div className="relative w-full h-full  md:pt-[66.66%]">
-                  <div className="absolute hidden  top-0 left-0 bottom-0 right-0 lg:flex items-center px-16 mx-auto">
+                <div className="relative w-full h-full  xl:pt-[66.66%]">
+                  <div className="absolute hidden  top-0 left-0 bottom-0 right-0 xl:flex items-center px-16 mx-auto">
                     <span className="flex gap-5">
                       <PulseCircle />
                       Know more
@@ -101,12 +101,12 @@ const Services = () => {
                     width={"1080"}
                     height={"1080"}
                     alt={""}
-                    className="lg:absolute w-full lg:scale-75 lg:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
+                    className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
                   />
                 </div>
               </section>
-              <section className="w-full lg:w-1/4 px-5 lg:px-0 flex flex-col gap-16 items-center border-r border-grey1 group  ">
-                <div className="w-full h-fit  lg:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
+              <section className="w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+                <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
                     className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] group-hover:text-primary text-left transition ease-in-out duration-500"
@@ -121,8 +121,8 @@ const Services = () => {
                     </p>
                   </span>
                 </div>
-                <div className="relative w-full h-full  md:pt-[66.66%]">
-                  <div className="absolute hidden  top-0 left-0 bottom-0 right-0 lg:flex items-center px-16 mx-auto">
+                <div className="relative w-full h-full  xl:pt-[66.66%]">
+                  <div className="absolute hidden  top-0 left-0 bottom-0 right-0 xl:flex items-center px-16 mx-auto">
                     <span className="flex gap-5">
                       <PulseCircle />
                       Know more
@@ -133,12 +133,12 @@ const Services = () => {
                     width={"1080"}
                     height={"1080"}
                     alt={""}
-                    className="lg:absolute w-full lg:scale-75 lg:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
+                    className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
                   />
                 </div>
               </section>
-              <section className="w-full lg:w-1/4 px-5 lg:px-0 flex flex-col gap-16 items-center border-r border-grey1 group  ">
-                <div className="w-full h-fit  lg:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
+              <section className="w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+                <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
                     className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] group-hover:text-primary text-left transition ease-in-out duration-500"
@@ -153,8 +153,8 @@ const Services = () => {
                     </p>
                   </span>
                 </div>
-                <div className="relative w-full h-full  md:pt-[66.66%]">
-                  <div className="absolute hidden  top-0 left-0 bottom-0 right-0 lg:flex items-center px-16 mx-auto">
+                <div className="relative w-full h-full  xl:pt-[66.66%]">
+                  <div className="absolute hidden  top-0 left-0 bottom-0 right-0 xl:flex items-center px-16 mx-auto">
                     <span className="flex gap-5">
                       <PulseCircle />
                       Know more
@@ -165,10 +165,14 @@ const Services = () => {
                     width={"1080"}
                     height={"1080"}
                     alt={""}
-                    className="lg:absolute w-full lg:scale-75 lg:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
+                    className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
                   />
                 </div>
               </section>
+             
+            
+            
+           
 
               {/* <section className="w-full lg:w-1/4 border-2 border-yellow-500 flex flex-col gap-16 items-center border-r border-grey1  ">
                 <div className="w-full h-fit px-16 mx-auto flex flex-col gap-6 hover:text-primary">

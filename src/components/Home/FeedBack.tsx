@@ -20,12 +20,12 @@ const FeedBack = () => {
             subHeading={"Happy Words From Happy Customer"}
           />
 
-          <section className="w-full text-white px-5">
+          <section className="w-full text-white px-10 xl:px-5">
             <Swiper
               slidesPerView={"auto"}
               style={{ paddingBottom: "1rem" }}
               modules={[Pagination, Autoplay]}
-            
+              autoplay={true}
               breakpoints={{
                 640: {
                   slidesPerView: 1,
@@ -33,7 +33,7 @@ const FeedBack = () => {
                 },
                 768: {
                   slidesPerView: 2,
-                  spaceBetween: 20,
+                  spaceBetween: 45,
                 },
                 1100: {
                   slidesPerView: 3,
@@ -56,7 +56,7 @@ const FeedBack = () => {
                   id="description"
                   className="w-full h-auto bg-gradient-to-br from-background3 to-background3 bg-no-repeat bg-[length:100%_80%] z-0"
                 >
-                  <section className="w-full h-auto py-[40px] px-[20px] lg:py-[66px] lg:px-20">
+                  <section className="w-full h-auto py-[40px] px-[20px] lg:py-[66px] lg:px-12 xl:px-20">
                     <p>
                       Turpis massa tincidunt dui ut ornare lectus sit. Vitae
                       ultricies leo integer malesuada. Amet massa vitae tortor
@@ -94,7 +94,7 @@ const FeedBack = () => {
                   id="description"
                   className="w-full h-auto bg-gradient-to-br from-background3 to-background3 bg-no-repeat bg-[length:100%_80%] z-0"
                 >
-                  <section className="w-full h-auto py-[40px] px-[20px] lg:py-[66px] lg:px-20">
+                  <section className="w-full h-auto py-[40px] px-[20px] lg:py-[66px] lg:px-12 xl:px-20">
                     <p>
                       Turpis massa tincidunt dui ut ornare lectus sit. Vitae
                       ultricies leo integer malesuada. Amet massa vitae tortor
@@ -132,7 +132,7 @@ const FeedBack = () => {
                   id="description"
                   className="w-full h-auto bg-gradient-to-br from-background3 to-background3 bg-no-repeat bg-[length:100%_80%] z-0"
                 >
-                  <section className="w-full h-auto py-[40px] px-[20px] lg:py-[66px] lg:px-20">
+                  <section className="w-full h-auto py-[40px] px-[20px] lg:py-[66px] lg:px-12 xl:px-20">
                     <p>
                       Turpis massa tincidunt dui ut ornare lectus sit. Vitae
                       ultricies leo integer malesuada. Amet massa vitae tortor
@@ -170,7 +170,7 @@ const FeedBack = () => {
                   id="description"
                   className="w-full h-auto bg-gradient-to-br from-background3 to-background3 bg-no-repeat bg-[length:100%_80%] z-0"
                 >
-                  <section className="w-full h-auto py-[40px] px-[20px] lg:py-[66px] lg:px-20">
+                  <section className="w-full h-auto py-[40px] px-[20px] lg:py-[66px] lg:px-12 xl:px-20">
                     <p>
                       Turpis massa tincidunt dui ut ornare lectus sit. Vitae
                       ultricies leo integer malesuada. Amet massa vitae tortor
