@@ -13,16 +13,16 @@ const Services = () => {
   gsap.registerPlugin(ScrollTrigger);
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(services.current, {
-        x: -100,
-        duration: 1,
+      gsap.from(".servicesSections", {
+        y: 100,
         opacity: 0,
-        stagger: 0.3,
-        ease: "power2.out",
+        stagger: 0.2,
+        ease: "power4.out",
         scrollTrigger: {
           trigger: services.current,
           scroller: "main",
-          start: "top 90%",
+          start: "30% 90%",
+          markers:true
         },
       });
     });
@@ -41,7 +41,7 @@ const Services = () => {
           <Heading heading={"Services"} subHeading={"What We Have to Offer"} />
           <section className="w-full h-auto xl:h-[38rem] xl:mt-10 ">
             <section className="w-full h-full flex flex-col md:flex-row md:flex-wrap  lg:gap-0  text-secondary border-tertiary ">
-              <section className="w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+              <section className=" servicesSections  w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
                 <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
@@ -73,7 +73,7 @@ const Services = () => {
                   />
                 </div>
               </section>
-              <section className="w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+              <section className=" servicesSections w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
                 <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
@@ -105,7 +105,7 @@ const Services = () => {
                   />
                 </div>
               </section>
-              <section className="w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+              <section className=" servicesSections w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
                 <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
@@ -137,7 +137,7 @@ const Services = () => {
                   />
                 </div>
               </section>
-              <section className="w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+              <section className=" servicesSections w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
                 <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}

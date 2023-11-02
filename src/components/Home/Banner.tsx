@@ -29,8 +29,8 @@ const Banner = () => {
 
   return (
     <section ref={banner} className="w-full h-auto">
-      <section className="w-full max-w-[90rem] h-auto mx-auto mb-[100px] ">
-        <section className="w-full flex flex-wrap justify-evenly ">
+      <section className="w-full max-w-[90rem] h-auto mx-auto mb-[100px]">
+        <section className="w-full flex flex-wrap justify-evenly xl:justify-between">
           <div className="w-full sm:w-fit">
             <div className="banner1 max-w-[27rem] h-auto p-[30px] pr-10 mx-auto flex flex-col sm:flex-row gap-5 sm:gap-7 text-secondary">
               <svg
