@@ -1,11 +1,11 @@
-import FeedBack from "@/components/Home/FeedBack";
-import Footer from "@/components/common/Footer";
-import Gallery from "@/components/Home/Gallery";
-import Hero from "@/components/Home/Hero";
-import Banner from "@/components/Home/Banner";
-import Services from "@/components/Home/Services";
-import TagLine from "@/components/Home/TagLine";
-import Header from "@/components/common/Header";
+import FeedBack from "@/components/Pages/Home/FeedBack";
+import Footer from "@/components/common/Footer/Footer";
+import Gallery from "@/components/Pages/Home/Gallery";
+import Hero from "@/components/Pages/Home/Hero";
+import Banner from "@/components/Pages/Home/Banner";
+import Services from "@/components/Pages/Home/Services";
+import TagLine from "@/components/Pages/Home/TagLine";
+import Header from "@/components/common/Navbar/Header";
 
 export default function Home() {
   return (

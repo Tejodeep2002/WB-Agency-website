@@ -5,7 +5,7 @@ import { SlSocialInstagram, SlSocialFacebook } from "react-icons/sl";
 import { PiPinterestLogoBold } from "react-icons/pi";
 import { BiPlay } from "react-icons/bi";
 import Image from "next/image";
-import PulseCircle from "../common/PulseCircle";
+import PulseCircle from "../../Ui/PulseCircle";
 import gsap from "gsap";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 
@@ -42,13 +42,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <section ref={hero} className=" w-full min-h-screen mb-14 ">
+    <section ref={hero} className=" w-full min-h-[90vh] mb-14">
       <section className=" w-full max-w-[110rem] h-full px-3 sm:px-5 md:px-14 xl:px-20 mx-auto   ">
         <section className=" w-full h-full flex">
           {/* left */}
           <section className=" w-full xl:w-1/2 h-fit flex z-10 ">
             <div className="absolute xl:hidden  w-full h-full bg-background2 blur-lg opacity-80"></div>
-            <section className="w-full xl:w-[40rem] h-auto mt-40 lg:mt-72 flex gap-5 sm:gap-8 lg:gap-16 ">
+            <section className="w-full xl:w-[40rem] h-auto mt-20 lg:mt-44 flex gap-5 sm:gap-8 lg:gap-16 ">
               <section
                 id="social"
                 className="w-10 h-auto flex flex-col items-center gap-20 "
@@ -84,7 +84,7 @@ const Hero = () => {
 
               <section
                 id=""
-                className="w-full h-auto flex flex-col gap-2 lg:gap-9 text-white"
+                className="w-full h-auto flex flex-col gap-2 lg:gap-8 text-white"
               >
                 <div className="hero1 w-full h-fit flex gap-6 items-center    ">
                   <PulseCircle />
@@ -119,7 +119,7 @@ const Hero = () => {
               width={"2166"}
               height={"1900"}
               alt=""
-              className=" w-full h-screen"
+              className=" w-full h-[80vh]"
               priority
             />
           </section>

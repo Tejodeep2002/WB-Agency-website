@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import SideBar from "./Navbar/Sidebar";
+import SideBar from "./Sidebar";
 
 const Header = () => {
   const [sideBarHidden, setSideBarHidden] = useState<boolean>(false);
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-20 w-full h-16 lg:h-28 flex items-center justify-center ">
-        <div className="absolute  w-full h-full  bg-background3 opacity-80 shadow-xl backdrop-blur-md z-0 "></div>
+      <header className="sticky top-0 left-0 right-[0.44rem] z-20 h-16 lg:h-28 flex items-center justify-center ">
+        <div className="absolute  w-full h-full  shadow-2xl  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-100 z-0 "></div>
         <section className="w-full  max-w-[110rem] px-10  flex justify-between items-center z-10 ">
           <h2 className=" font-bold text-2xl text-white">GaaGa</h2>
           <nav className="hidden xl:block">
@@ -23,7 +23,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href={"/about"}
+                  href={"/our-teams"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   ABOUT

@@ -1,12 +1,12 @@
 "use client";
 import React, { useRef } from "react";
-import PulseCircle from "../common/PulseCircle";
+import PulseCircle from "../../Ui/PulseCircle";
 import Image from "next/image";
 import Link from "next/link";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import Heading from "../common/Heading/Heading";
+import Heading from "../../common/Heading/Heading";
 
 const Services = () => {
   const services = useRef<HTMLDivElement>(null);
@@ -35,7 +35,7 @@ const Services = () => {
     >
       <div
         className="bg-fixed w-full h-auto  object-cover "
-        // style={{ backgroundImage: "url('/assets/bg.jpg')" }}
+        style={{ backgroundImage: "url('/assets/bg.jpg')" }}
       >
         <section className="w-full h-auto py-10 xl:py-36">
           <Heading heading={"Services"} subHeading={"What We Have to Offer"} />
