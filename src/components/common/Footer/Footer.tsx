@@ -17,7 +17,7 @@ const Footer = () => {
                 }
                 width={"200"}
                 height={"300"}
-                alt=" "
+                alt=""
                 className="max-w-[383px] h-[32px] "
               />
               <div>

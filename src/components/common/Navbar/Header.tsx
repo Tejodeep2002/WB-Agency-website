@@ -1,10 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import SideBar from "./Sidebar";
+import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
 
 const Header = () => {
   const [sideBarHidden, setSideBarHidden] = useState<boolean>(false);
+
   return (
     <>
       <header className="sticky top-0 left-0 right-[0.44rem] z-20 h-16 lg:h-28 flex items-center justify-center ">
