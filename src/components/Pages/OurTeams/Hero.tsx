@@ -1,5 +1,5 @@
 import TeamPicture from "@/components/Ui/TeamPicture";
-import Heading from "@/components/common/Heading/Heading";
+import Heading from "@/components/Ui/Heading/Heading";
 import React from "react";
 
 const Hero = () => {

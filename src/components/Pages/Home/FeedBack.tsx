@@ -9,7 +9,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AiOutlineStar } from "react-icons/ai";
 import Image from "next/image";
-import Heading from "../../common/Heading/Heading";
+import Heading from "../../Ui/Heading/Heading";
 const FeedBack = () => {
   return (
     <section className="w-full h-auto bg-background2 ">

@@ -5,7 +5,7 @@ import PulseCircle from "../../Ui/PulseCircle";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Heading from "../../common/Heading/Heading";
+import Heading from "../../Ui/Heading/Heading";
 
 const Gallery = () => {
   const gallery = useRef<HTMLDivElement>(null);

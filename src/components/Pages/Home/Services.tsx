@@ -6,7 +6,7 @@ import Link from "next/link";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import Heading from "../../common/Heading/Heading";
+import Heading from "../../Ui/Heading/Heading";
 
 const Services = () => {
   const services = useRef<HTMLDivElement>(null);

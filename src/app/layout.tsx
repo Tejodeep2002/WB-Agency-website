@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/common/Navbar/Header";
+import Header from "@/components/Ui/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Home",

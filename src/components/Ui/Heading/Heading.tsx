@@ -1,6 +1,6 @@
 "use client";
 import React, { FC, useRef } from "react";
-import PulseCircle from "../../Ui/PulseCircle";
+import PulseCircle from "../PulseCircle";
 import gsap from "gsap";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
