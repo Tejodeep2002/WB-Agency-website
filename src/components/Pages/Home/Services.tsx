@@ -22,7 +22,6 @@ const Services = () => {
           trigger: services.current,
           scroller: "main",
           start: "30% 90%",
-          markers:true
         },
       });
     });
