@@ -1,5 +1,5 @@
 import React from "react";
-import { BsInstagram } from "react-icons/Bs";
+import { BsInstagram } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 
