@@ -28,16 +28,16 @@ const Footer = () => {
                   quis auctor elit sed vulputate mi sit amet.{" "}
                 </p>
               </div>
-              <div className="w-full flex gap-4">
+              <div className="w-full flex gap-3">
                 <input
                   type="text"
                   title="Message"
-                  className="w-[60%] bg-transparent  border-b  text-white"
+                  className="w-[70%] bg-transparent focus:outline-none border-b  text-white"
                 />
                 <button
                   type="button"
                   title="button"
-                  className="w-[40%] h-11 rounded-full bg-transparent hover:bg-primary after:w-full border"
+                  className="w-[40%] h-11 rounded-full text-[24px] leading-[24px] font-base text-center text-secondary bg-transparent hover:bg-primary after:w-full transition ease-in-out duration-500"
                 >
                   Subscribe
                 </button>

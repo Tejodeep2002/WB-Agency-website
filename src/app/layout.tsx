@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Ui/Navbar/Navbar";
+import { Suspense } from "react";
+import Loading from "./our-teams/Loading";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -14,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Suspense fallback={<Loading/>}>
+
       <body suppressHydrationWarning={true}>{children}</body>
+      </Suspense>
     </html>
   );
 }
