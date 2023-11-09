@@ -51,7 +51,7 @@ const Footer = () => {
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Contact
             </section>
-            <section className="w-full max-w-[280px]">
+            <section className="w-full max-w-[280px] mt-8">
               <ul className="flex flex-col gap-5 flex-wrap ">
                 <li>
                   <p>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
@@ -75,7 +75,7 @@ const Footer = () => {
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Services
             </section>
-            <section className="w-full max-w-[280px]">
+            <section className="w-full max-w-[280px] mt-8">
               <ul className="flex flex-col gap-4 flex-wrap ">
                 <li>
                   <p>Branding & Identity</p>

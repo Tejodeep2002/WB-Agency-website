@@ -6,6 +6,7 @@ import Banner from "@/components/Pages/Home/Banner";
 import Services from "@/components/Pages/Home/Services";
 import TagLine from "@/components/Pages/Home/TagLine";
 import Navbar from "@/components/Ui/Navbar/Navbar";
+import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_carousel";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <TagLine />
       <Services />
       <FeedBack />
+      <Social_carousel/>
       <Footer />
     </main>
   );

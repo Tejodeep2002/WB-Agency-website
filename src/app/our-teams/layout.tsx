@@ -15,10 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Suspense fallback={<Loading/>}>
+      {/* <Suspense fallback={<Loading/>}> */}
 
       <body suppressHydrationWarning={true}>{children}</body>
-      </Suspense>
+      {/* </Suspense> */}
     </html>
   );
 }

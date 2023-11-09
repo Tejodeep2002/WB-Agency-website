@@ -4,7 +4,6 @@ import MainTitle from "@/components/Ui/MainTitle";
 import Navbar from "@/components/Ui/Navbar/Navbar";
 import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_carousel";
 
-
 import React from "react";
 
 const Services = () => {
@@ -13,8 +12,8 @@ const Services = () => {
       <Navbar />
       <MainTitle heading={"Services"} picture={""} />
       <Hero />
-     <Social_carousel/>
-      <Footer/>
+      <Social_carousel />
+      <Footer />
     </main>
   );
 };

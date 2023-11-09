@@ -1,14 +1,25 @@
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { FC, useRef } from "react";
 import PulseCircle from "../PulseCircle";
+import Link from "next/link";
 
-const ServiceItems = () => {
+interface ServiceItems {
+  image: string;
+  title: string;
+}
+
+const ServiceItems: FC<ServiceItems> = ({ title, image }) => {
+  const url = title.replace(" ","-");
+
+  console.log("link",url);
   return (
-    // <div className="w-full xl:w-[486px] h-full flex flex-col ">
     <div className="w-full h-full flex flex-col ">
-      <div className="relative w-full h-full xl:h-[290px] group z-10 overflow-hidden">
+      <Link
+        href={`services/${url}`}
+        className="relative w-full h-full xl:h-[290px] group z-10 overflow-hidden"
+      >
         <Image
-          src={"https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-3-service-4.jpg"}
+          src={image}
           alt=""
           width={"1000"}
           height={"0"}
@@ -20,11 +31,14 @@ const ServiceItems = () => {
             Read More
           </span>
         </div>
-      </div>
+      </Link>
       <div className="w-full flex items-center mt-10 ">
-        <button className="text-[30px] mx-auto leading-[34.8px] font-semibold text-center text-secondary hover:text-primary transition duration-700 ease-in-out">
-          Brand Logo
-        </button>
+        <Link
+          href={`service/${title}`}
+          className="text-[30px] mx-auto leading-[34.8px] font-semibold text-center text-secondary hover:text-primary transition duration-700 ease-in-out"
+        >
+          {title}
+        </Link>
       </div>
     </div>
   );

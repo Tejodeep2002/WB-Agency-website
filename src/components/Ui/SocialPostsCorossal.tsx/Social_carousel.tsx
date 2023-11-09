@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { BsInstagram } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,9 +8,42 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Autoplay, Pagination } from "swiper/modules";
+import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Social_carousel = () => {
+  const socialCarousel = useRef<HTMLDivElement>(null);
+
+  gsap.registerPlugin(ScrollTrigger);
+  useIsomorphicLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(socialCarousel.current, {
+        x: 100,
+        duration: 1,
+        opacity: 0,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: socialCarousel.current,
+          scroller: "main",
+          start: "10% 60%", 
+        },
+      });
+      gsap.from(".social_carousel_post", {
+        x: 100,
+        duration: 1,
+        opacity: 0,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: socialCarousel.current,
+          scroller: "main",
+          start: "10% 60%", 
+        },
+      });
+    });
+    return () => ctx.revert();
+  }, []);
   return (
-    <section className="w-full h-auto">
+    <section ref={socialCarousel} className="w-full h-auto">
       <section className="w-full h-auto pb-20">
         <Swiper
           slidesPerView={1}
