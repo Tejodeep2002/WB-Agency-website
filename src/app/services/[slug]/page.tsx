@@ -2,6 +2,7 @@ import ServiceDetails from "@/components/Pages/ServiceDetails/ServiceDetails";
 import Footer from "@/components/Ui/Footer/Footer";
 import MainTitle from "@/components/Ui/MainTitle";
 import Navbar from "@/components/Ui/Navbar/Navbar";
+import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_carousel";
 import React, { FC } from "react";
 
 interface PageProps{
@@ -16,7 +17,9 @@ const page:FC<PageProps>  = ({params}) => {
       <Navbar />
       <MainTitle heading={params.slug} picture={""} />
       <ServiceDetails/>
-      {/* <Footer/> */}
+      {/* <CaseStudy/> */}
+      <Social_carousel/>
+      <Footer/>
     </main>
   );
 };

@@ -28,10 +28,7 @@ const Services = () => {
     return () => ctx.revert();
   }, []);
   return (
-    <section
-      ref={services}
-      className="w-full h-auto"
-    >
+    <section ref={services} className="w-full h-auto">
       <div
         className="bg-fixed w-full h-auto  object-cover "
         style={{ backgroundImage: "url('/assets/bg.jpg')" }}
@@ -168,10 +165,6 @@ const Services = () => {
                   />
                 </div>
               </section>
-             
-            
-            
-           
 
               {/* <section className="w-full lg:w-1/4 border-2 border-yellow-500 flex flex-col gap-16 items-center border-r border-grey1  ">
                 <div className="w-full h-fit px-16 mx-auto flex flex-col gap-6 hover:text-primary">

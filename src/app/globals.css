@@ -43,8 +43,8 @@ p {
 h1 {
   color: var(--color-secondary);
   font-weight: 600;
-  font-size: 40px;
-  line-height: 38px;
+  font-size: 30px;
+  line-height: 39px;
   text-align: left;
 }
 

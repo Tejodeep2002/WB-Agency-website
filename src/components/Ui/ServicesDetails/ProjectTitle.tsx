@@ -1,18 +1,13 @@
-"use client";
 import React, { FC } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-interface MainTitleProps {
+interface ProjectTitleProps {
   heading: string;
   picture: string;
 }
-const MainTitle: FC<MainTitleProps> = ({ heading, picture }) => {
-  const pathname = usePathname();
-  const titlePathname = pathname.split("/").join(" / ");
-
-  console.log(titlePathname);
-  console.log(pathname.split("/")[1]);
+const ProjectTitle: FC<ProjectTitleProps> = ({ heading, picture }) => {
+  
   return (
     <section className="relative w-full h-auto">
       <div
@@ -22,13 +17,6 @@ const MainTitle: FC<MainTitleProps> = ({ heading, picture }) => {
         <section className="w-full h-auto flex flex-col items-center py-14 xl:pt-28">
           <section className="w-fit h-auto flex flex-col gap-4 items-center">
             <h1>{heading}</h1>
-            <p className="">
-              <Link href={"/"} className="text-secondary">
-                Home
-              </Link>
-
-              {titlePathname}
-            </p>
           </section>
         </section>
       </div>
@@ -36,4 +24,4 @@ const MainTitle: FC<MainTitleProps> = ({ heading, picture }) => {
   );
 };
 
-export default MainTitle;
+export default ProjectTitle;

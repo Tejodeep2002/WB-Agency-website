@@ -25,25 +25,14 @@ const Social_carousel = () => {
         scrollTrigger: {
           trigger: socialCarousel.current,
           scroller: "main",
-          start: "10% 60%", 
-        },
-      });
-      gsap.from(".social_carousel_post", {
-        x: 100,
-        duration: 1,
-        opacity: 0,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: socialCarousel.current,
-          scroller: "main",
-          start: "10% 60%", 
+          start: "top 80%", 
         },
       });
     });
     return () => ctx.revert();
   }, []);
   return (
-    <section ref={socialCarousel} className="w-full h-auto">
+    <section ref={socialCarousel} className="w-full h-auto ">
       <section className="w-full h-auto pb-20">
         <Swiper
           slidesPerView={1}
@@ -208,20 +197,7 @@ const Social_carousel = () => {
                 </div>
               </div>
             </div>
-            {/* </div> */}
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <Social_carousel_post />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Social_carousel_post />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Social_carousel_post />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Social_carousel_post />
-          </SwiperSlide> */}
         </Swiper>
       </section>
     </section>

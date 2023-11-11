@@ -28,11 +28,11 @@ const Footer = () => {
                   quis auctor elit sed vulputate mi sit amet.{" "}
                 </p>
               </div>
-              <div className="w-full flex gap-3">
+              <div className="w-full flex flex-wrap gap-3">
                 <input
                   type="text"
                   title="Message"
-                  className="w-[70%] bg-transparent focus:outline-none border-b  text-white"
+                  className="w-full xl:w-[70%] bg-transparent focus:outline-none border-b  text-white"
                 />
                 <button
                   type="button"
