@@ -3,84 +3,68 @@ import Image from "next/image";
 import React from "react";
 import Core_Services from "./Core_Services";
 import PulseCircle from "@/components/Ui/PulseCircle";
+import Technologies from "./Technologies";
 
 const ServiceDetails = () => {
   return (
     <section className="w-full h-auto ">
-      <section className="w-full h-auto py-20 px-5 md:px-5 xl:py-36">
-        <section className="w-full max-w-[100rem] mx-auto h-auto flex flex-col gap-10">
-          <section className="w-full h-auto">
-            {/* <Image
-              src={
-                "https://gaaga.wpengine.com/wp-content/uploads/2023/06/service-detail-1-1.jpg"
-              }
-              width={"1000"}
-              height={"1"}
-              alt=""
-              className="w-full"
-            /> */}
-            <section className="w-full border flex flex-col gap-16 mt-10">
-              {/* title */}
-              <section className="w-full ">
-                {/* <section className="w-full pb-5">
+      <section className="w-full h-auto  py-20 px-5 md:px-0 xl:py-24">
+        <section className="w-full h-auto flex flex-col">
+          <section className="w-full max-w-[100rem] mx-auto h-auto flex flex-col gap-10">
+            <section className="w-full h-auto">
+              <section className="w-full flex flex-col gap-40 ">
+                {/* title */}
+                <section className="w-full ">
+                  {/* <section className="w-full pb-5">
                   <h1 className="text-left ">Web Developement</h1>
                 </section> */}
-                <section className="w-full h-[40rem] mt-4 flex flex-col lg:flex-row gap-8 lg:gap-0 ">
-                  {/* <div className="relative w-full lg:w-[30%] h-[30rem] ">
-                    <Image
-                      src={"/assets/home-one-instagram-1.jpg"}
-                      width={"1000"}
-                      height={"0"}
-                      alt={""}
-                      className="absolute w-full h-full bg-fixed "
-                    />
-                  </div> */}
-                  <div className="w-[40%] h-full ">
-                    <Image
-                      src={"/assets/home-one-instagram-1.jpg"}
-                      width={"1000"}
-                      height={"0"}
-                      alt={""}
-                      className=" w-full h-full bg-fixed "
-                    />
-                  </div>
-                  <div className="w-[60%] h-full pr-20 flex flex-col justify-center">
-                    <div className="w-full h-[80%] py-12 px-20 flex flex-col gap-6 border-y border-r border-primary">
-                      <section className="w-full flex gap-8 text-secondary">
-                        <PulseCircle />
-                        Web Developement
-                      </section>
-                      <section className="w-full h-auto">
-                        <h1 className="text-left ">Web Developement</h1>
-                      </section>
-                      <section className="  w-full h-full">
-                        <p>
-                          Web development involves creating and maintaining
-                          websites or web applications. It encompasses various
-                          tasks, including web design, front-end development for
-                          user interfaces, back-end development for server-side
-                          logic, and database management. Web developers use
-                          programming languages such as HTML, CSS, and
-                          JavaScript to build the visual elements and
-                          functionality of a site.
-                        </p>
-                      </section>
-                      <section className="  w-full h-full">
-                        <p>
-                          Web development involves creating and maintaining
-                          websites or web applications. It encompasses various
-                          tasks, including web design, front-end development for
-                          user interfaces, back-end development for server-side
-                          logic, and database management. Web developers use
-                          programming languages such as HTML, CSS, and
-                          JavaScript to build the visual elements and
-                          functionality of a site.
-                        </p>
-                      </section>
+                  <section className="w-full h-[40rem] mt-4 flex flex-col lg:flex-row gap-8 lg:gap-0 ">
+                    <div className="w-[60%] h-full pl-20 flex flex-col justify-center">
+                      <div className="w-full h-[80%] py-12 px-20 flex flex-col gap-6 border-y border-l border-primary">
+                        <section className="w-full flex gap-8 text-secondary">
+                          <PulseCircle />
+                          Web Developement
+                        </section>
+                        <section className="w-full h-auto">
+                          <h1 className="text-left ">Web Developement</h1>
+                        </section>
+                        <section className="  w-full h-full">
+                          <p>
+                            Web development involves creating and maintaining
+                            websites or web applications. It encompasses various
+                            tasks, including web design, front-end development
+                            for user interfaces, back-end development for
+                            server-side logic, and database management. Web
+                            developers use programming languages such as HTML,
+                            CSS, and JavaScript to build the visual elements and
+                            functionality of a site.
+                          </p>
+                        </section>
+                        <section className="  w-full h-full">
+                          <p>
+                            Web development involves creating and maintaining
+                            websites or web applications. It encompasses various
+                            tasks, including web design, front-end development
+                            for user interfaces, back-end development for
+                            server-side logic, and database management. Web
+                            developers use programming languages such as HTML,
+                            CSS, and JavaScript to build the visual elements and
+                            functionality of a site.
+                          </p>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                </section>
-                <section className="w-full flex flex-col lg:flex-row gap-6">
+                    <div className="w-[40%] h-full ">
+                      <Image
+                        src={"/assets/home-one-instagram-1.jpg"}
+                        width={"1000"}
+                        height={"0"}
+                        alt={""}
+                        className=" w-full h-full bg-fixed "
+                      />
+                    </div>
+                  </section>
+                  {/* <section className="w-full flex flex-col lg:flex-row gap-6"> */}
                   {/* <div className="w-full max-w-1/2 xl:pr-10 ">
                     <p>
                       Web development involves creating and maintaining websites
@@ -92,8 +76,8 @@ const ServiceDetails = () => {
                       visual elements and functionality of a site.
                     </p>
                   </div> */}
-                  <div className="w-full xl:max-w-1/2 flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between items-center">
-                    {/* <div className="relative  w-[17rem] lg:w-[35%] h-28 rounded-full overflow-hidden">
+                  {/* <div className="w-full xl:max-w-1/2 flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between items-center"> */}
+                  {/* <div className="relative  w-[17rem] lg:w-[35%] h-28 rounded-full overflow-hidden">
                       <Image
                         src={
                           "https://gaaga.wpengine.com/wp-content/uploads/2023/06/service-detail-one-3.jpg"
@@ -116,14 +100,12 @@ const ServiceDetails = () => {
                         site.
                       </p>
                     </div> */}
-                  </div>
+                  {/* </div> */}
+                  {/* </section> */}
                 </section>
-              </section>
 
-            
-
-              {/* category,software,wesite */}
-              <section className="w-full  flex flex-row flex-wrap gap-3 justify-between uppercase text-secondary font-semibold text-sm leading-[23px] text-left">
+                {/* category,software,wesite */}
+                {/* <section className="w-full  flex flex-row flex-wrap gap-3 justify-between uppercase text-secondary font-semibold text-sm leading-[23px] text-left">
                 <span>
                   <span className="text-primary">Category: </span>
                   Development
@@ -139,9 +121,9 @@ const ServiceDetails = () => {
                 {/* <span>
                   <span className="text-primary">Category: </span>
                   Development
-                </span> */}
-              </section>
-              {/* <Image
+                </span> 
+              </section> */}
+                {/* <Image
                 src={
                   "https://gaaga.wpengine.com/wp-content/uploads/2023/06/service-detail-1-1.jpg"
                 }
@@ -151,13 +133,8 @@ const ServiceDetails = () => {
                 className="w-full"
               /> */}
 
-              <Core_Services />
-
-              <h2>Our Ongoing Process</h2>
-              <Process />
-
-              {/* more */}
-              {/* <section className="w-full flex flex-col  xl:mt-10">
+                {/* more */}
+                {/* <section className="w-full flex flex-col  xl:mt-10">
                 <section className="w-full pb-5">
                   <h4 className="text-[26px] xl:text-[30px] leading-[34.8px]  font-semibold">
                     Services Offer :
@@ -212,10 +189,15 @@ const ServiceDetails = () => {
                   </div>
                 </section>
               </section> */}
+              </section>
             </section>
           </section>
+          <Technologies />
+          <Core_Services />
+
+          <Process />
         </section>
-      </section>
+      </section>{" "}
     </section>
   );
 };
