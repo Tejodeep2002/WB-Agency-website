@@ -48,7 +48,7 @@ const Navbar = () => {
                   href={"/our-teams"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
-                  ABOUT
+                  OUR TEAMS
                 </Link>
               </li>
               <li>

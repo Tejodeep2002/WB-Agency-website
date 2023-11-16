@@ -24,15 +24,31 @@ const Services = () => {
           start: "30% 90%",
         },
       });
+
+      // gsap.from(services.current, {
+      //   y: 100,
+      //   opacity: 0,
+      //   stagger: 0.2,
+      //   ease: "power4.out",
+      //   scrollTrigger: {
+      //     trigger: services.current,
+      //     scroller: "main",
+      //     start: "30% 90%",
+      //   },
+      // });
+
+    
     });
+
     return () => ctx.revert();
   }, []);
   return (
-    <section ref={services} className="w-full h-auto">
+    <section ref={services} className="w-full h-auto ">
       <div
         className="bg-fixed w-full h-auto  object-cover "
-        style={{ backgroundImage: "url('/assets/bg.jpg')" }}
+        // style={{ backgroundImage: "url('/assets/bg.jpg')" }}
       >
+        {/* <section className="w-full h-auto py-10 xl:py-36"> */}
         <section className="w-full h-auto py-10 xl:py-36">
           <Heading heading={"Services"} subHeading={"What We Have to Offer"} />
           <section className="w-full h-auto xl:h-[38rem] xl:mt-10 ">

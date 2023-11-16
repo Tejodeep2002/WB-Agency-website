@@ -25,7 +25,7 @@ const Social_carousel = () => {
         scrollTrigger: {
           trigger: socialCarousel.current,
           scroller: "main",
-          start: "top 80%", 
+          start: "top 80%",
         },
       });
     });
@@ -60,7 +60,7 @@ const Social_carousel = () => {
           className="mySwiper w-full h-fit px-1 cursor-grab"
         >
           <SwiperSlide className="relative w-full h-full group">
-            {/* <div className="relative w-full h-full group"> */}
+          
             <Image
               src={"/assets/home-one-instagram-1.jpg"}
               width={"1000"}
