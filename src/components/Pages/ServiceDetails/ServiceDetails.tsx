@@ -1,4 +1,4 @@
-import Process from "@/components/Ui/Process";
+import Process from "@/components/Ui/ServicesDetails/Process";
 import Image from "next/image";
 import React from "react";
 import Core_Services from "./Core_Services";

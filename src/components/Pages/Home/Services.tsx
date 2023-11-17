@@ -36,8 +36,6 @@ const Services = () => {
       //     start: "30% 90%",
       //   },
       // });
-
-    
     });
 
     return () => ctx.revert();
@@ -49,9 +47,10 @@ const Services = () => {
         // style={{ backgroundImage: "url('/assets/bg.jpg')" }}
       >
         {/* <section className="w-full h-auto py-10 xl:py-36"> */}
-        <section className="w-full h-auto py-10 xl:py-36">
+        <section className=" w-full h-auto py-10 xl:py-36">
           <Heading heading={"Services"} subHeading={"What We Have to Offer"} />
-          <section className="w-full h-auto xl:h-[38rem] xl:mt-10 ">
+          {/* <section className="border w-full h-auto xl:h-[38rem] xl:mt-10 "> */}
+          <section className=" w-full h-auto  xl:mt-10 ">
             <section className="w-full h-full flex flex-col md:flex-row md:flex-wrap  lg:gap-0  text-secondary border-tertiary ">
               <section className=" servicesSections  w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
                 <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">

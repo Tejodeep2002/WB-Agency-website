@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Heading from "./Heading/Heading";
+import Heading from "../Heading/Heading";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import SwiperButtonComponent from "./SwiperButtonComponent";
+import SwiperButtonComponent from "../SwiperButtonComponent";
 
 const Process = () => {
   return (

@@ -103,8 +103,14 @@ const Hero = () => {
                 </p>
                 <section className=" hero1 w-full flex mt-9">
                   <div className="flex items-center gap-6 text-lg">
+                    <div className="relative">
+
                     <div className="w-14 h-14 flex items-center justify-center  rounded-full  bg-primary">
                       <BiPlay className="w-8 h-8 " />
+                    </div>
+                    <div className="absolute top-0 bottom-0 left-0 right-0 -z-10 animate-ping w-14 h-14 flex items-center justify-center  rounded-full  bg-primary">
+                      <BiPlay className="w-8 h-8 " />
+                    </div>
                     </div>
                     <span>view video</span>
                   </div>
@@ -120,8 +126,9 @@ const Hero = () => {
               height={"1900"}
               alt=""
               className=" w-full h-[80vh]"
-              priority
+              priority={true}
             />
+           
           </section>
         </section>
       </section>

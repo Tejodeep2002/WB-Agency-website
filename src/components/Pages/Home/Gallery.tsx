@@ -6,6 +6,7 @@ import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Heading from "../../Ui/Heading/Heading";
+import Link from "next/link";
 
 const Gallery = () => {
   const gallery = useRef<HTMLDivElement>(null);
@@ -57,7 +58,7 @@ const Gallery = () => {
           <section className="galleryContent w-full h-auto">
             <section className="w-full h-full flex flex-col gap-5">
               <section className="w-full xl:h-[30rem] flex flex-col md:flex-row  md:flex-wrap xl:flex-nowrap md:justify-evenly  gap-5">
-                <span className="relative w-full  md:w-[45%] xl:w-[25%] h-full">
+                <div className="relative w-full group md:w-[45%] xl:w-[25%] h-full">
                   <Image
                     src={"/assets/home-portfolio-1.jpg"}
                     width={"2000"}
@@ -65,7 +66,16 @@ const Gallery = () => {
                     alt=""
                     className=" w-full xl:h-full"
                   />
-                </span>
+                  <div className="absolute border bottom-0 invisible  group-hover:visible translate-y-[0.2rem] group-hover:translate-y-0 flex items-center justify-center w-full h-full shadow-2xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-100 z-0 transition ease-in duration-100">
+                    <div className=" w-full h-1/2">
+
+                    <span className="flex gap-3 text-secondary">
+                      <PulseCircle />
+                      Read More
+                    </span>
+                    </div>
+                  </div>
+                </div>
                 <span className="relative w-full md:w-[50%] xl:w-[50%]">
                   <Image
                     src={"/assets/home-portfolio-2.jpg"}
@@ -99,9 +109,9 @@ const Gallery = () => {
                         vitae tortor condimentum lacinia quis.
                       </p>
                     </span>
-                    <span className="flex items-center gap-2 ">
+                    <Link href={"/projects"} className="flex items-center gap-2 ">
                       <PulseCircle /> View All
-                    </span>
+                    </Link>
                   </div>
                 </div>
                 <section className="w-full xl:w-1/2 flex flex-wrap md:flex-nowrap gap-5  ">
@@ -125,44 +135,6 @@ const Gallery = () => {
                   </span>
                 </section>
               </section>
-              {/* <section className="w-full h-auto flex  gap-2 md:gap-5">
-                <div className="galleryContent1 relative w-full max-w-1/2 h-96 lg:h-full col-span-1  md:col-span-2 flex justify-center items-center bg-background">
-                  <div className="w-full max-w-lg h-auto pr-6 flex flex-col gap-10">
-                    <h2 className="text-left text-[50px] before:absolute before:content-[''] before:w-24 before:h-24 before:rounded-full before:bg-primary before:-z-10 z-10">
-                      All Projects
-                    </h2>
-                    <span>
-                      <p className="text-left">
-                        Dolor sit amet consectetur adipiscing elit ut aliquam
-                        purus sit. Euismod nisi porta lorem mollis aliquam ut
-                        porttitor. In hac habitasse platea dictumst. Amet massa
-                        vitae tortor condimentum lacinia quis.
-                      </p>
-                    </span>
-                    <span className="flex items-center gap-2 ">
-                      <PulseCircle /> View All
-                    </span>
-                  </div>
-                </div>
-                <div className="galleryContent2 relative w-full">
-                  <Image
-                    src={"/assets/home-portfolio-3.jpg"}
-                    width={"2000"}
-                    height={"0"}
-                    alt=""
-                    className="w-full"
-                  />
-                </div>
-                <div className="galleryContent2 relative w-full">
-                  <Image
-                    src={"/assets/home-portfolio-3.jpg"}
-                    width={"2000"}
-                    height={"0"}
-                    alt=""
-                    className="w-full"
-                  />
-                </div>
-              </section> */}
             </section>
           </section>
         </section>

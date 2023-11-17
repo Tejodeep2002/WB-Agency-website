@@ -9,9 +9,9 @@ interface ServiceItems {
 }
 
 const ServiceItems: FC<ServiceItems> = ({ title, image }) => {
-  const url = title.replace(" ","-");
+  const url = title.replace(" ", "-");
 
-  console.log("link",url);
+  console.log("link", url);
   return (
     <div className="w-full h-full flex flex-col ">
       <Link
