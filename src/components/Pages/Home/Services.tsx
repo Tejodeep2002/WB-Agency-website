@@ -75,16 +75,19 @@ const Services = () => {
                       Know more
                     </span>
                   </div>
+                  <Link href={"/services"}>
                   <Image
                     src={"/assets/services/home-1-service-1.jpg"}
                     width={"1080"}
                     height={"1080"}
                     alt={""}
                     className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
-                  />
+                    />
+                    </Link>
                 </div>
               </section>
-              <section className=" servicesSections w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+              
+              <section className=" servicesSections  w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
                 <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
@@ -107,16 +110,19 @@ const Services = () => {
                       Know more
                     </span>
                   </div>
+                  <Link href={"/services"}>
                   <Image
                     src={"/assets/services/home-1-service-1.jpg"}
                     width={"1080"}
                     height={"1080"}
                     alt={""}
                     className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
-                  />
+                    />
+                    </Link>
                 </div>
               </section>
-              <section className=" servicesSections w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+              
+              <section className=" servicesSections  w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
                 <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
@@ -139,16 +145,19 @@ const Services = () => {
                       Know more
                     </span>
                   </div>
+                  <Link href={"/services"}>
                   <Image
                     src={"/assets/services/home-1-service-1.jpg"}
                     width={"1080"}
                     height={"1080"}
                     alt={""}
                     className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
-                  />
+                    />
+                    </Link>
                 </div>
               </section>
-              <section className=" servicesSections w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
+              
+              <section className=" servicesSections  w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-r xl:border-grey1 group  ">
                 <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
                   <Link
                     href={"#"}
@@ -171,15 +180,18 @@ const Services = () => {
                       Know more
                     </span>
                   </div>
+                  <Link href={"/services"}>
                   <Image
                     src={"/assets/services/home-1-service-1.jpg"}
                     width={"1080"}
                     height={"1080"}
                     alt={""}
                     className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
-                  />
+                    />
+                    </Link>
                 </div>
               </section>
+              
             </section>
           </section>
         </section>

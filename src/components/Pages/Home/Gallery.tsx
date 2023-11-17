@@ -66,17 +66,26 @@ const Gallery = () => {
                     alt=""
                     className=" w-full xl:h-full"
                   />
-                  <div className="absolute border bottom-0 invisible  group-hover:visible translate-y-[0.2rem] group-hover:translate-y-0 flex items-center justify-center w-full h-full shadow-2xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-100 z-0 transition ease-in duration-100">
-                    <div className=" w-full h-1/2">
-
-                    <span className="flex gap-3 text-secondary">
-                      <PulseCircle />
-                      Read More
-                    </span>
-                    </div>
+                  <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                    <Link
+                      href={"#"}
+                      className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
+                    >
+                      UI & UX Designs
+                    </Link>
+                    <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                      Turpis egestas integer eget aliquet nibh praesent.
+                      Accumsan lacus vel facilisis volutpat est egestas dui.
+                    </p>
+                    <section className="w-full flex justify-start">
+                      <span className="flex gap-3 ">
+                        <PulseCircle />
+                        Read more
+                      </span>
+                    </section>
                   </div>
                 </div>
-                <span className="relative w-full md:w-[50%] xl:w-[50%]">
+                <div className="relative w-full group md:w-[50%] xl:w-[50%]">
                   <Image
                     src={"/assets/home-portfolio-2.jpg"}
                     width={"2000"}
@@ -84,8 +93,26 @@ const Gallery = () => {
                     alt=""
                     className="w-full xl:h-full"
                   />
-                </span>
-                <span className="relative w-full md:w-1/2 xl:w-[25%]">
+                  <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                    <Link
+                      href={"#"}
+                      className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
+                    >
+                      UI & UX Designs
+                    </Link>
+                    <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                      Turpis egestas integer eget aliquet nibh praesent.
+                      Accumsan lacus vel facilisis volutpat est egestas dui.
+                    </p>
+                    <section className="w-full flex justify-start">
+                      <span className="flex gap-3 ">
+                        <PulseCircle />
+                        Read more
+                      </span>
+                    </section>
+                  </div>
+                </div>
+                <div className="relative w-full group md:w-1/2 xl:w-[25%]">
                   <Image
                     src={"/assets/home-portfolio-3.jpg"}
                     width={"2000"}
@@ -93,7 +120,25 @@ const Gallery = () => {
                     alt=""
                     className="w-full xl:h-full"
                   />
-                </span>
+                  <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                    <Link
+                      href={"#"}
+                      className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
+                    >
+                      UI & UX Designs
+                    </Link>
+                    <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                      Turpis egestas integer eget aliquet nibh praesent.
+                      Accumsan lacus vel facilisis volutpat est egestas dui.
+                    </p>
+                    <section className="w-full flex justify-start">
+                      <span className="flex gap-3 ">
+                        <PulseCircle />
+                        Read more
+                      </span>
+                    </section>
+                  </div>
+                </div>
               </section>
               <section className="relative w-full xl:h-[30rem] flex flex-col xl:flex-row gap-5 md:gap-5 xl:gap-0">
                 <div className=" galleryContent1 relative w-full xl:w-1/2 h-96 lg:h-full my-8 xl:my-0  flex justify-center items-center bg-background">
@@ -109,13 +154,16 @@ const Gallery = () => {
                         vitae tortor condimentum lacinia quis.
                       </p>
                     </span>
-                    <Link href={"/projects"} className="flex items-center gap-2 ">
+                    <Link
+                      href={"/projects"}
+                      className="flex items-center gap-2 "
+                    >
                       <PulseCircle /> View All
                     </Link>
                   </div>
                 </div>
                 <section className="w-full xl:w-1/2 flex flex-wrap md:flex-nowrap gap-5  ">
-                  <span className="relative w-full md:w-1/2 h-full">
+                  <div className="relative group w-full md:w-1/2 h-full">
                     <Image
                       src={"/assets/home-portfolio-3.jpg"}
                       width={"2000"}
@@ -123,8 +171,26 @@ const Gallery = () => {
                       alt=""
                       className="w-full xl:h-full"
                     />
-                  </span>
-                  <span className="relative w-full md:w-1/2 ">
+                    <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                      <Link
+                        href={"#"}
+                        className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
+                      >
+                        UI & UX Designs
+                      </Link>
+                      <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                        Turpis egestas integer eget aliquet nibh praesent.
+                        Accumsan lacus vel facilisis volutpat est egestas dui.
+                      </p>
+                      <section className="w-full flex justify-start">
+                        <span className="flex gap-3 ">
+                          <PulseCircle />
+                          Read more
+                        </span>
+                      </section>
+                    </div>
+                  </div>
+                  <div className="relative group w-full md:w-1/2 ">
                     <Image
                       src={"/assets/home-portfolio-3.jpg"}
                       width={"2000"}
@@ -132,7 +198,25 @@ const Gallery = () => {
                       alt=""
                       className="w-full xl:h-full"
                     />
-                  </span>
+                    <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                      <Link
+                        href={"#"}
+                        className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
+                      >
+                        UI & UX Designs
+                      </Link>
+                      <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                        Turpis egestas integer eget aliquet nibh praesent.
+                        Accumsan lacus vel facilisis volutpat est egestas dui.
+                      </p>
+                      <section className="w-full flex justify-start">
+                        <span className="flex gap-3 ">
+                          <PulseCircle />
+                          Read more
+                        </span>
+                      </section>
+                    </div>
+                  </div>
                 </section>
               </section>
             </section>

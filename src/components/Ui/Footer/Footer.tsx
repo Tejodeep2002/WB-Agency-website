@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 
+
 const Footer = () => {
   return (
     <section className="w-full h-auto text-tertiary">

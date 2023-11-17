@@ -1,7 +1,32 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+const schema = yup
+  .object({
+    firstName: yup.string().required(),
+    lastName: yup.string().required(),
+    email: yup.string().email().required(),
+    companyName: yup.string().required(),
+    additionalMessage: yup.string(),
+  })
+  .required();
+type FormInput = yup.InferType<typeof schema>;
 
 const ContactUs = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormInput>({
+    resolver: yupResolver(schema),
+  });
+  const onSubmit = (data: FormInput) => {
+    console.log(data);
+  };
   return (
     <section className=" w-full h-auto">
       <section className=" w-full h-auto lg:h-[55rem] ">
@@ -47,14 +72,18 @@ const ContactUs = () => {
                     Do you have any querries please reach us
                   </h3>
                 </section>
-                <section className="w-full h-fit flex flex-wrap gap-0 ">
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  className="w-full h-fit flex flex-wrap gap-0 "
+                >
                   <span className="w-full lg:w-1/2 h-fit  text-paragraph text-[16px] pb-10 lg:pr-11">
                     <input
                       type="text"
                       className="w-full bg-transparent py-[15px] focus:outline-none border-b border-paragraph"
                       placeholder="First Name"
-                      required
+                      {...register("firstName")}
                     />
+                    <p>{errors.firstName?.message}</p>
                   </span>
                   <span className="w-full lg:w-1/2 h-fit text-paragraph text-[16px] pb-10 lg:pl-11">
                     <input
@@ -62,7 +91,9 @@ const ContactUs = () => {
                       className="w-full h-fit bg-transparent py-[15px] focus:outline-none border-b border-paragraph"
                       placeholder="Last Name"
                       required
+                      {...register("lastName")}
                     />
+                    <p>{errors.lastName?.message}</p>
                   </span>
                   <span className="w-full lg:w-1/2 h-fit text-paragraph text-[16px] pb-10 lg:pr-11">
                     <input
@@ -70,7 +101,9 @@ const ContactUs = () => {
                       className="w-full bg-transparent py-[15px] focus:outline-none border-b border-paragraph"
                       placeholder="Your Email"
                       required
+                      {...register("email")}
                     />
+                    <p>{errors.email?.message}</p>
                   </span>
                   <span className="w-full lg:w-1/2 h-fit text-paragraph text-[16px] pb-10 lg:pl-11">
                     <input
@@ -78,21 +111,27 @@ const ContactUs = () => {
                       className="w-full bg-transparent py-[15px] focus:outline-none border-b border-paragraph"
                       placeholder="Company Name"
                       required
+                      {...register("companyName")}
                     />
+                    <p>{errors.companyName?.message}</p>
                   </span>
                   <textarea
-                    name=""
                     id=""
                     cols={4}
                     rows={4}
                     placeholder="Additional Message"
                     className="w-full h-32 resize-y bg-transparent py-[15px] text-paragraph text-[16px] focus:outline-none border-b border-paragraph"
-                  ></textarea>
-                  <button className="w-fit h-fit py-3 px-10 mt-20 flex items-center gap-3 border border-secondary text-secondary group hover:text-primary hover:border-primary transition ease-in-out duration-500">
+                    {...register("additionalMessage")}
+                  />
+                  <p>{errors.additionalMessage?.message}</p>
+                  <button
+                    type="submit"
+                    className="w-fit h-fit py-3 px-10 mt-20 flex items-center gap-3 border border-secondary text-secondary group hover:text-primary hover:border-primary transition ease-in-out duration-500"
+                  >
                     <div className="w-2 h-2 rounded-full bg-primary  group-hover:bg-secondary transition ease-in-out duration-500"></div>
                     Submit
                   </button>
-                </section>
+                </form>
               </section>
             </section>
           </section>
