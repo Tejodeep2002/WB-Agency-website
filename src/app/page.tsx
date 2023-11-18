@@ -15,7 +15,7 @@ import ContactUs from "@/components/Pages/Home/ContactUs";
 export default function Home() {
   return (
     <main className="main relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 scroll-smooth ">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Banner />
       <Gallery />

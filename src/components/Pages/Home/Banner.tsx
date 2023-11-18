@@ -32,9 +32,9 @@ const Banner = () => {
       <section className="w-full max-w-[90rem] h-auto mx-auto mb-[100px]">
         <section className="w-full flex flex-wrap justify-evenly xl:justify-between">
           <div className="w-full sm:w-fit">
-            <div className="banner1 max-w-[27rem] h-auto p-[30px] pr-10 mx-auto flex flex-col sm:flex-row gap-5 sm:gap-7 text-secondary">
+            <div className="banner1  max-w-[28rem] h-auto p-[25px] mx-auto flex flex-col sm:flex-row gap-5 sm:gap-6 text-secondary">
               <svg
-                className="w-[110px] sm:w-[130px] mx-auto fill-primary "
+                className=" w-[110px] h-fit sm:w-[130px] mx-auto fill-primary "
                 viewBox="0 0 100 120"
                 x="0px"
                 y="0px"
@@ -42,21 +42,24 @@ const Banner = () => {
                 <path d="M22.2,89.3c-0.3,0.1-0.9,0.4-1.4,0.5l-0.1,0c-3.6,1.3-10.3,3.8-10.3,10l0,1.8l3.6,0l0-1.8 c0-3.7,5-5.5,7.9-6.6c1-0.3,1.9-0.7,2.7-1.3c1-0.9,1.4-2.9,1.6-5c0.7,0.2,1.4,0.4,2.2,0.4c0.7,0,1.5-0.1,2.2-0.3 c0.2,2,0.6,4.1,1.6,4.9c0.8,0.6,1.7,1,2.7,1.3c1.7,0.6,3.3,1.3,4.8,2.2c-3.7,1.5-8.6,4-8.6,9.4l0,1.8l3.6,0l0-1.8c0-3.7,5-5.5,8-6.6 c1-0.3,1.8-0.7,2.7-1.3c1-0.9,1.4-2.9,1.6-4.9c0.7,0.2,1.4,0.3,2.2,0.3c0.7,0,1.5-0.1,2.2-0.4c0.1,2.1,0.6,4.1,1.6,5 c0.8,0.6,1.7,1,2.7,1.3c3,1.1,8,2.9,7.9,6.6l0,1.8l3.6,0l0-1.8c0-5.3-4.9-7.9-8.6-9.4c1.5-0.9,3.1-1.6,4.8-2.2 c1-0.3,1.9-0.7,2.7-1.3c1-0.9,1.4-2.9,1.6-4.9c0.7,0.2,1.4,0.3,2.2,0.3c0.7,0,1.5-0.1,2.2-0.4c0.1,2.1,0.6,4.1,1.6,5 c0.8,0.6,1.7,1,2.7,1.3c3,1.1,8,2.9,7.9,6.6l0,1.8l3.6,0l0-1.8c0-6.2-6.7-8.7-10.3-10l-0.1,0c-0.5-0.2-1.1-0.4-1.4-0.5 c-0.4-1.5-0.5-3-0.5-4.5v-0.3c0.7-0.7,1.3-1.4,1.7-2.3c1.3-2.1,2.1-4.5,2.1-7c0-7.4-3.6-12-9.5-12c-0.8,0-1.7,0.1-2.5,0.3 c0.2-0.3,0.3-0.6,0.3-0.9l0.6-6l0.7-0.4c6.2-3.5,9.8-9.2,9.8-15.5c0-5.7-3-10.9-8.2-14.5l-1.5-1l-1.3,2C65,17.7,54.9,10.5,42.7,10.5 c-13.9,0-25.1,9.4-25.1,21c0,6.9,3.9,13.1,10.4,17.1l1,10.6c0.1,0.7,0.5,1.3,1.1,1.5c0.2,0.1,0.4,0.1,0.7,0.1c0.4,0,0.8-0.2,1.2-0.4 l9-7.8c0.6,0,1.2,0.1,1.8,0.1c0.2,0,0.3,0,0.5,0L41.8,55l1.5,0.9c3.9,2.3,8.4,3.6,13,3.5c0.5,0,1.1,0,1.6,0l1.3-0.1l5.2,4.6 c0.2,0.2,0.5,0.3,0.7,0.4c-2.7,1.3-5.2,4.4-5.2,11.1c0.1,2.7,0.9,5.3,2.5,7.4c0.4,0.7,0.9,1.4,1.6,1.9v0.2c0,1.5-0.2,3-0.6,4.5 c-0.3,0.1-0.9,0.4-1.4,0.5l-0.1,0c-2.5,0.8-4.9,2-7,3.5c-0.2-1.2-0.4-2.5-0.4-3.7v-0.3c0.7-0.7,1.3-1.4,1.8-2.3 c1.4-2.1,2.1-4.5,2.1-7c0-7.4-3.6-12-9.5-12c-3.5,0-9.5,1.6-9.5,12c0,2.7,0.9,5.2,2.5,7.4c0.4,0.7,0.9,1.4,1.5,1.9v0.2 c0,1.2-0.1,2.5-0.4,3.7c-2.1-1.5-4.5-2.7-6.9-3.5l-0.1,0c-0.5-0.2-1.2-0.4-1.5-0.5c-0.4-1.4-0.6-2.9-0.6-4.5v-0.2 c0.6-0.5,1.2-1.2,1.6-1.9c1.6-2.2,2.4-4.7,2.5-7.4c0-10.5-5.9-12-9.5-12c-5.9,0-9.5,4.6-9.5,12c0,2.5,0.7,4.9,2.1,7 c0.4,0.9,1,1.6,1.7,2.3v0.3C22.7,86.3,22.6,87.8,22.2,89.3 M68.2,29.3c4.2,2.9,6.7,7.1,6.7,11.5c0,4.9-3,9.5-8,12.3 c-0.1-0.1-0.3-0.1-0.4-0.1c-1-0.1-1.8,0.6-1.9,1.6c0,0,0,0,0,0l-0.4,4.2l-3.3-2.9c-0.6-0.5-1.4-0.6-2-0.2l-1.1,0.1 c-0.4,0-0.9,0-1.4,0c-3.9,0-7.8-1-11.1-3l-0.5-0.3c13-0.8,23.2-9.9,23.2-21c0-0.9-0.1-1.7-0.2-2.6L68.2,29.3z M39.1,48.8l0,0.6 c-0.1,0.1-0.2,0.1-0.3,0.2l-6.6,5.8l-0.5-4.9l1.5,0.6l1.4-3.3L33,47.1c-7.3-3-11.8-9-11.8-15.6c0-9.6,9.7-17.5,21.6-17.5 s21.5,7.8,21.5,17.5S54.6,49,42.7,49c-0.6,0-1.2,0-1.8-0.1L39.1,48.8z M28.4,66.8c1.6,0,5.9,0,5.9,8.4c0,1.9-0.6,3.7-1.8,5.2 c-0.8,1.1-1.4,2.2-2,2.2h0v0.4c-0.6,0.4-1.4,0.6-2.2,0.6c-1.5,0-3-1.1-4.5-3.4c-1-1.5-1.5-3.2-1.5-5C22.5,72.7,23.1,66.8,28.4,66.8  M46.7,88.2c-0.6-0.8-1.2-1.4-2-2.6c-1.1-1.6-1.7-3.5-1.8-5.4c0-8.4,4.3-8.5,5.9-8.5c5.4,0,5.9,5.9,5.9,8.4c0,1.8-0.5,3.5-1.5,5 c-1.5,2.3-3.1,3.4-4.6,3.4c-0.8,0-1.6-0.2-2.2-0.6v0.3L46.7,88.2z M67.2,82.7c-0.6,0-1.2-1.1-2-2.2c-1.1-1.5-1.7-3.4-1.8-5.3 c0-8.4,4.3-8.4,5.9-8.4c5.4,0,5.9,5.9,5.9,8.5c0,1.8-0.5,3.5-1.5,5c-1.5,2.3-3,3.4-4.5,3.4c-0.8,0-1.5-0.2-2.2-0.6L67.2,82.7 L67.2,82.7z"></path>
               </svg>
 
-              <div className=" w-fit h-auto flex flex-col gap-3">
-                <div className="text-[26px] sm:text-[30px] mx-auto leading-[34.8px]  font-semibold text-left hover:text-primary">
-                  Advanced Tools
+              <div className=" w-fit h-auto text-center sm:text-left flex flex-col gap-3">
+                <div className=" text-[26px] sm:text-[30px] leading-[34.8px]  font-semibold hover:text-primary">
+                  Marketing Master
                 </div>
-                <div className="text-center">
-                  <p>Scelerisque viverra mauris in aliquam sem fringilla ut.</p>
+                <div className="">
+                  <p>
+                    Over 2 years creating visually stunning, user-centric
+                    websites.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full sm:w-fit">
-            <div className=" banner1 max-w-[27rem]  h-full p-[30px] mx-auto pr-10 flex flex-col sm:flex-row gap-5 sm:gap-9  text-white">
+          <div className=" w-full sm:w-fit">
+            <div className=" banner1 max-w-[28rem]  h-auto p-[25px] mx-auto  flex flex-col sm:flex-row gap-5 sm:gap-6  text-white">
               <svg
-                className="w-[110px] sm:w-[130px]  mx-auto fill-primary"
-                viewBox="0 0 126 110"
+                className=" w-[110px] h-fit  sm:w-[130px]  mx-auto fill-primary"
+                viewBox="9 0 110 126"
                 x="0px"
                 y="0px"
               >
@@ -65,21 +68,24 @@ const Banner = () => {
                 <path d="M27.5,65.7c1.9,0.8,3.4,2.3,4.1,4.3c0.7,2.1,0.3,4.6-1.1,7.2c-0.6,1.2-0.2,2.7,1,3.3c0,0,0,0,0,0 c0.4,0.2,0.7,0.3,1.1,0.3c0.9,0,1.7-0.5,2.2-1.3c2-3.8,2.5-7.7,1.4-11.1c-1.1-3.2-3.5-5.8-6.7-7.1c-1.2-0.6-2.7,0-3.2,1.2 C25.8,63.7,26.4,65.1,27.5,65.7"></path>
               </svg>
 
-              <div className="w-fit h-auto  flex flex-col gap-3 ">
-                <div className="text-[26px] sm:text-[30px] mx-auto leading-[34.8px]  font-semibold text-left hover:text-primary">
-                  Innovation
+              <div className=" w-fit h-auto text-center sm:text-left flex flex-col gap-3 ">
+                <div className="text-[26px]  sm:text-[30px] leading-[34.8px]  font-semibold  hover:text-primary">
+                  Expert Developer
                 </div>
-                <div className="text-center">
-                  <p>Sit amet volutpat consequat mauris nunc congue nisi.</p>
+                <div className="">
+                  <p>
+                    Skilled in diverse coding languages, we transform concepts
+                    into responsive websites.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full sm:w-fit">
-            <div className="banner1 max-w-[28rem] h-full p-[30px] mx-auto pr-10 flex flex-col sm:flex-row gap-5 sm:gap-9 text-white ">
+          <div className=" w-full sm:w-fit">
+            <div className=" banner1 max-w-[28rem] h-full p-[25px] mx-auto flex flex-col sm:flex-row gap-5 sm:gap-6 text-white ">
               <svg
-                className="w-[110px] sm:w-[130px]  mx-auto fill-primary"
-                viewBox="0 0 100 110"
+                className=" w-[110px] sm:w-[130px] h-fit  mx-auto fill-primary"
+                viewBox="0 0 110 126"
                 x="0px"
                 y="0px"
               >
@@ -99,12 +105,15 @@ const Banner = () => {
                 <path d="M39.7,75.3c0,0,0,0.1,0,0.1c0.5,1.4,1.7,7.6,2.1,9.6c0.2,1,1,1.6,2,1.6c0.1,0,0.3,0,0.4,0 c1.1-0.2,1.8-1.3,1.6-2.4c0,0,0,0,0,0c-0.2-0.8-1.9-8.2-2.5-10.1c-0.1-0.4-0.2-0.8-1-1l0,0c0-0.5-0.2-1-0.6-1.2 c-6.3-3.8-10.1-10.6-10-17.9c0-11.6,9.3-20.9,20.9-20.9s20.9,9.3,20.9,20.9c0,7-3.5,13.6-9.4,17.5c-0.4,0.3-0.7,0.7-0.8,1.2 c-0.3,0.3-0.5,0.6-0.7,1c-0.5,1.9-1.6,6.1-1.7,6.1c-0.3,1.1,0.4,2.2,1.5,2.5c0.2,0,0.3,0.1,0.5,0.1c0.9,0,1.7-0.6,2-1.5 c0,0,1.1-4.2,1.6-6c0,0,0-0.1,0-0.1c11.4-7.6,14.5-23.1,6.9-34.5s-23.1-14.5-34.5-6.9s-14.5,23.1-6.9,34.5 C33.9,70.8,36.6,73.4,39.7,75.3"></path>
               </svg>
 
-              <div className="w-fit h-auto flex flex-col gap-3 ">
-                <div className="text-[26px] sm:text-[30px] mx-auto leading-[34.8px]  font-semibold text-left hover:text-primary">
-                  Advanced Tools
+              <div className=" w-fit h-auto text-center sm:text-left flex flex-col gap-3 ">
+                <div className="text-[26px] sm:text-[30px] mx-auto leading-[34.8px]  font-semibold  hover:text-primary">
+                  Innovative Design
                 </div>
-                <div className="text-center">
-                  <p>Scelerisque viverra mauris in aliquam sem fringilla ut.</p>
+                <div className="">
+                  <p>
+                    Comprehensive strategies boosting online visibility,
+                    engagement, and measurable results.
+                  </p>
                 </div>
               </div>
             </div>
