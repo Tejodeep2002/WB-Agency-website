@@ -3,7 +3,7 @@ import Footer from "@/components/Ui/Footer/Footer";
 import MainTitle from "@/components/Ui/MainTitle";
 import Navbar from "@/components/Ui/Navbar/Navbar";
 import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_carousel";
-import { services } from "@/config/Sanity_Config";
+import { services } from "@/config/SanityClient";
 import React, { FC } from "react";
 
 interface PageProps {
@@ -17,7 +17,7 @@ const page: FC<PageProps> = async ({ params }) => {
     <main className="relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 bg-background2 scroll-smooth">
       <Navbar />
       <MainTitle heading={params.slug} picture={""} />
-      <ServiceDetails />
+      <ServiceDetails serviceName={params.slug}/>
       {/* <CaseStudy/> */}
       <Social_carousel />
       <Footer />

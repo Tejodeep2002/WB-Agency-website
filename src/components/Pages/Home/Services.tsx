@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Heading from "../../Ui/Heading/Heading";
 import ServiceItemSection from "@/components/Ui/Hero/ServiceItemSection";
-import { services } from "@/config/Sanity_Config";
+import { services } from "@/config/SanityClient";
 
 const Services = async () => {
   const service = await services();
