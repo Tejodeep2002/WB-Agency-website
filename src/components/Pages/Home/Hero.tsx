@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <>
-      <header className=" w-full  z-20 h-16 lg:h-28 flex items-center justify-center ">
+      {/* <header className=" w-full  z-20 h-16 lg:h-28 flex items-center justify-center ">
         <div className="  w-full h-full  shadow-2xl  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-100 z-0 "></div>
         <section className="absolute w-full max-w-[110rem]  px-10  flex  items-center z-10  ">
           <h2 className=" font-bold text-2xl text-white">GaaGa</h2>
@@ -119,8 +119,8 @@ const Hero = () => {
               Lets start
             </button>
           </section> */}
-        </section>
-      </header>
+        {/* </section>
+      </header>  */}
       <section ref={hero} className=" w-full min-h-[90vh] mb-14">
         <section className=" w-full max-w-[110rem] h-full px-3 sm:px-5 md:px-14 xl:px-20 mx-auto   ">
           <section className=" w-full h-full flex">

@@ -7,6 +7,11 @@ const nextConfig = {
         protocol: "https",
         hostname: "gaaga.wpengine.com",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        pathname: `/images/**`,
+      },
     ],
   },
 };

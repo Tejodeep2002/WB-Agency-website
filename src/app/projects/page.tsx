@@ -10,7 +10,7 @@ const Projects = () => {
       <Navbar />
       <MainTitle heading={"Projects"} picture={""} />
       <Project_Section />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };

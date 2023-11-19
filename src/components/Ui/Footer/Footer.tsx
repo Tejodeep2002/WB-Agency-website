@@ -55,17 +55,17 @@ const Footer = () => {
             <section className="w-full max-w-[280px] mt-8">
               <ul className="flex flex-col gap-5 flex-wrap ">
                 <li>
-                  <p>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+                  <p>Kolkata,Westbengal,India</p>
                 </li>
                 <li>
-                  <p>Phone : +000 - 123 - 456789</p>
+                  <p>Phone : +91 - 9038007312</p>
                 </li>
                 <li>
                   <p>Mail : info@example.com</p>
                 </li>
-                <li>
+                {/* <li>
                   <p>Working Hours : 8hrs</p>
-                </li>
+                </li> */}
               </ul>
             </section>
           </section>

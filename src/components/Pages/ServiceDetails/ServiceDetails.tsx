@@ -4,8 +4,15 @@ import React from "react";
 import Core_Services from "./Core_Services";
 import PulseCircle from "@/components/Ui/PulseCircle";
 import Technologies from "./Technologies";
+import { createClient } from "next-sanity";
 
-const ServiceDetails = () => {
+
+const ServiceDetails = async () => {
+
+  
+
+  
+
   return (
     <section className="w-full h-auto ">
       <section className="w-full h-auto  py-20  md:px-0 xl:py-24">
@@ -17,12 +24,10 @@ const ServiceDetails = () => {
                 <div className="w-full h-[80%] p-6 xl:py-12 xl:px-20 flex flex-col gap-6 border xl:border-y xl:border-l border-primary">
                   <section className="w-full flex gap-4 text-secondary">
                     <PulseCircle />
-                    Web Developement
+                    {/* {services[0].name} */}
                   </section>
                   <section className="w-full h-auto">
-                    <h1 className="text-left ">
-                    Web Developement
-                    </h1>
+                    {/* <h1 className="text-left "> {services.name}</h1> */}
                   </section>
                   <section className="  w-full h-full">
                     <p>
@@ -35,7 +40,6 @@ const ServiceDetails = () => {
                       visual elements and functionality of a site.
                     </p>
                   </section>
-                 
                 </div>
               </div>
               <div className="w-full xl:w-[40%] h-full ">
@@ -49,7 +53,7 @@ const ServiceDetails = () => {
               </div>
             </section>
           </section>
-          <Technologies />
+          <Technologies  />
           <Core_Services />
 
           <Process />
