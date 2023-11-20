@@ -9,13 +9,11 @@ import { findServiceByName } from "@/config/SanityClient";
 import { imageUrlFor } from "@/config/SanityImageUrl";
 
 interface ServiceDetailsProps {
-  serviceName: string;
+  serviceDetails: any
 }
 
-const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceName }) => {
-  const serviceDetails = await findServiceByName(
-    serviceName.split("-").join(" ")
-  );
+const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {
+  
 
   console.log(serviceDetails);
 

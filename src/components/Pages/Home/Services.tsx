@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import Heading from "../../Ui/Heading/Heading";
 import ServiceItemSection from "@/components/Ui/Hero/ServiceItemSection";
-import { services } from "@/config/SanityClient";
+import { getAllServices } from "@/config/SanityClient";
 
 const Services = async () => {
-  const service = await services();
+  const service = await getAllServices();
 
   return (
     <section className="services w-full h-auto ">

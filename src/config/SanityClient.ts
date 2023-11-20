@@ -8,10 +8,8 @@ export const client = createClient({
 });
 
 
-export const services = async () =>
-  await client.fetch(`*[_type=="service"]{
-    name,description,"imageUrl": image.asset->url
-  }`,{cache: 'force-cache'});
+export const getAllServices = async () =>
+  await client.fetch(`*[_type=="service"]`,{cache: 'force-cache'});
 
 export const findServiceByName = async (serviceName: any) =>
   await client.fetch(`*[_type=="service" && name match "${serviceName}"]{
