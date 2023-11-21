@@ -44,12 +44,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <>
-      <section ref={hero} id={"home"} className=" w-full min-h-[90vh] mb-14">
-        <section className=" w-full max-w-[110rem] h-full px-3 sm:px-5 md:px-14 xl:px-20 mx-auto   ">
-          <section className=" w-full h-full flex">
+    <section ref={hero} id={"home"} className=" w-full h-full min-h-[100vh] ">
+      <section className=" w-full h-full border border-red-500">
+        <section className="border w-full max-w-[110rem]  h-full px-3 sm:px-5 md:px-14 xl:px-20 mx-auto   ">
+          <section className="border w-full h-full flex">
             {/* left */}
-            <section className=" w-full xl:w-1/2 h-fit flex z-10 ">
+            <section className="border w-full xl:w-1/2 h-fit  flex z-10 ">
               <div className="absolute xl:hidden  w-full h-full bg-background2 blur-lg opacity-80"></div>
               <section className="w-full xl:w-[40rem] h-auto mt-20 lg:mt-44 flex gap-5 sm:gap-8 lg:gap-16 ">
                 <section
@@ -144,7 +144,7 @@ const Hero = () => {
               </section>
             </section>
             {/* right */}
-            <section className="absolute right-0 w-full xl:w-1/2 h-full">
+            <section className="border absolute right-0 w-full xl:w-1/2 h-full">
               <Image
                 src={"/assets/heroMain.jpg"}
                 width={"2166"}
@@ -157,7 +157,7 @@ const Hero = () => {
           </section>
         </section>
       </section>
-    </>
+    </section>
   );
 };
 

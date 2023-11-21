@@ -28,7 +28,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section ref={banner} className="w-full h-auto">
+    <section ref={banner} className="w-full h-auto border">
       <section className="w-full max-w-[90rem] h-auto mx-auto mb-[100px]">
         <section className="w-full flex flex-wrap justify-evenly xl:justify-between">
           <div className="w-full sm:w-fit">

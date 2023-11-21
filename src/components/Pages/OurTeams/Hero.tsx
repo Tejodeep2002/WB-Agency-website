@@ -11,13 +11,13 @@ const Hero = () => {
           {/* <section className="w-full h-auto grid grid-cols-4 gap-x-5 gap-y-16 "> */}
           {/* <section className="w-full h-auto flex flex-col md:flex-row flex-wrap gap-x-5 gap-y-10 "> */}
           <section className="w-full h-auto grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-x-5 gap-y-10 ">
+            {/* <TeamPicture />
             <TeamPicture />
             <TeamPicture />
             <TeamPicture />
             <TeamPicture />
             <TeamPicture />
-            <TeamPicture />
-            <TeamPicture />
+            <TeamPicture /> */}
           </section>
         </section>
       </section>
