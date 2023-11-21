@@ -14,12 +14,12 @@ const Services = async () => {
   );
 
   return (
-    <section className="services w-full h-auto ">
+    <section className="services w-full h-auto " id={"services"}>
       <div
         className="bg-fixed w-full h-auto  object-cover "
         // style={{ backgroundImage: "url('/assets/bg.jpg')" }}
       >
-        <section className=" w-full h-auto py-10 xl:py-36">
+        <section className=" w-full h-auto py-10 xl:pt-36">
           <Heading heading={"Services"} subHeading={"What We Have to Offer"} />
           <ServiceSection data={services} />
         </section>

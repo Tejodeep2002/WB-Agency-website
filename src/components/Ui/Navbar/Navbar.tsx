@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="sticky top-0 left-0 right-[0.44rem] z-20 h-16 lg:h-28 flex items-center justify-center ">
+      <header className="fixed top-0 left-0 right-[0.44rem] z-20 h-16 lg:h-28 flex items-center justify-center ">
         <div className="absolute  w-full h-full  shadow-2xl  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-100 z-0 "></div>
         <section
           ref={heading}
@@ -37,10 +37,26 @@ const Navbar = () => {
             <ul className="flex gap-10 text-sm font-medium leading-[25px] tracking-[2.8px] uppercase ">
               <li>
                 <Link
-                  href={"/"}
+                  href={"#home"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   HOME
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"#services"}
+                  className="text-secondary hover:text-primary transition ease-in-out duration-500"
+                >
+                  SERVICES
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"#gallery"}
+                  className="text-secondary hover:text-primary transition ease-in-out duration-500"
+                >
+                  GALLERY
                 </Link>
               </li>
               <li>
@@ -49,22 +65,6 @@ const Navbar = () => {
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   OUR TEAMS
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"/services"}
-                  className="text-secondary hover:text-primary transition ease-in-out duration-500"
-                >
-                  SERVICES
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"/projects"}
-                  className="text-secondary hover:text-primary transition ease-in-out duration-500"
-                >
-                  PROJECT
                 </Link>
               </li>
               <li>

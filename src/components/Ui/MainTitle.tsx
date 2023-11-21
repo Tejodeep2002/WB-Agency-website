@@ -23,7 +23,6 @@ const MainTitle: FC<MainTitleProps> = ({ heading, picture }) => {
               <Link href={"/"} className="text-secondary">
                 Home
               </Link>
-
               {titlePathname}
             </p>
           </section>

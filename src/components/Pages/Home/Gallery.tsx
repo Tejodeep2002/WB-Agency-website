@@ -51,8 +51,8 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section ref={gallery} id="gallery" className="relative w-full h-auto">
-      <section className="w-full h-full mb-14">
+    <section ref={gallery} id="gallery" className="relative w-full h-auto ">
+      <section className="w-full h-full py-14 xl:py-36">
         <section className="w-full flex flex-col gap-7 px-4 sm:px-2 md:px-0 mx-auto text-white">
           <Heading heading={"Gallery"} subHeading={"Our Project Portfolio"} />
           <section className="galleryContent w-full h-auto">

@@ -19,7 +19,6 @@ const FeedBack = () => {
             heading={"Client Feedback"}
             subHeading={"Happy Words From Happy Customer"}
           />
-
           <section className="w-full text-white px-10 xl:px-5">
             <Swiper
               slidesPerView={"auto"}

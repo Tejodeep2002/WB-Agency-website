@@ -65,5 +65,19 @@ export const findServiceByName = async (serviceName: string) =>
       "image":image.asset->url,
       description
     }`
-    
+  );
+
+export const getAllManagementData = async () =>
+  await client.fetch(
+    `*[_type=="management"]{
+      _id,
+      name,
+      position,
+      "profileImage":profileImage.asset->url,
+      socialLinks[]{
+        _key,
+        name,
+        link,
+      }
+    }`
   );
