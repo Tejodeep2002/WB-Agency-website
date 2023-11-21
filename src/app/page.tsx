@@ -10,10 +10,7 @@ import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_caro
 import OurTeams from "@/components/Pages/Home/OurTeams";
 import ContactUs from "@/components/Pages/Home/ContactUs";
 
-
-
-export default function  Home() {
- 
+export default function Home() {
   return (
     <main className="main relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 scroll-smooth ">
       <Navbar />
@@ -22,10 +19,10 @@ export default function  Home() {
       <Gallery />
       <TagLine />
       <Services />
-      <OurTeams/>
-      <ContactUs/>
+      <OurTeams />
+      <ContactUs />
       <FeedBack />
-      <Social_carousel/>
+      <Social_carousel />
       <Footer />
     </main>
   );

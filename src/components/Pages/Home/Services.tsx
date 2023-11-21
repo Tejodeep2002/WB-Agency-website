@@ -1,10 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Heading from "../../Ui/Heading/Heading";
-import ServiceItemSection from "@/components/Ui/Hero/ServiceItemSection";
-import { getAllServices } from "@/config/SanityClient";
+import { client } from "@/config/SanityClient";
+import ServiceSection from "@/components/Ui/Hero/ServiceSection";
 
 const Services = async () => {
-  const service = await getAllServices();
+  const services = await client.fetch(
+    `*[_type=="service"]{
+      _id,name,description,"image":image.asset->url
+  }`,
+    {
+      cache: "force-cache",
+    }
+  );
 
   return (
     <section className="services w-full h-auto ">
@@ -14,7 +21,7 @@ const Services = async () => {
       >
         <section className=" w-full h-auto py-10 xl:py-36">
           <Heading heading={"Services"} subHeading={"What We Have to Offer"} />
-          <ServiceItemSection data={service} />
+          <ServiceSection data={services} />
         </section>
       </div>
     </section>

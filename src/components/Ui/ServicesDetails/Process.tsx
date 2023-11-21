@@ -44,7 +44,7 @@ const Process: FC<ProcessProps> = ({ process }) => {
               }}
               className="relative w-full h-fit grid grid-cols-5 xl:mt-10"
             >
-              {process.map((steps: any) =>
+              {process?.map((steps: any) =>
                 steps.step % 2 === 1 ? (
                   <SwiperSlide
                     key={steps._key}
@@ -56,7 +56,7 @@ const Process: FC<ProcessProps> = ({ process }) => {
                     <section>
                       <div className="w-full h-[340px]  pb-11">
                         <Image
-                          src={imageUrlFor(steps.image).url()}
+                          src={steps.image}
                           width={"1000"}
                           height={"0"}
                           alt={""}
@@ -92,7 +92,7 @@ const Process: FC<ProcessProps> = ({ process }) => {
                     <section className="flex flex-col-reverse ">
                       <div className="w-full h-[340px]  pt-11">
                         <Image
-                          src={imageUrlFor(steps.image).url()}
+                          src={steps.image}
                           width={"1000"}
                           height={"0"}
                           alt={""}

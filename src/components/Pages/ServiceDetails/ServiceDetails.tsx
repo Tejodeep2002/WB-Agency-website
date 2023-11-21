@@ -4,19 +4,12 @@ import React, { FC } from "react";
 import Core_Services from "./Core_Services";
 import PulseCircle from "@/components/Ui/PulseCircle";
 import Technologies from "./Technologies";
-import { createClient } from "next-sanity";
-import { findServiceByName } from "@/config/SanityClient";
-import { imageUrlFor } from "@/config/SanityImageUrl";
 
 interface ServiceDetailsProps {
-  serviceDetails: any
+  serviceDetails: any;
 }
 
 const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {
-  
-
-  console.log(serviceDetails);
-
   return (
     <section className="w-full h-auto ">
       <section className="w-full h-auto  py-20  md:px-0 xl:py-24">
@@ -40,7 +33,7 @@ const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {
               </div>
               <div className="w-full xl:w-[40%] h-full ">
                 <Image
-                  src={imageUrlFor(serviceDetails.image).url()}
+                  src={serviceDetails.image}
                   width={"1000"}
                   height={"0"}
                   alt={""}

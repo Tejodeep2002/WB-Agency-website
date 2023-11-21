@@ -50,7 +50,7 @@ const Core_Services: FC<CoreServicesProps> = ({ services }) => {
           <section className="w-full h-auto xl:mt-10 ">
             {/* <section className="w-full h-full flex flex-col md:flex-row md:flex-wrap  lg:gap-0  text-secondary border-tertiary "> */}
             <section className=" w-full h-full  grid grid-cols-1  xl:grid-cols-4 text-secondary border-tertiary ">
-              {services.map((items: any) => (
+              {services?.map((items: any) => (
                 <section
                   key={items._key}
                   className="w-full h-auto core_servicesSection"
@@ -65,7 +65,7 @@ const Core_Services: FC<CoreServicesProps> = ({ services }) => {
                       </span>
                     </div>
                     <Image
-                      src={imageUrlFor(items.image).url()}
+                      src={items.image}
                       width={"1080"}
                       height={"0"}
                       alt={""}
