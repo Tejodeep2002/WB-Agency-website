@@ -23,10 +23,10 @@ const TeamPicture: FC<TeamPicture> = ({ personDetails }) => {
     return () => ctx.revert();
   }, []);
 
-  console.log("Details",personDetails)
+  console.log("Details", personDetails);
   return (
     <div ref={teamProject} className="w-full  h-auto group flex flex-col gap-9">
-      <div className="relative w-full h-auto group-hover:border-2 group-hover:border-primary border-transparent z-10 transition ease-in-out duration-700">
+      <div className="relative w-full h-auto border-4 group-hover:border-primary border-transparent z-10 transition ease-in-out duration-700">
         <Image
           src={personDetails.profileImage}
           width={"790"}

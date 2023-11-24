@@ -77,7 +77,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href={"/contactus"}
+                  href={"#contactUs"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   CONTACT US

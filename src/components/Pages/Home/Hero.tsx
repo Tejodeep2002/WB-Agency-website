@@ -49,7 +49,7 @@ const Hero = () => {
       <section className=" w-full max-w-[110rem] h-full px-3 sm:px-5 md:px-14 xl:px-20 mx-auto   ">
         <section className=" w-full h-full flex py-16 xl:py-32">
           {/* left */}
-          <section className=" w-full xl:w-1/2 h-full  flex items-end z-10 ">
+          <section className="w-full xl:w-1/2 h-full  flex items-end z-10 ">
             <div className="absolute xl:hidden  w-full h-full bg-background2 blur-lg opacity-80"></div>
             <section className=" w-full xl:w-[40rem] h-fit mt-20 lg:mt-0 flex gap-5 sm:gap-8 lg:gap-16 ">
               <section
@@ -139,16 +139,11 @@ const Hero = () => {
             </section>
           </section>
           {/* right */}
-          <section className="relative right-0 w-full xl:w-1/2 h-full">
-            {/* <Image
-              src={"/assets/heroMain.jpg"}
-              width={"2166"}
-              height={"1900"}
-              alt=""
-              className=" w-full h-[80vh]"
-              priority={true}
-            /> */}
-            <Spline scene="https://prod.spline.design/vDmw0a65KiiALwh4/scene.splinecode" />
+          <section className="relative right-0 w-full xl:w-1/2 h-full flex justify-center items-center">
+            <Spline
+              scene="https://prod.spline.design/vDmw0a65KiiALwh4/scene.splinecode"
+             className="absolute top-0 scale-95 -z-10"
+            />
           </section>
         </section>
       </section>

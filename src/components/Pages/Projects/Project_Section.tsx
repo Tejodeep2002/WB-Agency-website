@@ -1,11 +1,18 @@
 import ProjectItem from "@/components/Ui/Projects/ProjectItem";
+import { getAllProjects } from "@/config/SanityClient";
+import { imageUrlFor } from "@/config/SanityImageUrl";
 import React from "react";
 
-const Project_Section = () => {
+const Project_Section = async () => {
+  const projects = await getAllProjects();
+
+  const sortedProjectList = projects.sort((a:any, b:any) => a.id - b.id)
+  console.log(sortedProjectList);
   return (
     <section className="w-full h-auto">
       <section className=" w-full h-auto py-20 px-5 xl:py-36 xl:pb-20">
         <section className=" w-full max-w-[100rem] mx-auto h-auto flex flex-col gap-20 ">
+          {/* Heading */}
           <section className=" w-full h-auto text-secondary flex flex-col md:flex-row gap-3 md:gap-0  items-center ">
             <section className=" w-full md:w-[15%] lg:w-[20%] h-full  ">
               <section className="  w-full h-full flex items-center   ">
@@ -223,7 +230,17 @@ const Project_Section = () => {
           </section>
           <section className="w-full h-auto flex flex-col gap-3 md:gap-4 lg:gap-6 ">
             <section className=" w-full h-auto 2xl:h-[30rem] flex flex-col md:flex-row gap-4 lg:gap-6  justify-between">
-              <div className="w-full xl:w-[32rem] h-full">
+              {sortedProjectList.map((item: any) => (
+                <div key={item.id} className="w-full xl:w-[32rem] h-full">
+                  <ProjectItem
+                    name={item.name}
+                    preview={item.preview}
+                    category={item.category}
+                    projectOwnership={item.projectOwnership}
+                  />
+                </div>
+              ))}
+              {/* <div className="w-full xl:w-[32rem] h-full">
                 <ProjectItem
                   image={
                     "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-3.png"
@@ -243,15 +260,16 @@ const Project_Section = () => {
                     "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-3.png"
                   }
                 />
-              </div>
+              </div> */}
             </section>
-            <section className="w-full h-[10rem] md:h-auto">
+            <section className="w-full h-[10rem] sm:h-[17em] md:h-[14rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem]">
               <div className="w-full h-full ">
-                <ProjectItem
-                  image={
-                    "https://gaaga.wpengine.com/wp-content/uploads/2023/06/portfolio-image-4.jpg"
-                  }
-                />
+              <ProjectItem
+                    name={sortedProjectList[4]?.name}
+                    preview={sortedProjectList[4]?.preview}
+                    category={sortedProjectList[4]?.category}
+                    projectOwnership={sortedProjectList[4]?.projectOwnership}
+                  />
               </div>
             </section>
             <section className="w-full h-auto 2xl:h-[30rem] flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-6  justify-between">

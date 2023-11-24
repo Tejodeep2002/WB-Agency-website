@@ -7,12 +7,11 @@ const Services = async () => {
   const services = await client.fetch(
     `*[_type=="service"]{
       _id,name,description,"image":image.asset->url
-  }`,
-    {
-      cache: "force-cache",
-    }
+  }`
   );
 
+  
+  
   return (
     <section className="services w-full h-auto " id={"services"}>
       <div

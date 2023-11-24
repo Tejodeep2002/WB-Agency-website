@@ -28,8 +28,8 @@ const ContactUs = () => {
     console.log(data);
   };
   return (
-    <section className=" w-full h-auto">
-      <section className=" w-full h-auto lg:h-[55rem] ">
+    <section id={"contactUs"} className=" w-full h-auto py-36">
+      <section className=" w-full h-auto lg:h-[55rem]">
         <section className="w-full h-full flex flex-col lg:flex-row">
           <section className=" relative w-full lg:w-[45%] xl:w-[35%] h-[40rem] lg:h-full  ">
             <Image

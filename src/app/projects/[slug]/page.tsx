@@ -10,9 +10,9 @@ const ProjectDetails = () => {
   return (
     <main className="relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 bg-background2 scroll-smooth">
       <Navbar />
-      <ProjectTitle heading={"Business App"} picture={""}/>
-      <Project_Details/>
-     
+      <ProjectTitle heading={"Business App"} picture={""} />
+      <Project_Details />
+
       {/* <Footer /> */}
     </main>
   );

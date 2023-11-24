@@ -11,7 +11,6 @@ interface TeamSwiperProps {
 }
 
 const TeamSwiper: FC<TeamSwiperProps> = ({ allTeamsDetails }) => {
-  
   return (
     <Swiper
       slidesPerView={1}
@@ -40,7 +39,7 @@ const TeamSwiper: FC<TeamSwiperProps> = ({ allTeamsDetails }) => {
     >
       {allTeamsDetails.map((personDetails: any) => (
         <SwiperSlide key={personDetails._id}>
-          <TeamPicture  personDetails={personDetails} />
+          <TeamPicture personDetails={personDetails} />
         </SwiperSlide>
       ))}
 

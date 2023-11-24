@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import PulseCircle from "../../Ui/PulseCircle";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import gsap from "gsap";
@@ -56,7 +56,7 @@ const Gallery = () => {
         <section className="w-full flex flex-col gap-7 px-4 sm:px-2 md:px-0 mx-auto text-white">
           <Heading heading={"Gallery"} subHeading={"Our Project Portfolio"} />
           <section className="galleryContent w-full h-auto">
-            <section className="w-full h-full flex flex-col gap-5">
+            <section className="w-full h-full flex flex-col gap-5 ">
               <section className="w-full xl:h-[30rem] flex flex-col md:flex-row  md:flex-wrap xl:flex-nowrap md:justify-evenly  gap-5">
                 <div className="relative w-full group md:w-[45%] xl:w-[25%] h-full">
                   <Image
@@ -73,12 +73,12 @@ const Gallery = () => {
                     >
                       UI & UX Designs
                     </Link>
-                    <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                    <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
                       Turpis egestas integer eget aliquet nibh praesent.
                       Accumsan lacus vel facilisis volutpat est egestas dui.
                     </p>
                     <section className="w-full flex justify-start">
-                      <span className="flex gap-3 ">
+                      <span className="flex gap-3 text-secondary">
                         <PulseCircle />
                         Read more
                       </span>
@@ -93,19 +93,19 @@ const Gallery = () => {
                     alt=""
                     className="w-full xl:h-full"
                   />
-                  <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                  <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
                     <Link
                       href={"#"}
                       className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
                     >
                       UI & UX Designs
                     </Link>
-                    <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                    <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
                       Turpis egestas integer eget aliquet nibh praesent.
                       Accumsan lacus vel facilisis volutpat est egestas dui.
                     </p>
                     <section className="w-full flex justify-start">
-                      <span className="flex gap-3 ">
+                      <span className="flex gap-3 text-secondary">
                         <PulseCircle />
                         Read more
                       </span>
@@ -120,19 +120,19 @@ const Gallery = () => {
                     alt=""
                     className="w-full xl:h-full"
                   />
-                  <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                  <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
                     <Link
                       href={"#"}
                       className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
                     >
                       UI & UX Designs
                     </Link>
-                    <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                    <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
                       Turpis egestas integer eget aliquet nibh praesent.
                       Accumsan lacus vel facilisis volutpat est egestas dui.
                     </p>
                     <section className="w-full flex justify-start">
-                      <span className="flex gap-3 ">
+                      <span className="flex gap-3 text-secondary">
                         <PulseCircle />
                         Read more
                       </span>
@@ -147,7 +147,7 @@ const Gallery = () => {
                       All Projects
                     </h2>
                     <span>
-                      <p className="text-left">
+                      <p className="text-left text-secondary">
                         Dolor sit amet consectetur adipiscing elit ut aliquam
                         purus sit. Euismod nisi porta lorem mollis aliquam ut
                         porttitor. In hac habitasse platea dictumst. Amet massa
@@ -156,7 +156,7 @@ const Gallery = () => {
                     </span>
                     <Link
                       href={"/projects"}
-                      className="flex items-center gap-2 "
+                      className="flex items-center gap-2 text-secondary"
                     >
                       <PulseCircle /> View All
                     </Link>
@@ -171,19 +171,19 @@ const Gallery = () => {
                       alt=""
                       className="w-full xl:h-full"
                     />
-                    <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                    <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
                       <Link
                         href={"#"}
                         className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
                       >
                         UI & UX Designs
                       </Link>
-                      <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                      <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
                         Turpis egestas integer eget aliquet nibh praesent.
                         Accumsan lacus vel facilisis volutpat est egestas dui.
                       </p>
                       <section className="w-full flex justify-start">
-                        <span className="flex gap-3 ">
+                        <span className="flex gap-3 text-secondary">
                           <PulseCircle />
                           Read more
                         </span>
@@ -198,19 +198,19 @@ const Gallery = () => {
                       alt=""
                       className="w-full xl:h-full"
                     />
-                    <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                    <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
                       <Link
                         href={"#"}
                         className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
                       >
                         UI & UX Designs
                       </Link>
-                      <p className="translate-y-[1rem] group-hover:translate-y-0 transition ease-in-out duration-700">
+                      <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
                         Turpis egestas integer eget aliquet nibh praesent.
                         Accumsan lacus vel facilisis volutpat est egestas dui.
                       </p>
                       <section className="w-full flex justify-start">
-                        <span className="flex gap-3 ">
+                        <span className="flex gap-3 text-secondary">
                           <PulseCircle />
                           Read more
                         </span>

@@ -10,7 +10,7 @@ interface TechnologiesProps {
   weAreUsing: any[];
 }
 const Technologies: FC<TechnologiesProps> = ({ weAreUsing }) => {
-  console.log("Client WE are using", weAreUsing);
+ 
   const technologies = useRef<HTMLDivElement>(null);
   gsap.registerPlugin(ScrollTrigger);
   useIsomorphicLayoutEffect(() => {

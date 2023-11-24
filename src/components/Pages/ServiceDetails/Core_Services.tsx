@@ -34,17 +34,17 @@ const Core_Services: FC<CoreServicesProps> = ({ services }) => {
   }, []);
   
   return (
-    <section ref={Core_Services} className="w-full h-auto">
+    <section ref={Core_Services} className="w-full h-auto bg-backgroun2">
       <section className="relative w-full h-fit">
-        <div
+        {/* <div
           className="absolute w-full h-full  bg-cover bg-black opacity-30"
           // style={{
           //   backgroundImage:
           //     "url('https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Process-Icon-Box-Bg-Img-1-scaled.jpg')",
           // }}
           // style={{ backgroundImage: "url('/assets/bg.jpg')" }}
-        />
-        <section className="w-full h-auto flex py-20 xl:py-36 px-5 xl:px-0  flex-col items-center">
+        /> */}
+        <section className="w-full h-auto flex py-20 xl:py-36 px-5 xl:px-0  flex-col items-center ">
           <Heading heading={"Services"} subHeading={"We are Mastery in "} />
           {/* <h1>We can offer</h1> */}
           <section className="w-full h-auto xl:mt-10 ">

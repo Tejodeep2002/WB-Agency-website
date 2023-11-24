@@ -14,7 +14,7 @@ interface ProcessProps {
   process: any;
 }
 const Process: FC<ProcessProps> = ({ process }) => {
-  console.log(process);
+  
   return (
     <section className="w-full h-auto ">
       <section className="w-full h-auto pt-36 pb-20 px-5 md:px-5">

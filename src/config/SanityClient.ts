@@ -34,7 +34,7 @@ export const client = createClient({
 // }
 
 export const getAllServices = async () => {
-  return await client.fetch(`*[_type=="service"]`, { cache: "force-cache" });
+  return await client.fetch(`*[_type=="service"]`);
 };
 
 export const findServiceByName = async (serviceName: string) =>
@@ -91,5 +91,15 @@ export const getAllFeedback = async () =>
       message,
       "image":image.asset->url,
       _type
+    }`
+  );
+export const getAllProjects = async () =>
+  await client.fetch(
+    `*[_type=="project"]{
+      id,
+      name,
+      preview,
+      category,
+      projectOwnership,
     }`
   );
