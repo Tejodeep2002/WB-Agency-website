@@ -27,6 +27,19 @@ const config: Config = {
         background3: "var(--color-background3)",
         holo: "-webkit-text-stroke:5px black, -webkit-text-fill-color:transparent",
       },
+      animation:{
+        wiggle: "wiggle 700ms ease-in-out"
+
+      },
+      keyframes:{
+        wiggle: {
+          '0%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(-8deg)' },
+          '50%': { transform: 'rotate(8deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        }
+
+      }
     },
   },
   plugins: [],

@@ -66,7 +66,7 @@ const Gallery = () => {
                     alt=""
                     className=" w-full xl:h-full"
                   />
-                  <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
+                  <div className="absolute -bottom-1 w-full h-auto p-10 flex flex-col justify-start gap-5 text-left  opacity-0  group-hover:opacity-100 translate-y-[1rem] group-hover:translate-y-0 bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50 transition-all ease-in-out duration-300">
                     <Link
                       href={"#"}
                       className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"

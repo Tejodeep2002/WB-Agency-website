@@ -5,14 +5,18 @@
 
 @layer base {
   :root {
-    --color-primary: #dd4242;
-    --color-secondary: white;
+    /* --color-primary: #dd4242; */
+    --color-primary: #16FF00;
+    --color-secondary: black;
     --color-tertiary: #b0b0b0;
     --color-subHeading: #717171;
-    --color-paragraph: #b5b5b5;
-    --color-background: #111319;
-    --color-background2: #15171c;
-    --color-background3: #1d1e22;
+    /* --color-paragraph: #b5b5b5; */
+    --color-paragraph: #61677A;
+    /* --color-paragraph: black; */
+    /* --color-background: #111319; */
+    --color-background: #FFFBF5;
+    --color-background2: #FAEED1;
+    --color-background3: #FEFAE0;
   }
 }
 

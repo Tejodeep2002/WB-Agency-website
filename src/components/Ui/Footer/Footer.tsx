@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
-
 
 const Footer = () => {
   return (
@@ -46,7 +46,6 @@ const Footer = () => {
             </div>
           </section>
 
-
           {/* mid */}
           <section className="w-full md:w-[40%] lg:w-1/4 h-auto px-5">
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
@@ -69,7 +68,6 @@ const Footer = () => {
               </ul>
             </section>
           </section>
-
 
           {/* right */}
           <section className="w-full md:w-[40%] lg:w-1/4 h-auto px-5">
@@ -103,7 +101,7 @@ const Footer = () => {
           {/* left */}
           <section className="w-fit h-auto hidden lg:flex ">
             <ul className="w-fit  flex gap-12 items-center py-auto">
-              <li >
+              <li>
                 <Link href={""}>Home</Link>
               </li>
               <li>
@@ -122,24 +120,38 @@ const Footer = () => {
             <ul className="w-fit flex gap-6 mx-auto">
               <li>
                 <Link
-                  href={""}
-                  className="w-[30px] h-[30px] rounded-full flex items-center justify-center border border-grey1"
+                  href={"https://www.linkedin.com/company/webflexrr"}
+                  target="_blank"
+                  className="w-[30px] h-[30px] rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
                 >
-                  <FaLinkedinIn className="w-[14px] h-[14px]" />
+                  <FaLinkedinIn className="w-[14px] h-[14px] " />
                 </Link>
               </li>
               <li>
                 <Link
-                  href={""}
-                  className="w-[30px] h-[30px] rounded-full flex items-center justify-center border border-grey1"
+                  href={"https://twitter.com/WebFlexRR"}
+                  target="_blank"
+                  className="w-[30px] h-[30px] rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
+                >
+                  <BsTwitterX className="w-[14px] h-[14px]" />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={
+                    "https://www.facebook.com/profile.php?id=61553639945217"
+                  }
+                  target="_blank"
+                  className="w-[30px] h-[30px] rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
                 >
                   <FaFacebookF className="w-[14px] h-[14px]" />
                 </Link>
               </li>
               <li>
                 <Link
-                  href={""}
-                  className="w-[30px] h-[30px] rounded-full flex items-center justify-center border border-grey1"
+                  href={"https://www.instagram.com/webflexrr"}
+                  target="_blank"
+                  className="w-[30px] h-[30px] rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
                 >
                   <FaInstagram className="w-[14px] h-[14px]" />
                 </Link>
@@ -148,7 +160,7 @@ const Footer = () => {
           </section>
           {/* right */}
           <section className=" text-center">
-            <p>Copyright ©WedesignTech All Rights Reserved.</p>
+            <p>Copyright ©WebFlexRR All Rights Reserved.</p>
           </section>
         </section>
       </section>

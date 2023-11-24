@@ -37,7 +37,7 @@ const Navbar = () => {
             <ul className="flex gap-10 text-sm font-medium leading-[25px] tracking-[2.8px] uppercase ">
               <li>
                 <Link
-                  href={"#home"}
+                  href={"/#home"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   HOME
@@ -45,7 +45,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href={"#services"}
+                  href={"/#services"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   SERVICES
@@ -53,7 +53,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href={"#gallery"}
+                  href={"/#gallery"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   GALLERY
@@ -61,7 +61,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href={"/our-teams"}
+                  href={"/#ourTeam"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   OUR TEAMS
