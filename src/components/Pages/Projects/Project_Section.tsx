@@ -1,13 +1,12 @@
 import ProjectItem from "@/components/Ui/Projects/ProjectItem";
 import { getAllProjects } from "@/config/SanityClient";
-import { imageUrlFor } from "@/config/SanityImageUrl";
 import React from "react";
 
 const Project_Section = async () => {
   const projects = await getAllProjects();
-
-  const sortedProjectList = projects.sort((a:any, b:any) => a.id - b.id)
-  console.log(sortedProjectList);
+ 
+  const sortedProjectList = projects.sort((a: any, b: any) => a.id - b.id);
+  
   return (
     <section className="w-full h-auto">
       <section className=" w-full h-auto py-20 px-5 xl:py-36 xl:pb-20">
@@ -229,18 +228,87 @@ const Project_Section = async () => {
             </section>
           </section>
           <section className="w-full h-auto flex flex-col gap-3 md:gap-4 lg:gap-6 ">
-            <section className=" w-full h-auto 2xl:h-[30rem] flex flex-col md:flex-row gap-4 lg:gap-6  justify-between">
-              {sortedProjectList.map((item: any) => (
-                <div key={item.id} className="w-full xl:w-[32rem] h-full">
-                  <ProjectItem
-                    name={item.name}
-                    preview={item.preview}
-                    category={item.category}
-                    projectOwnership={item.projectOwnership}
-                  />
-                </div>
-              ))}
-              {/* <div className="w-full xl:w-[32rem] h-full">
+            <section className="border w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:flex-row flex-wrap gap-4 lg:gap-6 justify-between">
+              {sortedProjectList.map((item: any) =>
+                item.previewSpacing === 1 ? (
+                  <div
+                    key={item.id}
+                    className="w-full h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 "
+                  >
+                    <ProjectItem
+                      name={item.name}
+                      preview={item.preview}
+                      category={item.category}
+                      projectOwnership={item.projectOwnership}
+                    />
+                  </div>
+                ) : item.previewSpacing === 2 ? (
+                  <div
+                    key={item.id}
+                    className="w-full  h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 md:col-span-2 "
+                  >
+                    <ProjectItem
+                      name={item.name}
+                      preview={item.preview}
+                      category={item.category}
+                      projectOwnership={item.projectOwnership}
+                    />
+                  </div>
+                ) : item.previewSpacing === 3 ? (
+                  <section
+                    key={item.id}
+                    className="w-full h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] grid-cols-1 md:col-span-2  lg:col-span-3"
+                  >
+                    <div className="w-full h-full ">
+                      <ProjectItem
+                        name={item.name}
+                        preview={item.preview}
+                        category={item.category}
+                        projectOwnership={item.projectOwnership}
+                      />
+                    </div>
+                  </section>
+                ) : (
+                  <></>
+                )
+              )}
+            </section>
+            {/* <section className="border w-full h-auto 2xl:h-[30rem] flex flex-col md:flex-row flex-wrap gap-4 lg:gap-6  justify-between">
+              {projects.map((item: any) =>
+                item.previewSpacing === 1 ? (
+                  <div key={item.id} className="w-full xl:w-[32rem] h-full">
+                    <ProjectItem
+                      name={item.name}
+                      preview={item.preview}
+                      category={item.category}
+                      projectOwnership={item.projectOwnership}
+                    />
+                  </div>
+                ) : item.previewSpacing === 2 ? (
+                  <div className="w-full md:w-[49rem] h-full  ">
+                    <ProjectItem
+                      name={item.name}
+                      preview={item.preview}
+                      category={item.category}
+                      projectOwnership={item.projectOwnership}
+                    />
+                  </div>
+                ) : item.previewSpacing === 3 ? (
+                  <section className="w-full h-[10rem] sm:h-[17em] md:h-[14rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem]">
+                    <div className="w-full h-full ">
+                      <ProjectItem
+                        name={item.name}
+                        preview={item.preview}
+                        category={item.category}
+                        projectOwnership={item.projectOwnership}
+                      />
+                    </div>
+                  </section>
+                ) : (
+                  <></>
+                )
+              )}
+               <div className="w-full xl:w-[32rem] h-full">
                 <ProjectItem
                   image={
                     "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-3.png"
@@ -260,9 +328,10 @@ const Project_Section = async () => {
                     "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-3.png"
                   }
                 />
-              </div> */}
-            </section>
-            <section className="w-full h-[10rem] sm:h-[17em] md:h-[14rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem]">
+              </div> 
+            </section>  */}
+
+            {/* <section className="w-full h-[10rem] sm:h-[17em] md:h-[14rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem]">
               <div className="w-full h-full ">
               <ProjectItem
                     name={sortedProjectList[4]?.name}
@@ -271,23 +340,23 @@ const Project_Section = async () => {
                     projectOwnership={sortedProjectList[4]?.projectOwnership}
                   />
               </div>
-            </section>
-            <section className="w-full h-auto 2xl:h-[30rem] flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-6  justify-between">
-              <div className="w-full md:w-[49rem] h-full  ">
+            </section> */}
+            {/* <section className="w-full h-auto 2xl:h-[30rem] flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-6  justify-between"> */}
+            {/*<div className="w-full md:w-[49rem] h-full  ">
                 <ProjectItem
                   image={
                     "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-6.jpg"
                   }
                 />
-              </div>
-              <div className="w-full md:w-[49rem] h-full  ">
+              </div> */}
+            {/* <div className="w-full md:w-[49rem] h-full  ">
                 <ProjectItem
                   image={
                     "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-6.jpg"
                   }
                 />
-              </div>
-            </section>
+              </div> */}
+            {/* </section> */}
             {/* <section className="w-full grid grid-cols-3 gap-8">
               <div className="w-full h-full">
                 <ProjectItem

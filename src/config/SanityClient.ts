@@ -7,32 +7,6 @@ export const client = createClient({
   useCdn: true,
 });
 
-// interface getAllServices {
-//   procedure: {
-//     description: string;
-//     step: number;
-//     _key: string;
-//     title: string;
-//   }[];
-//   weAerUsing: {
-//     iconName: string;
-//     iconImage: object;
-//     _key: string;
-//   };
-//   service: {
-//     _type: string;
-//     description: string;
-//     _key: string;
-//     title: string;
-//     image: object;
-//   };
-//   name: string;
-//   _createdAt: Date;
-//   _type: string;
-//   description: string;
-//   _id: string;
-// }
-
 export const getAllServices = async () => {
   return await client.fetch(`*[_type=="service"]`);
 };
@@ -72,13 +46,12 @@ export const getAllManagementData = async () =>
     `*[_type=="management"]{
       _id,
       name,
-      position,
       "profileImage":profileImage.asset->url,
-      socialLinks[]{
-        _key,
-        name,
-        link,
-      }
+      position,
+      linkedIn,
+      twitter,
+      youtube,
+      instagram,
     }`
   );
 export const getAllFeedback = async () =>
@@ -98,8 +71,20 @@ export const getAllProjects = async () =>
     `*[_type=="project"]{
       id,
       name,
-      preview,
+      description,
       category,
       projectOwnership,
+      previewSpacing,
+      preview,
+      }`
+  );
+export const getAllPosts = async () =>
+  await client.fetch(
+    `*[_type=="post"]{
+      _id,
+      socialMedia,
+      socialId,
+      link,
+      "image":image.asset->url,
     }`
   );

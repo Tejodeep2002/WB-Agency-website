@@ -16,7 +16,6 @@ const ProjectItem: FC<ProjectItemProps> = ({
   category,
   projectOwnership,
 }) => {
-  // console.log("Projects", name, preview, category, projectOwnership);
   return (
     <div className="relative w-full h-full group">
       <div className="relative w-full h-full ">

@@ -2,6 +2,7 @@
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import gsap from "gsap";
 import Image from "next/image";
+import Link from "next/link";
 import React, { FC, useRef } from "react";
 
 interface TeamPicture {
@@ -23,7 +24,7 @@ const TeamPicture: FC<TeamPicture> = ({ personDetails }) => {
     return () => ctx.revert();
   }, []);
 
-  console.log("Details", personDetails);
+
   return (
     <div ref={teamProject} className="w-full  h-auto group flex flex-col gap-9">
       <div className="relative w-full h-auto border-4 group-hover:border-primary border-transparent z-10 transition ease-in-out duration-700">
@@ -35,23 +36,60 @@ const TeamPicture: FC<TeamPicture> = ({ personDetails }) => {
           className="relative w-full h-full grayscale group-hover:grayscale-0 z-0 transition ease-in-out duration-700"
         />
         <div className="absolute bottom-0 w-full h-16 bg-transparent text-secondary opacity-0 group-hover:opacity-100 translate-y-0 group-hover:-translate-y-4 flex items-center justify-center cursor-pointer transition ease-in-out duration-700">
-          <span>
-            <button className="hover:text-primary transition ease-in-out duration-500">
-              FB
-            </button>
-            <span className="text-primary"> - </span>
-            <button className="hover:text-primary transition ease-in-out duration-500">
-              TW
-            </button>
-            <span className="text-primary"> - </span>
-            <button className="hover:text-primary transition ease-in-out duration-500">
-              {" "}
-              YT
-            </button>
-            <span className="text-primary"> - </span>
-            <button className="hover:text-primary transition ease-in-out duration-500">
-              LI
-            </button>
+          <span className="text-lg">
+            {personDetails.linkedIn ? (
+              <>
+                <span className="text-primary"> - </span>
+                <Link
+                  href={personDetails.linkedIn}
+                  target="_blank"
+                  className="hover:text-primary transition ease-in-out duration-500"
+                >
+                  LI
+                </Link>
+                <span className="text-primary"> - </span>
+              </>
+            ) : (
+              <></>
+            )}
+            {personDetails.twitter && (
+              <>
+                <Link
+                  href={personDetails.twitter}
+                  target="_blank"
+                  className="hover:text-primary transition ease-in-out duration-500"
+                >
+                  TW
+                </Link>
+                <span className="text-primary"> - </span>
+              </>
+            )}
+
+            {personDetails.youtube && (
+              <>
+                <Link
+                  href={personDetails.youtube}
+                  target="_blank"
+                  className="hover:text-primary transition ease-in-out duration-500"
+                >
+                  YT
+                </Link>
+                <span className="text-primary"> - </span>
+              </>
+            )}
+
+            {personDetails.instagram && (
+              <>
+                <Link
+                  href={personDetails.instagram}
+                  target="_blank"
+                  className="hover:text-primary transition ease-in-out duration-500"
+                >
+                  IG
+                </Link>
+                <span className="text-primary"> - </span>
+              </>
+            )}
           </span>
         </div>
       </div>

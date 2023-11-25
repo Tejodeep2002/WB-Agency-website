@@ -69,7 +69,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href={"/blog"}
+                  href={"/#blog"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   BLOG US
@@ -92,9 +92,9 @@ const Navbar = () => {
               className="flex xl:hidden items-center text-secondary"
             >
               <span className="p-2 space-y-1  rounded text-secondary ">
-                <span className="block w-4 h-0.5 bg-gray-100"></span>
-                <span className="block w-4 h-0.5 bg-gray-100"></span>
-                <span className="block w-4 h-0.5 bg-gray-100"></span>
+                <span className="block w-4 h-0.5 bg-black"></span>
+                <span className="block w-4 h-0.5 bg-black"></span>
+                <span className="block w-4 h-0.5 bg-black"></span>
               </span>
               <span className="hidden md:block">Menu</span>
             </button>
