@@ -14,15 +14,15 @@ const ServiceSectionItem: FC<ServiceSectionProps> = ({
   image,
 }) => {
   return (
-    <section className=" servicesSections  w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto pb-24 px-5 xl:px-0 flex flex-col gap-16 items-center xl:border-x xl:border-grey1 group  ">
-      <div className="w-full h-fit xl:px-16 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
+    <section className=" servicesSections  w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto mb-20  px-5 xl:px-0 flex flex-col gap-10 lg:gap-16 items-center xl:border-x xl:border-grey1 group  ">
+      <div className=" w-full h-fit text-center xl:px-11 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
         <Link
           href={`/services/${name.split(" ").join("-").toLowerCase()}`}
-          className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] group-hover:text-primary text-left transition ease-in-out duration-500"
+          className=" text-secondary text-center  font-bold text-[30px] md:text-[35px] leading-[41.76px] group-hover:text-primary  transition ease-in-out duration-500"
         >
           {name}
         </Link>
-        <span>
+        <span className="">
           <p>
             {description.split(" ").splice(0, 12).join(" ").concat(" ....")}
           </p>

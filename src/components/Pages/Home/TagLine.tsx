@@ -17,7 +17,7 @@ const TagLine = () => {
         scrollTrigger: {
           trigger: tagLine.current,
           scroller: "main",
-          start: "20% 90%",
+          start: "top 90%",
         },
       });
       gsap.from(".tagLineContent2", {
@@ -28,7 +28,7 @@ const TagLine = () => {
         scrollTrigger: {
           trigger: tagLine.current,
           scroller: "main",
-          start: "55% 90%",
+          start: "40% 90%",
         },
       });
     });
@@ -37,7 +37,7 @@ const TagLine = () => {
   }, []);
 
   return (
-    <section ref={tagLine} className="relative w-full h-auto bg-background2 ">
+    <section ref={tagLine} className=" relative w-full h-auto bg-background2 ">
       <section className="w-full py-20 lg:py-36 ">
         <section className="w-full max-w-[90rem] mx-auto px-5 md:px-10 flex flex-col gap-10 lg:gap-16 xl:gap-28 ">
           <section className="tagLineContent w-full max-w-5xl mx-auto text-center flex flex-col gap-14">
@@ -46,7 +46,7 @@ const TagLine = () => {
               Are Always Here To Help You Grow Your Business
             </h3>
           </section>
-          <section className="tagLineContent2 lg:min-w-[40rem] lg:mx-auto xl:w-full  h-auto lg:justify-evenly items-center justify-between  text-tertiary">
+          <section className="tagLineContent2  lg:min-w-[40rem] lg:mx-auto xl:w-full  h-auto lg:justify-evenly items-center justify-between  text-tertiary">
             <section className="w-fit md:w-full h-auto grid md:grid-cols-2 lg:gap-7 xl:grid-cols-4 mx-auto">
               <div className="w-60 lg:w-80 h-32 flex items-center gap-5   ">
                 <div className="text-[75px] lg:text-[100px] xl:text-[120px] leading-[87px] font-semibold border-secondary text-transparent stroke-text hover:text-primary transition ease-in-out duration-500">

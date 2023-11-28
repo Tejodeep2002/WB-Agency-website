@@ -67,14 +67,14 @@ const Navbar = () => {
                   OUR TEAMS
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href={"/#blog"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   BLOG US
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href={"#contactUs"}

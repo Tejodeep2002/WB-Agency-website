@@ -8,7 +8,7 @@ const FeedBack = async () => {
   const feedbacks = await getAllFeedback();
 
   return (
-    <section className="w-full h-auto bg-background2 ">
+    <section className=" w-full h-auto bg-background2 ">
       <section className="w-full h-auto py-10 lg:py-36">
         <section className="w-full max-w-[100rem]  mx-auto flex flex-col gap-14 ">
           <Heading

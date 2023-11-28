@@ -20,12 +20,13 @@ const ServiceSection: FC<ServiceSectionProps> = ({ data }) => {
       gsap.from(".servicesSections", {
         y: 100,
         opacity: 0,
-        stagger: 0.2,
-        ease: "power4.out",
+        stagger: 0.3,
+        duration: 1,
+        ease: "power3.inout",
         scrollTrigger: {
           trigger: ".services",
           scroller: "main",
-          start: "30% 90%",
+          start: "13% 80%",
         },
       });
     });
@@ -35,7 +36,7 @@ const ServiceSection: FC<ServiceSectionProps> = ({ data }) => {
 
   return (
     <section className=" w-full h-auto  xl:mt-10 ">
-      <section className="w-full h-full flex flex-col md:flex-row md:flex-wrap  lg:gap-0  text-secondary border-tertiary ">
+      <section className="w-full h-full flex flex-col md:flex-row md:flex-wrap gap-10  lg:gap-0  text-secondary border-tertiary ">
         {data.map((item: any, index: number) => (
           <ServiceSectionItem
             key={item._id}

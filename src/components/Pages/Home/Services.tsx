@@ -10,10 +10,8 @@ const Services = async () => {
   }`
   );
 
-  
-  
   return (
-    <section className="services w-full h-auto " id={"services"}>
+    <section className=" services w-full h-auto " id={"services"}>
       <div
         className="bg-fixed w-full h-auto  object-cover "
         // style={{ backgroundImage: "url('/assets/bg.jpg')" }}

@@ -59,7 +59,7 @@ const SideBar: FC<SideBarProps> = ({ hidden, toggle }) => {
                 Our Teams
               </Link>
             </li>
-            <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
+            {/* <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
               <Link
                 href={"/#blog"}
                 onClick={() => toggle(false)}
@@ -67,7 +67,7 @@ const SideBar: FC<SideBarProps> = ({ hidden, toggle }) => {
               >
                 Blogs
               </Link>
-            </li>
+            </li> */}
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
               <Link
                 href={"/#contact"}

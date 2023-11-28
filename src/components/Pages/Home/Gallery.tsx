@@ -10,6 +10,7 @@ import Link from "next/link";
 
 const Gallery = () => {
   const gallery = useRef<HTMLDivElement>(null);
+  const gallerySection2 = useRef<HTMLDivElement>(null);
   gsap.registerPlugin(ScrollTrigger);
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -21,7 +22,7 @@ const Gallery = () => {
         scrollTrigger: {
           trigger: gallery.current,
           scroller: "main",
-          start: "10% 80%",
+          start: "7% 80%",
         },
       });
       gsap.from(".galleryContent1", {
@@ -29,9 +30,9 @@ const Gallery = () => {
         duration: 1,
         opacity: 0,
         scrollTrigger: {
-          trigger: gallery.current,
+          trigger: gallerySection2.current,
           scroller: "main",
-          start: "30% 80%",
+          start: "top 80%",
         },
         ease: "power2.out",
       });
@@ -40,9 +41,9 @@ const Gallery = () => {
         duration: 1,
         opacity: 0,
         scrollTrigger: {
-          trigger: gallery.current,
+          trigger: gallerySection2.current,
           scroller: "main",
-          start: "30% 80%",
+          start: "top 80%",
         },
         ease: "power2.out",
       });
@@ -51,14 +52,18 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section ref={gallery} id="gallery" className="relative w-full h-auto ">
-      <section className="w-full h-full py-14 xl:py-36">
+    <section
+      ref={gallery}
+      id="gallery"
+      className=" relative w-full h-auto "
+    >
+      <section className="w-full h-full py-10 xl:py-36">
         <section className="w-full flex flex-col gap-7 px-4 sm:px-2 md:px-0 mx-auto text-white">
           <Heading heading={"Gallery"} subHeading={"Our Project Portfolio"} />
           <section className="galleryContent w-full h-auto">
             <section className="w-full h-full flex flex-col gap-5 ">
               <section className="w-full xl:h-[30rem] flex flex-col md:flex-row  md:flex-wrap xl:flex-nowrap md:justify-evenly  gap-5">
-                <div className=" border border-black relative w-full h-[23rem] xl:h-full   group md:w-[45%] xl:w-[25%] ">
+                <div className="relative w-full h-[23rem] xl:h-full   group md:w-[45%] xl:w-[25%] ">
                   <Image
                     src={"/assets/home-portfolio-1.jpg"}
                     width={"2000"}
@@ -140,7 +145,10 @@ const Gallery = () => {
                   </div>
                 </div>
               </section>
-              <section className="relative w-full xl:h-[30rem] flex flex-col xl:flex-row gap-5 md:gap-5 xl:gap-0">
+              <section
+                ref={gallerySection2}
+                className=" relative w-full xl:h-[30rem] flex flex-col xl:flex-row gap-5 md:gap-5 xl:gap-0"
+              >
                 <div className=" galleryContent1 relative w-full xl:w-1/2 h-96 lg:h-full my-8 xl:my-0  flex justify-center items-center bg-background">
                   <div className="w-full xl:max-w-lg h-auto px-6  flex flex-col gap-10">
                     <h2 className="text-left text-[50px]  before:absolute before:content-[''] before:w-24 before:h-24 before:rounded-full before:bg-primary before:-z-20 -z-10">
@@ -162,7 +170,7 @@ const Gallery = () => {
                     </Link>
                   </div>
                 </div>
-                <section className="w-full xl:w-1/2 flex flex-wrap md:flex-nowrap gap-5  ">
+                <section className="galleryContent2 w-full xl:w-1/2 flex flex-wrap md:flex-nowrap gap-5  ">
                   <div className="relative group w-full h-[23rem] xl:h-full md:w-1/2 ">
                     <Image
                       src={"/assets/home-portfolio-3.jpg"}
