@@ -140,10 +140,10 @@ const Hero = () => {
           </section>
           {/* right */}
           <section className=" hidden xl:flex absolute xl:relative right-0 w-full xl:w-[40%] h-full justify-center items-center">
-            <Spline
+            {/* <Spline
               scene="https://prod.spline.design/vDmw0a65KiiALwh4/scene.splinecode"
               className=" -z-10"
-            />
+            /> */}
           </section>
         </section>
       </section>
