@@ -139,7 +139,7 @@ const Hero = () => {
             </section>
           </section>
           {/* right */}
-          <section className=" invisible xl:visible absolute xl:relative right-0 w-full xl:w-[40%] h-full flex justify-center items-center">
+          <section className=" hidden xl:flex absolute xl:relative right-0 w-full xl:w-[40%] h-full justify-center items-center">
             <Spline
               scene="https://prod.spline.design/vDmw0a65KiiALwh4/scene.splinecode"
               className=" -z-10"

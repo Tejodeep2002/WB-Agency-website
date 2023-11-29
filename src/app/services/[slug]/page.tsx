@@ -14,9 +14,8 @@ interface PageProps {
 
 export const generateStaticParams = async () => {
   const service = await getAllServices();
-
   return service.map((service: any) => ({
-    slug: service.name.split(" ").join("-"),
+    slug: service.name.split(" ").join("-").toLowerCase(),
   }));
 };
 
@@ -24,6 +23,8 @@ const page: FC<PageProps> = async ({ params }) => {
   const serviceDetails = await findServiceByName(
     params.slug.split("-").join(" ")
   );
+
+  console.log("Services Details", serviceDetails);
   return (
     <main className="relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 bg-background2 scroll-smooth">
       <Navbar />
