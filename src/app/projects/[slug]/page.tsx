@@ -13,7 +13,7 @@ const ProjectDetails = () => {
       <ProjectTitle heading={"Business App"} picture={""} />
       <Project_Details />
 
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };

@@ -14,6 +14,7 @@ interface PageProps {
 
 export const generateStaticParams = async () => {
   const service = await getAllServices();
+  
   return service.map((service: any) => ({
     slug: service.name.split(" ").join("-").toLowerCase(),
   }));
