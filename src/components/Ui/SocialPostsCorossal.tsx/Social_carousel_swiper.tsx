@@ -49,8 +49,8 @@ const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {
 
   
   return (
-    <section ref={socialCarousel} className="border w-full h-auto ">
-      <section className="w-full h-auto pb-20">
+    <section ref={socialCarousel} className=" w-full h-auto ">
+      <section className="w-full h-auto">
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
@@ -74,7 +74,7 @@ const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {
               spaceBetween: 20,
             },
           }}
-          className="border mySwiper w-full h-[25rem] px-1 cursor-grab"
+          className=" mySwiper w-full h-[25rem] px-1 cursor-grab"
         >
           {posts.map((post) => (
             <SwiperSlide

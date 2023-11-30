@@ -105,7 +105,8 @@ const Footer = () => {
                 <Link
                   href={"/#home"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
-                >
+                  aria-label="Home"
+               >
                   Home
                 </Link>
               </li>
@@ -113,6 +114,7 @@ const Footer = () => {
                 <Link
                   href={"/#home"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
+                  aria-label="Services"
                 >
                   Services
                 </Link>
@@ -121,6 +123,7 @@ const Footer = () => {
                 <Link
                   href={"/#home"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
+                  aria-label="Gallery"
                 >
                   Gallery
                 </Link>
@@ -129,6 +132,7 @@ const Footer = () => {
                 <Link
                   href={"/#home"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
+                  aria-label="Out teams"
                 >
                   Our Teams
                 </Link>
@@ -137,8 +141,9 @@ const Footer = () => {
                 <Link
                   href={"/#home"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
-                >
-                  Contact
+                  aria-label="Contact Us"
+               >
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -151,6 +156,7 @@ const Footer = () => {
                   href={"https://twitter.com/WebFlexRR"}
                   target="_blank"
                   className="w-[35px] h-[35px] text-secondary rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
+                  aria-label="Twitter"
                 >
                   <BsTwitterX className="w-[14px] h-[14px] " />
                 </Link>
@@ -160,6 +166,7 @@ const Footer = () => {
                   href={"https://www.linkedin.com/company/webflexrr"}
                   target="_blank"
                   className="w-[35px] h-[35px] text-secondary rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
+                  aria-label="Linkedin"
                 >
                   <FaLinkedinIn className="w-[16px] h-[16px] " />
                 </Link>
@@ -171,6 +178,7 @@ const Footer = () => {
                   }
                   target="_blank"
                   className="w-[35px] h-[35px] text-secondary rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
+                  aria-label="Facebook"
                 >
                   <FaFacebookF className="w-[16px] h-[16px]" />
                 </Link>
@@ -180,6 +188,7 @@ const Footer = () => {
                   href={"https://www.instagram.com/webflexrr"}
                   target="_blank"
                   className="w-[35px] h-[35px] text-secondary rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
+                  aria-label="Instagram"
                 >
                   <FaInstagram className="w-[17px] h-[17px]" />
                 </Link>

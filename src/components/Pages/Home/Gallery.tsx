@@ -52,11 +52,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section
-      ref={gallery}
-      id="gallery"
-      className=" relative w-full h-auto "
-    >
+    <section ref={gallery} id="gallery" className=" relative w-full h-auto ">
       <section className="w-full h-full py-10 xl:py-36">
         <section className="w-full flex flex-col gap-7 px-4 sm:px-2 md:px-0 mx-auto text-white">
           <Heading heading={"Gallery"} subHeading={"Our Project Portfolio"} />
@@ -83,10 +79,10 @@ const Gallery = () => {
                       Accumsan lacus vel facilisis volutpat est egestas dui.
                     </p>
                     <section className="w-full flex justify-start">
-                      <span className="flex gap-3 text-secondary">
+                      <Link href={"#"} className="flex gap-3 text-secondary">
                         <PulseCircle />
                         Read more
-                      </span>
+                      </Link>
                     </section>
                   </div>
                 </div>
@@ -110,10 +106,10 @@ const Gallery = () => {
                       Accumsan lacus vel facilisis volutpat est egestas dui.
                     </p>
                     <section className="w-full flex justify-start">
-                      <span className="flex gap-3 text-secondary">
+                      <Link href={"#"} className="flex gap-3 text-secondary">
                         <PulseCircle />
                         Read more
-                      </span>
+                      </Link>
                     </section>
                   </div>
                 </div>
@@ -133,14 +129,13 @@ const Gallery = () => {
                       UI & UX Designs
                     </Link>
                     <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
-                      Turpis egestas integer eget aliquet nibh praesent.
-                      Accumsan lacus vel facilisis volutpat est egestas dui.
+                      Explore our portfolio, a testament to our mastery in web design, development, SEO, digital marketing, and compelling content creation. Each project showcases innovation and results-driven solutions.
                     </p>
                     <section className="w-full flex justify-start">
-                      <span className="flex gap-3 text-secondary">
+                      <Link href={"#"} className="flex gap-3 text-secondary">
                         <PulseCircle />
                         Read more
-                      </span>
+                      </Link>
                     </section>
                   </div>
                 </div>
@@ -156,10 +151,7 @@ const Gallery = () => {
                     </h2>
                     <span>
                       <p className="text-left text-secondary">
-                        Dolor sit amet consectetur adipiscing elit ut aliquam
-                        purus sit. Euismod nisi porta lorem mollis aliquam ut
-                        porttitor. In hac habitasse platea dictumst. Amet massa
-                        vitae tortor condimentum lacinia quis.
+                      Explore our portfolio, a testament to our mastery in web design, development, SEO, digital marketing, and compelling content creation. Each project showcases innovation and results-driven solutions.
                       </p>
                     </span>
                     <Link
@@ -191,10 +183,10 @@ const Gallery = () => {
                         Accumsan lacus vel facilisis volutpat est egestas dui.
                       </p>
                       <section className="w-full flex justify-start">
-                        <span className="flex gap-3 text-secondary">
+                        <Link href={"#"} className="flex gap-3 text-secondary">
                           <PulseCircle />
                           Read more
-                        </span>
+                        </Link>
                       </section>
                     </div>
                   </div>
@@ -218,10 +210,10 @@ const Gallery = () => {
                         Accumsan lacus vel facilisis volutpat est egestas dui.
                       </p>
                       <section className="w-full flex justify-start">
-                        <span className="flex gap-3 text-secondary">
+                        <Link href={"#"} className="flex gap-3 text-secondary">
                           <PulseCircle />
                           Read more
-                        </span>
+                        </Link>
                       </section>
                     </div>
                   </div>

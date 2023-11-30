@@ -64,6 +64,7 @@ const Hero = () => {
                           "https://www.facebook.com/profile.php?id=61553639945217"
                         }
                         target="_blank"
+                        aria-label="This is Facebook"
                       >
                         <SlSocialFacebook className="w-[25px] h-[25px] sm:w-[30px] sm:h-[30px]  hover:text-primary transition ease-in-out duration-500" />
                       </Link>
@@ -72,6 +73,7 @@ const Hero = () => {
                       <Link
                         href={"https://www.instagram.com/webflexrr"}
                         target="_blank"
+                        aria-label="This is Instagram"
                       >
                         <SlSocialInstagram className="w-[25px] h-[25px] sm:w-[30px] sm:h-[30px]  hover:text-primary transition ease-in-out duration-500" />
                       </Link>
@@ -80,6 +82,7 @@ const Hero = () => {
                       <Link
                         href={"https://twitter.com/WebFlexRR"}
                         target="_blank"
+                        aria-label="This is Twitter"
                       >
                         <RiTwitterXLine className="w-[25px] h-[25px] sm:w-[30px] sm:h-[30px]  hover:text-primary transition ease-in-out duration-500" />
                       </Link>
@@ -88,6 +91,7 @@ const Hero = () => {
                       <Link
                         href={"https://www.linkedin.com/company/webflexrr"}
                         target="_blank"
+                        aria-label="This is Linkedin"
                       >
                         <FaLinkedinIn className="w-[25px] h-[25px] sm:w-[30px] sm:h-[30px]  hover:text-primary transition ease-in-out duration-500" />
                       </Link>
@@ -110,17 +114,19 @@ const Hero = () => {
                 <div className="hero1 w-full h-fit flex gap-6 items-center    ">
                   <PulseCircle />
                   <span className="text-[20px] sm:text-[26px] leading-[42.64px] text-subHeading">
-                    Innovation Ideas
+                    WebFlexrr Design Solutions
                   </span>
                 </div>
                 <h1 className="hero1 lg:w-[35rem]">
-                  We Offer you <span className="text-primary"> A Digital </span>
-                  Platform .
+                  We Solve Your Problem With Our
+                  <span className="text-primary"> Best Experts Lead</span>
                 </h1>
-                <p className="hero1 md:w-[35rem] mt-4 ">
-                  Vulputate enim nulla aliquet porttitor lacus luctus accumsan
-                  tortor posuere. Nisl purus in mollis nunc sed id sempe egestas
-                  quis ips.
+                <p className="hero1 md:w-[40rem] mt-4 ">
+                  Welcome to Web Flexrr, Transforming visions into captivating
+                  online experiences, our team specializes in cutting-edge web
+                  design, seamless web development, powerful digital marketing
+                  strategies, SEO optimization, and compelling content creation.
+                  Elevate your online presence with our tailored solutions.
                 </p>
                 <section className=" hero1 w-full flex mt-9">
                   <div className="flex items-center gap-6 text-lg">

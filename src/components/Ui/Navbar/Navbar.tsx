@@ -90,6 +90,8 @@ const Navbar = () => {
             <button
               onClick={() => setSideBarHidden(true)}
               className="flex xl:hidden items-center text-secondary"
+              aria-label="Open Menus"
+              
             >
               <span className="p-2 space-y-1  rounded text-secondary ">
                 <span className="block w-4 h-0.5 bg-black"></span>

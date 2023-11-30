@@ -4,6 +4,8 @@ import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import Heading from "@/components/Ui/Heading/Heading";
+import PulseCircle from "@/components/Ui/PulseCircle";
 
 const schema = yup
   .object({
@@ -65,7 +67,14 @@ const ContactUs = () => {
             </div> */}
           </section>
           <section className=" w-full lg:w-[55%] xl:w-[65%] h-full">
-            <section className="w-full h-full p-5 pb-[100px] lg:p-[50px] xl:p-[100px]">
+            <section className="w-full h-full p-5 pb-[100px] lg:p-[50px] xl:p-[100px] flex flex-col gap-6">
+              <div className="hero1 w-full h-fit flex gap-6 items-center    ">
+                <PulseCircle />
+                <span className="text-[20px] sm:text-[26px] leading-[42.64px] text-primary">
+                  Get in Touch
+                </span>
+              </div>
+
               <section className="w-full h-full flex flex-col gap-16">
                 <section className="w-full xl:pr-28 text-left ">
                   <h3 className="text-left">

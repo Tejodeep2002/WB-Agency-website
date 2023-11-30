@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TextPlugin from "gsap/TextPlugin";
 
 interface HeadingProps {
-  heading: string;
+  heading?: string;
   subHeading: string;
 }
 
