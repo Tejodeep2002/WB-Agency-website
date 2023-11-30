@@ -45,12 +45,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <section ref={hero} id={"home"} className=" w-full h-full min-h-[100vh]  ">
-      <section className=" w-full max-w-[110rem] h-full px-3 sm:px-5 md:px-14 xl:px-20 mx-auto   ">
-        <section className=" w-full h-full flex py-16 xl:py-32">
+    <section ref={hero} id={"home"} className=" w-full h-auto ">
+      <section className=" w-full max-w-[110rem] h-full mt-16 lg:mt-28 px-3 sm:px-5 md:px-14 xl:px-20 mx-auto">
+        <section className=" w-full h-full flex md:py-16 xl:py-28">
           {/* left */}
           <section className=" w-full xl:w-[60%] h-full  flex items-end z-10 ">
-            <div className="absolute xl:hidden  w-full h-full bg-background2 blur-lg opacity-80"></div>
+            <div className=" absolute xl:hidden  w-full h-full bg-background2 blur-lg opacity-80"></div>
             <section className=" w-full xl:w-[40rem] h-fit mt-20 lg:mt-0 flex gap-5 sm:gap-8 lg:gap-16 ">
               <section
                 id="social"
@@ -111,9 +111,9 @@ const Hero = () => {
                 </section>
               </section>
               <section className=" w-full h-auto flex flex-col gap-2 lg:gap-8 text-white">
-                <div className="hero1 w-full h-fit flex gap-6 items-center    ">
+                <div className="hero1 w-full h-fit flex flex-wrap gap-6 items-center    ">
                   <PulseCircle />
-                  <span className="text-[20px] sm:text-[26px] leading-[42.64px] text-subHeading">
+                  <span className="text-[20px] sm:text-[26px] leading-[42.64px] font-medium text-secondary">
                     WebFlexrr Design Solutions
                   </span>
                 </div>

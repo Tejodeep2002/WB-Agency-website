@@ -12,6 +12,7 @@ interface TeamSwiperProps {
 
 const TeamSwiper: FC<TeamSwiperProps> = ({ allTeamsDetails }) => {
   return (
+    <>
     <Swiper
       slidesPerView={1}
       spaceBetween={20}
@@ -38,13 +39,19 @@ const TeamSwiper: FC<TeamSwiperProps> = ({ allTeamsDetails }) => {
       className="w-full h-auto grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-x-5 gap-y-10 "
     >
       {allTeamsDetails.map((personDetails: any) => (
-        <SwiperSlide key={personDetails._id} >
+        <SwiperSlide key={personDetails._id}>
           <TeamPicture personDetails={personDetails} />
         </SwiperSlide>
       ))}
 
       {/* <SwiperButtonComponent /> */}
     </Swiper>
+    
+    
+    
+    
+    
+    </>
   );
 };
 

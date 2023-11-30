@@ -129,7 +129,10 @@ const Gallery = () => {
                       UI & UX Designs
                     </Link>
                     <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
-                      Explore our portfolio, a testament to our mastery in web design, development, SEO, digital marketing, and compelling content creation. Each project showcases innovation and results-driven solutions.
+                      Explore our portfolio, a testament to our mastery in web
+                      design, development, SEO, digital marketing, and
+                      compelling content creation. Each project showcases
+                      innovation and results-driven solutions.
                     </p>
                     <section className="w-full flex justify-start">
                       <Link href={"#"} className="flex gap-3 text-secondary">
@@ -151,7 +154,10 @@ const Gallery = () => {
                     </h2>
                     <span>
                       <p className="text-left text-secondary">
-                      Explore our portfolio, a testament to our mastery in web design, development, SEO, digital marketing, and compelling content creation. Each project showcases innovation and results-driven solutions.
+                        Explore our portfolio, a testament to our mastery in web
+                        design, development, SEO, digital marketing, and
+                        compelling content creation. Each project showcases
+                        innovation and results-driven solutions.
                       </p>
                     </span>
                     <Link
