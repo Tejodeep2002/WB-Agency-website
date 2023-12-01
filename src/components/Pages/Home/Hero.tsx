@@ -10,28 +10,12 @@ import PulseCircle from "../../Ui/PulseCircle";
 import gsap from "gsap";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import Link from "next/link";
-import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
   const hero = useRef<HTMLDivElement>(null);
-  const socialIcons = useRef<HTMLDivElement>(null);
-  const scrollDiv = useRef<HTMLDivElement>(null);
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(socialIcons.current, {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        ease: "circ.inOut",
-      });
-      gsap.from(scrollDiv.current, {
-        y: -30,
-        opacity: 0,
-        duration: 1,
-        ease: "circ.inOut",
-      });
-
       gsap.from(".hero1", {
         x: 100,
         opacity: 0,
@@ -45,8 +29,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section ref={hero} id={"home"} className=" w-full h-auto ">
-      <section className=" w-full max-w-[110rem] h-full mt-16 lg:mt-28 px-3 sm:px-5 md:px-14 xl:px-20 mx-auto">
+    <section ref={hero} id={"home"} className=" w-full h-auto  pt-16 lg:pt-28 ">
+      <section className=" w-full max-w-[110rem] h-full  px-3 sm:px-5 md:px-14 xl:px-20 mx-auto">
         <section className=" w-full h-full flex md:py-16 xl:py-28">
           {/* left */}
           <section className=" w-full xl:w-[60%] h-full  flex items-end z-10 ">
@@ -56,7 +40,7 @@ const Hero = () => {
                 id="social"
                 className=" w-10 h-auto flex flex-col items-center gap-20 "
               >
-                <section ref={socialIcons}>
+                <section className=" animate-visible-from-up ">
                   <ul className="flex flex-col gap-12 text-paragraph">
                     <li>
                       <Link
@@ -98,10 +82,7 @@ const Hero = () => {
                     </li>
                   </ul>
                 </section>
-                <section
-                  className=" w-full h-auto flex flex-col gap-6 items-center "
-                  ref={scrollDiv}
-                >
+                <section className="animate-visible-from-down w-full h-auto flex flex-col gap-6 items-center ">
                   <PulseCircle flowDirection="bottom" />
                   <div className="w-full h-fit mt-10 ">
                     <p className=" rotate-[270deg] text-secondary text-base tracking-[4px] uppercase">
@@ -114,7 +95,7 @@ const Hero = () => {
                 <div className="hero1 w-full h-fit flex flex-wrap gap-6 items-center    ">
                   <PulseCircle />
                   <span className="text-[20px] sm:text-[26px] leading-[42.64px] font-medium text-secondary">
-                    WebFlexrr Design Solutions
+                    WebFlexrr Digital Solutions
                   </span>
                 </div>
                 <h1 className="hero1 lg:w-[35rem]">
@@ -146,10 +127,15 @@ const Hero = () => {
           </section>
           {/* right */}
           <section className=" hidden xl:flex absolute xl:relative right-0 w-full xl:w-[40%] h-full justify-center items-center">
-            {/* <Spline
-              scene="https://prod.spline.design/vDmw0a65KiiALwh4/scene.splinecode"
-              className=" -z-10"
-            /> */}
+            <Image
+              src={"/assets/home.png"}
+              width={"400"}
+              height={"400"}
+              alt=""
+              priority={true} 
+              placeholder={"empty"}
+              className=" animate-visible-from-left w-full "
+            ></Image>
           </section>
         </section>
       </section>

@@ -24,40 +24,40 @@ const SideBar: FC<SideBarProps> = ({ hidden, toggle }) => {
               />
             </li>
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
-              <Link
+              <a
                 href={"/#home"}
                 onClick={() => toggle(false)}
                 className="w-full h-full px-5 flex justify-start  text-secondary transition ease-in-out duration-500"
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
-              <Link
+              <a
                 href={"/#services"}
                 onClick={() => toggle(false)}
                 className="w-full h-full px-5 flex justify-start  text-secondary transition ease-in-out duration-500"
               >
                 Services
-              </Link>
+              </a>
             </li>
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
-              <Link
+              <a
                 href={"/#gallery"}
                 onClick={() => toggle(false)}
                 className="w-full h-full px-5 flex justify-start  text-secondary transition ease-in-out duration-500"
               >
                 Gallery
-              </Link>
+              </a>
             </li>
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
-              <Link
+              <a
                 href={"/#ourTeam"}
                 onClick={() => toggle(false)}
                 className="w-full h-full px-5 flex justify-start  text-secondary transition ease-in-out duration-500"
               >
                 Our Teams
-              </Link>
+              </a>
             </li>
             {/* <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
               <Link
@@ -69,13 +69,13 @@ const SideBar: FC<SideBarProps> = ({ hidden, toggle }) => {
               </Link>
             </li> */}
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
-              <Link
-                href={"/#contact"}
+              <a
+                href={"/#contactUs"}
                 onClick={() => toggle(false)}
                 className="w-full h-full px-5 flex justify-start  text-secondary transition ease-in-out duration-500"
               >
                 Contact Us
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

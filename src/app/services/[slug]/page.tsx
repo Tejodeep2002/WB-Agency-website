@@ -12,14 +12,6 @@ interface PageProps {
   };
 }
 
-export const generateStaticParams = async () => {
-  const service = await getAllServices();
-  
-  return service.map((service: any) => ({
-    slug: service.name.split(" ").join("-").toLowerCase(),
-  }));
-};
-
 const page: FC<PageProps> = async ({ params }) => {
   const serviceDetails = await findServiceByName(
     params.slug.split("-").join(" ")
