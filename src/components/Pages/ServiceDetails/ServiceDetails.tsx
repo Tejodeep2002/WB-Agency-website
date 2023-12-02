@@ -31,13 +31,13 @@ const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {
                   </section>
                 </div>
               </div>
-              <div className="w-full xl:w-[40%] h-full ">
+              <div className="w-full xl:w-[40%] flex items-center justify-center ">
                 <Image
                   src={serviceDetails.image}
                   width={"1000"}
                   height={"0"}
                   alt={""}
-                  className=" w-full h-full "
+                  className=" w-full drop-shadow-lg "
                 />
               </div>
             </section>

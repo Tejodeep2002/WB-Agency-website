@@ -50,7 +50,7 @@ const TagLine = () => {
             <section className="w-fit md:w-full h-auto grid md:grid-cols-2 lg:gap-7 xl:grid-cols-4 mx-auto">
               <div className="w-60 lg:w-80 h-32 flex items-center gap-5   ">
                 <div className="text-[75px] lg:text-[100px] xl:text-[120px] leading-[87px] font-semibold border-secondary text-transparent stroke-text hover:text-primary transition ease-in-out duration-500">
-                  10
+                  2+
                 </div>
                 <div className="w-fit flex flex-col text-2xl text-left leading-10 text-tertiary hover:text-secondary transition ease-in-out duration-500">
                   Years Experience
@@ -66,7 +66,7 @@ const TagLine = () => {
               </div>
               <div className="w-60 lg:w-80 h-32  flex items-center gap-5 ">
                 <div className="text-[75px] lg:text-[100px] xl:text-[120px]  leading-[87px] font-semibold border-secondary text-transparent stroke-text hover:text-primary transition ease-in-out duration-700">
-                  52
+                  10+
                 </div>
                 <span className="flex flex-col text-2xl text-left leading-10 text-tertiary hover:text-secondary transition ease-in-out duration-700">
                   Clients Satisfied
@@ -74,7 +74,7 @@ const TagLine = () => {
               </div>
               <div className="w-60 lg:w-80 h-32 flex items-center gap-5 ">
                 <div className="text-[75px] lg:text-[100px] xl:text-[120px]  leading-[87px] font-semibold border-secondary text-transparent stroke-text hover:text-primary transition ease-in-out duration-500">
-                  90
+                  20+
                 </div>
                 <span className="flex flex-col text-2xl text-left leading-10 text-tertiary hover:text-secondary transition ease-in-out duration-500">
                   Projects Completed

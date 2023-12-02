@@ -31,10 +31,10 @@ const Hero = () => {
   return (
     <section ref={hero} id={"home"} className=" w-full h-auto  pt-16 lg:pt-28 ">
       <section className=" w-full max-w-[110rem] h-full  px-3 sm:px-5 md:px-14 xl:px-20 mx-auto">
-        <section className=" w-full h-full flex md:py-16 xl:py-28">
+        <section className=" w-full h-fit flex flex-col-reverse lg:flex-row md:py-16 xl:py-28">
           {/* left */}
-          <section className=" w-full xl:w-[60%] h-full  flex items-end z-10 ">
-            <div className=" absolute xl:hidden  w-full h-full bg-background2 blur-lg opacity-80"></div>
+          <section className=" w-full xl:w-[50%] h-full  flex items-end z-10 ">
+          
             <section className=" w-full xl:w-[40rem] h-fit mt-20 lg:mt-0 flex gap-5 sm:gap-8 lg:gap-16 ">
               <section
                 id="social"
@@ -126,16 +126,17 @@ const Hero = () => {
             </section>
           </section>
           {/* right */}
-          <section className=" hidden xl:flex absolute xl:relative right-0 w-full xl:w-[40%] h-full justify-center items-center">
+          <section className="flex relative right-0 w-full xl:w-[50%] h-full justify-center items-center">
             <Image
               src={"/assets/home.png"}
               width={"400"}
               height={"400"}
               alt=""
-              priority={true} 
+              priority={true}
               placeholder={"empty"}
-              className=" animate-visible-from-left w-full "
-            ></Image>
+              className=" animate-visible-from-left w-full drop-shadow-xl-black"
+            />
+              {/* <div className=" absolute  w-full h-full  bg-gradient-to-t from-background2 to-blue-500"></div> */}
           </section>
         </section>
       </section>

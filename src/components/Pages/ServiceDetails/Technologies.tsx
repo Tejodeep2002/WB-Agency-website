@@ -10,7 +10,7 @@ interface TechnologiesProps {
   weAreUsing: any[];
 }
 const Technologies: FC<TechnologiesProps> = ({ weAreUsing }) => {
- 
+  
   const technologies = useRef<HTMLDivElement>(null);
   gsap.registerPlugin(ScrollTrigger);
   useIsomorphicLayoutEffect(() => {
@@ -36,13 +36,13 @@ const Technologies: FC<TechnologiesProps> = ({ weAreUsing }) => {
       <section className="w-full h-auto py-20 xl:py-36 px-5 ">
         <Heading heading={"Technology"} subHeading={"We are Using "} />
         <section className="w-full max-w-[70rem] h-fit mx-auto bg-background3 border-2 border-primary p-3 ">
-          <section className="w-full h-full grid grid-cols-3 xl:grid-cols-6  gap-5 ">
+          <section className="w-full h-full grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6  gap-5 ">
             {weAreUsing?.map((item: any) => (
               <div
                 key={item._key}
-                className="technologiesSection w-full h-[8rem] border-2 border-primary flex items-center justify-center"
+                className="technologiesSection w-full h-[9rem] border-2 border-primary flex items-center justify-center"
               >
-                <span className="flex flex-col items-center gap-3 text-secondary font-semibold leading-[26px]">
+                <span className="flex flex-col items-center justify-center p-3.5 gap-3 text-secondary text-center font-semibold leading-[26px]">
                   <Image
                     src={item.iconImage}
                     width={50}

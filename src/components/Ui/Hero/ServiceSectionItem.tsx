@@ -41,7 +41,7 @@ const ServiceSectionItem: FC<ServiceSectionProps> = ({
             width={"1080"}
             height={"1080"}
             alt={name}
-            className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
+            className="xl:absolute w-full xl:scale-75 xl:opacity-0 group-hover:visible group-hover:scale-100 group-hover:opacity-100 top-0 bg-white transition ease-in-out duration-300 "
           />
         </Link>
       </div>

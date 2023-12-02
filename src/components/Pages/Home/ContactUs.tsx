@@ -6,6 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Heading from "@/components/Ui/Heading/Heading";
 import PulseCircle from "@/components/Ui/PulseCircle";
+import emailjs from "@emailjs/browser";
 
 const schema = yup
   .object({
@@ -28,6 +29,22 @@ const ContactUs = () => {
   });
   const onSubmit = (data: FormInput) => {
     console.log(data);
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+      
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <section id={"contactUs"} className=" w-full h-auto py-36">

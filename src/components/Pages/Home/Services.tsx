@@ -9,6 +9,7 @@ const Services = async () => {
       _id,name,description,"image":image.asset->url
   }`
   );
+  // console.log(services)
 
   return (
     <section className=" services w-full h-auto " id={"services"}>

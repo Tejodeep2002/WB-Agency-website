@@ -13,13 +13,11 @@ const Footer = () => {
           <section className="w-full md:w-full lg:w-1/2 h-auto px-5">
             <div className="w-full max-w-[580px] h-auto flex flex-col gap-12">
               <Image
-                src={
-                  "https://gaaga.wpengine.com/wp-content/uploads/2023/05/gaaka-Logo-1.png"
-                }
-                width={"200"}
-                height={"300"}
-                alt=""
-                className="max-w-[383px] h-[32px] "
+                src={"/logos/logo.png"}
+                width={"250"}
+                height={"0"}
+                alt={""}
+                className=""
               />
               <div>
                 <p>
@@ -106,7 +104,7 @@ const Footer = () => {
                   href={"/#home"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
                   aria-label="Home"
-               >
+                >
                   Home
                 </Link>
               </li>
@@ -142,7 +140,7 @@ const Footer = () => {
                   href={"/#home"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
                   aria-label="Contact Us"
-               >
+                >
                   Contact Us
                 </Link>
               </li>
@@ -197,7 +195,7 @@ const Footer = () => {
           </section>
           {/* right */}
           <section className=" text-center">
-            <p>Copyright 	&#169;2023, WebFlexRR All Rights Reserved.</p>
+            <p>Copyright &#169;2023, WebFlexRR All Rights Reserved.</p>
           </section>
         </section>
       </section>
