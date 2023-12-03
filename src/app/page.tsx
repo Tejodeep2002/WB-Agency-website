@@ -21,7 +21,7 @@ export default function Home() {
       <TagLine />
       <OurTeams />
       <ContactUs />
-      <FeedBack />
+      {/* <FeedBack /> */}
       <Social_carousel />
       <Footer />
     </main>

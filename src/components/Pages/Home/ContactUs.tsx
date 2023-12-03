@@ -1,53 +1,78 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Heading from "@/components/Ui/Heading/Heading";
 import PulseCircle from "@/components/Ui/PulseCircle";
 import emailjs from "@emailjs/browser";
 
-const schema = yup
-  .object({
-    firstName: yup.string().required(),
-    lastName: yup.string().required(),
-    email: yup.string().email().required(),
-    companyName: yup.string().required(),
-    additionalMessage: yup.string(),
-  })
-  .required();
+const schema = yup.object({
+  firstName: yup.string().required("First Name is Required"),
+  lastName: yup.string().required("Last Name is Required"),
+  email: yup
+    .string()
+    .email("Email format is not valid")
+    .required("Email is Required"),
+  companyName: yup.string().required("Company Name is Required"),
+  additionalMessage: yup.string().required("Message is Required"),
+});
+
 type FormInput = yup.InferType<typeof schema>;
 
 const ContactUs = () => {
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors },
   } = useForm<FormInput>({
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      companyName: "",
+      additionalMessage: "",
+    },
     resolver: yupResolver(schema),
   });
-  const onSubmit = (data: FormInput) => {
-    console.log(data);
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-      
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
+  const onSubmit = async (data: FormInput) => {
+    console.log("Submit Data", data);
+
+    const formData = {
+      service_id: `${process.env.NEXT_PUBLIC_YOUR_SERVICE_ID}`,
+      template_id: `${process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID}`,
+      user_id: `${process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY}`,
+      template_params: {
+        from_name: data.firstName,
+        from_email: data.email,
+        to_name: "Tejodeep",
+        message: data.additionalMessage,
+      },
+    };
+
+    try {
+      const response = await fetch(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
         }
       );
+
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
-    <section id={"contactUs"} className=" w-full h-auto py-36">
+    <section id={"contactUs"} className=" w-full h-auto lg:py-36">
       <section className=" w-full h-auto lg:h-[55rem]">
         <section className="w-full h-full flex flex-col lg:flex-row">
           <section className=" relative w-full lg:w-[45%] xl:w-[35%] h-[40rem] lg:h-full  ">
@@ -105,6 +130,7 @@ const ContactUs = () => {
                   <span className="w-full lg:w-1/2 h-fit  text-paragraph text-[16px] pb-10 lg:pr-11">
                     <input
                       type="text"
+                      id="firstName"
                       className="w-full bg-transparent py-[15px] focus:outline-none border-b border-paragraph"
                       placeholder="First Name"
                       {...register("firstName")}
@@ -114,9 +140,9 @@ const ContactUs = () => {
                   <span className="w-full lg:w-1/2 h-fit text-paragraph text-[16px] pb-10 lg:pl-11">
                     <input
                       type="text"
+                      id="lastName"
                       className="w-full h-fit bg-transparent py-[15px] focus:outline-none border-b border-paragraph"
                       placeholder="Last Name"
-                      required
                       {...register("lastName")}
                     />
                     <p>{errors.lastName?.message}</p>
@@ -124,9 +150,9 @@ const ContactUs = () => {
                   <span className="w-full lg:w-1/2 h-fit text-paragraph text-[16px] pb-10 lg:pr-11">
                     <input
                       type="email"
+                      id="email"
                       className="w-full bg-transparent py-[15px] focus:outline-none border-b border-paragraph"
                       placeholder="Your Email"
-                      required
                       {...register("email")}
                     />
                     <p>{errors.email?.message}</p>
@@ -134,15 +160,15 @@ const ContactUs = () => {
                   <span className="w-full lg:w-1/2 h-fit text-paragraph text-[16px] pb-10 lg:pl-11">
                     <input
                       type="text"
+                      id="companyName"
                       className="w-full bg-transparent py-[15px] focus:outline-none border-b border-paragraph"
                       placeholder="Company Name"
-                      required
                       {...register("companyName")}
                     />
                     <p>{errors.companyName?.message}</p>
                   </span>
                   <textarea
-                    id=""
+                    id="additionalMessage"
                     cols={4}
                     rows={4}
                     placeholder="Additional Message"

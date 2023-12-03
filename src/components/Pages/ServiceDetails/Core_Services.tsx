@@ -32,7 +32,7 @@ const Core_Services: FC<CoreServicesProps> = ({ services }) => {
     });
     return () => ctx.revert();
   }, []);
-  
+
   return (
     <section ref={Core_Services} className="w-full h-auto bg-backgroun2">
       <section className="relative w-full h-fit">
@@ -55,7 +55,7 @@ const Core_Services: FC<CoreServicesProps> = ({ services }) => {
                   key={items._key}
                   className="w-full h-auto core_servicesSection"
                 >
-                  <div className="relative w-full h-[20rem] group xl:border-x border-secondary  ">
+                  <div className="relative w-full h-[22rem] group xl:border-x border-secondary  ">
                     <div className="relative flex flex-col  top-0 left-0 bottom-0 right-0 xl:flex items-center p-8 xl:px-16 mx-auto">
                       <span className=" text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] group-hover:text-primary text-left transition ease-in-out duration-500">
                         {items.title}
@@ -69,7 +69,7 @@ const Core_Services: FC<CoreServicesProps> = ({ services }) => {
                       width={"1080"}
                       height={"0"}
                       alt={""}
-                      className="absolute xl:absolute w-full xl:scale-75 opacity-40 -z-10 xl:opacity-0 xl:group-hover:visible xl:group-hover:scale-100 xl:group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
+                      className=" absolute xl:absolute w-full xl:scale-75 opacity-40 -z-10 xl:opacity-0 xl:group-hover:visible xl:group-hover:scale-100 xl:group-hover:opacity-100 top-0 transition ease-in-out duration-300 "
                     />
                   </div>
                 </section>

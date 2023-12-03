@@ -6,25 +6,26 @@ import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-auto text-tertiary bg-background2">
-      <section className="w-full h-auto pt-[70px] pb-[100px]">
+    <footer className="w-full h-auto text-tertiary bg-background2 ">
+      <section className="w-full h-auto py-[70px]">
         <section className="w-full max-w-[100rem] mx-auto flex flex-row flex-wrap lg:flex-row gap-10 lg:gap-0">
           {/* left */}
           <section className="w-full md:w-full lg:w-1/2 h-auto px-5">
-            <div className="w-full max-w-[580px] h-auto flex flex-col gap-12">
+            <div className="w-full max-w-[580px] h-auto flex flex-col gap-10">
               <Image
-                src={"/logos/logo.png"}
-                width={"250"}
+                src={"/logos/logo2.png"}
+                width={"120"}
                 height={"0"}
                 alt={""}
                 className=""
               />
               <div>
                 <p>
-                  Sodales ut etiam sit amet. Eget nulla facilisi etiam
-                  dignissim. Aliquam vestibulum morbi blandit cursus risus.
-                  Ultrices vitae auctor eu augue ut lectus. Ultricies integer
-                  quis auctor elit sed vulputate mi sit amet.{" "}
+                  At our agency, each project is a labor of passion and
+                  commitment. With relentless dedication and meticulous effort,
+                  we craft digital solutions that stand as a testament to the
+                  hard work and time invested in building a robust online
+                  presence for our clients.
                 </p>
               </div>
               <div className=" w-full flex flex-wrap gap-5 xl:gap-2">
@@ -50,15 +51,26 @@ const Footer = () => {
               Contact
             </section>
             <section className="w-full max-w-[280px] mt-8">
-              <ul className="flex flex-col gap-5 flex-wrap ">
+              <ul className="flex flex-col gap-5 flex-wrap text-secondary">
                 <li>
                   <p>Kolkata,Westbengal,India</p>
                 </li>
-                <li>
-                  <p>Phone : +91 - 9038007312</p>
+                <li className="w-full flex gap-2 text-secondary">
+                  <span>
+                    <p>Phone :</p>
+                  </span>
+                  <ul>
+                    <li>
+                      <p>+91 - 7044785308</p>
+                    </li>
+                    <li>
+                      <p>+91 - 9674128921</p>
+                    </li>
+                  </ul>
                 </li>
+
                 <li>
-                  <p>Mail : info@example.com</p>
+                  <p>Mail : contact@webflexrr.com</p>
                 </li>
                 {/* <li>
                   <p>Working Hours : 8hrs</p>
@@ -78,13 +90,13 @@ const Footer = () => {
                   <p>Branding & Identity</p>
                 </li>
                 <li>
+                  <p>Content Creation</p>
+                </li>
+                <li>
                   <p>Web Design & Development</p>
                 </li>
                 <li>
                   <p>Mobile App Development</p>
-                </li>
-                <li>
-                  <p>UI & UX Designing</p>
                 </li>
                 <li>
                   <p>Digital Marketing</p>
@@ -195,7 +207,10 @@ const Footer = () => {
           </section>
           {/* right */}
           <section className=" text-center">
-            <p>Copyright &#169;2023, WebFlexRR All Rights Reserved.</p>
+            <p>
+              Copyright &#169;2023, WebFlexRR Digital Services All Rights
+              Reserved.
+            </p>
           </section>
         </section>
       </section>

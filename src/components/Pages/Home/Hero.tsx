@@ -31,11 +31,10 @@ const Hero = () => {
   return (
     <section ref={hero} id={"home"} className=" w-full h-auto  pt-16 lg:pt-28 ">
       <section className=" w-full max-w-[110rem] h-full  px-3 sm:px-5 md:px-14 xl:px-20 mx-auto">
-        <section className=" w-full h-fit flex flex-col-reverse lg:flex-row md:py-16 xl:py-28">
+        <section className="relative  w-full h-fit flex flex-col-reverse lg:flex-row py-10 xl:py-28">
           {/* left */}
-          <section className=" w-full xl:w-[50%] h-full  flex items-end z-10 ">
-          
-            <section className=" w-full xl:w-[40rem] h-fit mt-20 lg:mt-0 flex gap-5 sm:gap-8 lg:gap-16 ">
+          <section className=" w-full lg:w-[50%] h-full  flex items-end z-10 ">
+            <section className=" w-full lg:w-[40rem] h-fit mt-10 lg:mt-0 flex gap-5 sm:gap-8 lg:gap-16 ">
               <section
                 id="social"
                 className=" w-10 h-auto flex flex-col items-center gap-20 "
@@ -91,7 +90,7 @@ const Hero = () => {
                   </div>
                 </section>
               </section>
-              <section className=" w-full h-auto flex flex-col gap-2 lg:gap-8 text-white">
+              <section className="  w-full h-auto flex flex-col gap-2 lg:gap-8 text-white">
                 <div className="hero1 w-full h-fit flex flex-wrap gap-6 items-center    ">
                   <PulseCircle />
                   <span className="text-[20px] sm:text-[26px] leading-[42.64px] font-medium text-secondary">
@@ -102,7 +101,7 @@ const Hero = () => {
                   We Solve Your Problem With Our
                   <span className="text-primary"> Best Experts Lead</span>
                 </h1>
-                <p className="hero1 md:w-[40rem] mt-4 ">
+                <p className="hero1 lg:w-[40rem] mt-4 ">
                   Welcome to Web Flexrr, Transforming visions into captivating
                   online experiences, our team specializes in cutting-edge web
                   design, seamless web development, powerful digital marketing
@@ -126,7 +125,7 @@ const Hero = () => {
             </section>
           </section>
           {/* right */}
-          <section className="flex relative right-0 w-full xl:w-[50%] h-full justify-center items-center">
+          <section className=" flex relative w-full lg:w-[50%] h-full flex-col justify-center items-center">
             <Image
               src={"/assets/home.png"}
               width={"400"}
@@ -134,9 +133,8 @@ const Hero = () => {
               alt=""
               priority={true}
               placeholder={"empty"}
-              className=" animate-visible-from-left w-full drop-shadow-xl-black"
+              className=" animate-visible-from-left w-full  lg:mt-32 xl:mt-20 2xl:mt-0 drop-shadow-xl-black"
             />
-              {/* <div className=" absolute  w-full h-full  bg-gradient-to-t from-background2 to-blue-500"></div> */}
           </section>
         </section>
       </section>

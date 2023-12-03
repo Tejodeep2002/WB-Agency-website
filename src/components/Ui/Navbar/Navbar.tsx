@@ -9,18 +9,16 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-[0.44rem] z-20 h-16 lg:h-28 flex items-center justify-center ">
+      <header className="fixed top-0 left-0 right-0 z-20 h-16 lg:h-28 flex items-center justify-center ">
         <div className="absolute  w-full h-full  shadow-2xl  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-100 z-0 "></div>
-        <section className="animate-visible-from-down ease-in-out-expo  w-full max-w-[110rem] px-10  flex justify-between items-center z-10 ">
-          {/* <h2 className=" font-bold text-2xl text-white">GaaGa</h2>
-           */}
+        <section className=" animate-visible-from-down ease-in-out-expo  w-full max-w-[110rem] px-5  flex justify-between items-center z-10 ">
           <a href={"/"}>
             <Image
               src={"/logos/logo.png"}
               width={"250"}
               height={"0"}
               alt={""}
-              className=""
+              className="w-32"
             />
           </a>
           <nav className="hidden xl:block">
@@ -90,7 +88,7 @@ const Navbar = () => {
               <span className="hidden md:block">Menu</span>
             </button>
 
-            <button className=" w-fit h-fit py-4 px-7 border border-secondary text-secondary hover:text-primary hover:border-primary transition ease-in-out duration-500">
+            <button className="hidden lg:flex w-fit h-fit py-4 px-7 border border-secondary text-secondary hover:text-primary hover:border-primary transition ease-in-out duration-500">
               Lets meet Us
             </button>
           </section>

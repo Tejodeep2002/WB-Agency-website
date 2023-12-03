@@ -12,12 +12,12 @@ interface ServiceDetailsProps {
 const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {
   return (
     <section className="w-full h-auto ">
-      <section className="w-full h-auto  py-20  md:px-0 xl:py-24">
+      <section className="w-full h-auto pb-20 md:px-0 ">
         <section className="w-full h-auto flex flex-col">
           {/* title */}
-          <section className=" w-full max-w-[100rem] mx-auto h-auto pb-20 px-5 xl:py-28">
-            <section className=" w-full xl:h-[40rem] flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 ">
-              <div className="w-full xl:w-[60%] h-full xl:pl-20 flex flex-col justify-center">
+          <section className=" w-full max-w-[100rem] mx-auto h-auto pb-20 px-5 xl:py-16">
+            <section className=" w-full xl:h-[37rem] flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 ">
+              <div className=" w-full xl:w-[60%] h-full xl:pl-20 flex flex-col justify-center">
                 <div className="w-full h-[80%] p-6 xl:py-12 xl:px-20 flex flex-col gap-6 border xl:border-y xl:border-l border-primary">
                   <section className="w-full flex gap-4 text-secondary">
                     <PulseCircle />
@@ -31,13 +31,13 @@ const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {
                   </section>
                 </div>
               </div>
-              <div className="w-full xl:w-[40%] flex items-center justify-center ">
+              <div className=" w-full xl:w-[40%] px-6 flex items-center justify-center ">
                 <Image
                   src={serviceDetails.image}
                   width={"1000"}
                   height={"0"}
                   alt={""}
-                  className=" w-full drop-shadow-lg "
+                  className=" w-full drop-shadow-lg  "
                 />
               </div>
             </section>

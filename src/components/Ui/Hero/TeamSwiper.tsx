@@ -1,9 +1,8 @@
-"use client";
 import React, { FC } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+// import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import TeamPicture from "../TeamPicture";
 
 interface TeamSwiperProps {
@@ -13,7 +12,7 @@ interface TeamSwiperProps {
 const TeamSwiper: FC<TeamSwiperProps> = ({ allTeamsDetails }) => {
   return (
     <>
-    <Swiper
+      {/* <Swiper
       slidesPerView={1}
       spaceBetween={20}
       modules={[Pagination, Navigation]}
@@ -44,13 +43,13 @@ const TeamSwiper: FC<TeamSwiperProps> = ({ allTeamsDetails }) => {
         </SwiperSlide>
       ))}
 
-      {/* <SwiperButtonComponent /> */}
-    </Swiper>
-    
-    
-    
-    
-    
+      {/* <SwiperButtonComponent /> 
+    </Swiper> */}
+      <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-x-5 gap-y-10 ">
+        {allTeamsDetails.map((personDetails: any) => (
+          <TeamPicture personDetails={personDetails} key={personDetails._id} />
+        ))}
+      </div>
     </>
   );
 };

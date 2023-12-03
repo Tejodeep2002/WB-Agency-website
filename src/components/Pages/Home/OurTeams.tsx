@@ -10,7 +10,7 @@ const OurTeams = async() => {
       <section className="w-full py-20 lg:py-36 ">
         <section className="w-full max-w-[100rem] mx-auto px-5 md:px-10 flex flex-col gap-7 ">
           <Heading
-            heading={"Out Team"}
+            heading={"Our Team"}
             subHeading={"Speak With One of Our Experts"}
           />
           <TeamSwiper allTeamsDetails={allTeamsDetails}/>
