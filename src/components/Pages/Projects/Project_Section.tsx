@@ -1,15 +1,53 @@
 import ProjectItem from "@/components/Ui/Projects/ProjectItem";
 import { getAllProjects } from "@/config/SanityClient";
+import Link from "next/link";
 import React from "react";
+import { Url } from "url";
+
+interface getAllProjectsProps {
+  id: number;
+  name: string;
+  description: string;
+  category: string;
+  projectOwnership: string;
+  previewSpacing: number;
+  preview: object;
+  projectLink: Url;
+}
 
 const Project_Section = async () => {
-  const projects = await getAllProjects();
- 
-  const sortedProjectList = projects.sort((a: any, b: any) => a.id - b.id);
-  
+  const projects: getAllProjectsProps[] = await getAllProjects();
+  const sortedProjectList = projects.sort(
+    (a: getAllProjectsProps, b: getAllProjectsProps) => a.id - b.id
+  );
+
+  // const LayoutSort = () => {
+  //   let temp: getAllProjectsProps[] = [];
+
+  //   for (let i: number = 0; i < sortedProjectList.length; i++) {
+  //     if (sortedProjectList[i].previewSpacing == 3) {
+  //       return temp.concat(sortedProjectList[i]);
+  //     } else if (sortedProjectList[i].previewSpacing == 2) {
+  //       if (sortedProjectList[i - 2].previewSpacing != 2) {
+  //         return temp.concat(sortedProjectList[i]);
+  //       }
+  //     } else {
+  //       if (
+  //         sortedProjectList[i - 1].previewSpacing == 1 &&
+  //         sortedProjectList[i - 2].previewSpacing == 1
+  //       ) {
+  //         return temp.concat(sortedProjectList[i]);
+  //       }
+  //     }
+  //   }
+
+  //   return temp;
+  // };
+
+  // console.log(sortedProjectList);
   return (
-    <section className="w-full h-auto">
-      <section className=" w-full h-auto py-20 px-5 xl:py-36 xl:pb-20">
+    <section className="w-full h-auto ">
+      <section className=" w-full h-auto  px-5 xl:py-36 xl:pb-20">
         <section className=" w-full max-w-[100rem] mx-auto h-auto flex flex-col gap-20 ">
           {/* Heading */}
           <section className=" w-full h-auto text-secondary flex flex-col md:flex-row gap-3 md:gap-0  items-center ">
@@ -228,44 +266,53 @@ const Project_Section = async () => {
             </section>
           </section>
           <section className="w-full h-auto flex flex-col gap-3 md:gap-4 lg:gap-6 ">
-            <section className="border w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:flex-row flex-wrap gap-4 lg:gap-6 justify-between">
+            <section className=" w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:flex-row flex-wrap gap-4 lg:gap-6 justify-between">
               {sortedProjectList.map((item: any) =>
                 item.previewSpacing === 1 ? (
                   <div
                     key={item.id}
-                    className="w-full h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 "
+                    // className="w-full h-[18rem]  md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 "
+                    className="w-full  aspect-[4/3]  col-span-1 "
                   >
-                    <ProjectItem
-                      name={item.name}
-                      preview={item.preview}
-                      category={item.category}
-                      projectOwnership={item.projectOwnership}
-                    />
-                  </div>
-                ) : item.previewSpacing === 2 ? (
-                  <div
-                    key={item.id}
-                    className="w-full  h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 md:col-span-2 "
-                  >
-                    <ProjectItem
-                      name={item.name}
-                      preview={item.preview}
-                      category={item.category}
-                      projectOwnership={item.projectOwnership}
-                    />
-                  </div>
-                ) : item.previewSpacing === 3 ? (
-                  <section
-                    key={item.id}
-                    className="w-full h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] grid-cols-1 md:col-span-2  lg:col-span-3"
-                  >
-                    <div className="w-full h-full ">
+                    <Link href={item.projectLink ? item.projectLink : ""}>
                       <ProjectItem
                         name={item.name}
                         preview={item.preview}
                         category={item.category}
                         projectOwnership={item.projectOwnership}
                       />
+                    </Link>
+                  </div>
+                ) : item.previewSpacing === 2 ? (
+                  <div
+                    key={item.id}
+                    // className="w-full  h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 md:col-span-2 "
+                    className="w-full aspect-[4/3] md:aspect-[16/5.9] col-span-1 md:col-span-2 "
+                  >
+                    <Link href={item.projectLink ? item.projectLink : ""}>
+                      <ProjectItem
+                        name={item.name}
+                        preview={item.preview}
+                        category={item.category}
+                        projectOwnership={item.projectOwnership}
+                      />
+                    </Link>
+                  </div>
+                ) : item.previewSpacing === 3 ? (
+                  <section
+                    key={item.id}
+                    // className="w-full h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] grid-cols-1 md:col-span-2  lg:col-span-3"
+                    className="w-full aspect-[4/3] md:aspect-[16/5.9] lg:aspect-[16/4]  grid-cols-1 md:col-span-2  lg:col-span-3"
+                  >
+                    <div className="w-full h-full ">
+                      <Link href={item.projectLink ? item.projectLink : ""}>
+                        <ProjectItem
+                          name={item.name}
+                          preview={item.preview}
+                          category={item.category}
+                          projectOwnership={item.projectOwnership}
+                        />
+                      </Link>
                     </div>
                   </section>
                 ) : (
@@ -357,48 +404,16 @@ const Project_Section = async () => {
                 />
               </div> */}
             {/* </section> */}
-            {/* <section className="w-full grid grid-cols-3 gap-8">
-              <div className="w-full h-full">
-                <ProjectItem
-                  image={
-                    "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-3.png"
-                  }
-                />
-              </div>
-
-              <div className="w-full h-full">
-                <ProjectItem
-                  image={
-                    "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-3.png"
-                  }
-                />
-              </div>
-
-              <div className="w-full h-full">
-                <ProjectItem
-                  image={
-                    "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-3.png"
-                  }
-                />
-              </div>
-
-              <div className="w-full h-full">
-                <ProjectItem
-                  image={
-                    "https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Portfolio-Another-Img-3.png"
-                  }
-                />
-              </div>
-            </section> */}
+          
           </section>
           <section className="w-full h-auto  ">
-            <button
+            {/* <button
               type="submit"
               className="w-fit h-fit py-4 px-7 mx-auto flex items-center gap-3 border border-secondary text-secondary group hover:text-primary hover:border-primary transition ease-in-out duration-500"
             >
               <div className="w-2 h-2 rounded-full bg-primary  group-hover:bg-secondary transition ease-in-out duration-500"></div>
               Load More
-            </button>
+            </button> */}
           </section>
         </section>
       </section>

@@ -76,6 +76,7 @@ export const getAllProjects = async () =>
       projectOwnership,
       previewSpacing,
       preview,
+      projectLink
       }`
   );
 export const getAllPosts = async () =>

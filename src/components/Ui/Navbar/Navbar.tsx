@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-20 h-16 lg:h-28 flex items-center justify-center ">
+      <header className="fixed top-0 left-0 right-0 z-20 h-16  lg:h-24 flex items-center justify-center ">
         <div className="absolute  w-full h-full  shadow-2xl  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-100 z-0 "></div>
         <section className=" animate-visible-from-down ease-in-out-expo  w-full max-w-[110rem] px-5  flex justify-between items-center z-10 ">
           <a href={"/"}>
@@ -18,7 +18,7 @@ const Navbar = () => {
               width={"250"}
               height={"0"}
               alt={""}
-              className="w-32"
+              className="w-36 lg:w-48"
             />
           </a>
           <nav className="hidden xl:block">

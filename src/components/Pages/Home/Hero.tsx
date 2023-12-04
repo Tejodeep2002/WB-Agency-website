@@ -94,7 +94,7 @@ const Hero = () => {
                 <div className="hero1 w-full h-fit flex flex-wrap gap-6 items-center    ">
                   <PulseCircle />
                   <span className="text-[20px] sm:text-[26px] leading-[42.64px] font-medium text-secondary">
-                    WebFlexrr Digital Solutions
+                    WebFlexrr Digital Services
                   </span>
                 </div>
                 <h1 className="hero1 lg:w-[35rem]">

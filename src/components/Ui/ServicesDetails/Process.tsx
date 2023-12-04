@@ -14,10 +14,9 @@ interface ProcessProps {
   process: any;
 }
 const Process: FC<ProcessProps> = ({ process }) => {
-  
   return (
     <section className="w-full h-auto ">
-      <section className="w-full h-auto pt-36 pb-20 px-5 md:px-5">
+      <section className="w-full h-auto pt-28 pb-20 px-5 md:px-5">
         <section className="w-full max-w-[100rem] mx-auto h-auto ">
           <section className="w-full h-fit flex flex-col">
             <Heading

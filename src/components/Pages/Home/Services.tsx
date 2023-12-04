@@ -9,19 +9,13 @@ const Services = async () => {
       _id,name,description,"image":image.asset->url
   }`
   );
-  // console.log(services)
 
   return (
     <section className=" services w-full h-auto " id={"services"}>
-      <div
-        className="bg-fixed w-full h-auto  object-cover "
-        // style={{ backgroundImage: "url('/assets/bg.jpg')" }}
-      >
-        <section className=" w-full h-auto py-10 xl:pt-36">
-          <Heading heading={"Services"} subHeading={"What We Have to Offer"} />
-          <ServiceSection data={services} />
-        </section>
-      </div>
+      <section className=" w-full h-auto py-20 lg:pt-28">
+        <Heading heading={"Services"} subHeading={"What We Have to Offer"} />
+        <ServiceSection data={services} />
+      </section>
     </section>
   );
 };

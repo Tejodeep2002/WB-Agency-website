@@ -108,7 +108,7 @@ const ContactUs = () => {
               </section>
             </div> */}
           </section>
-          <section className=" w-full lg:w-[55%] xl:w-[65%] h-full">
+          <section className=" w-full lg:w-[55%] xl:w-[65%] h-full py-16 lg:py-0">
             <section className="w-full h-full p-5 pb-[100px] lg:p-[50px] xl:p-[100px] flex flex-col gap-6">
               <div className="hero1 w-full h-fit flex gap-6 items-center    ">
                 <PulseCircle />

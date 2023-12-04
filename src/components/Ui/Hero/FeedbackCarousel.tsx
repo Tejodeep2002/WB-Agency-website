@@ -12,8 +12,6 @@ interface FeedbackCarouselProps {
 }
 
 const FeedbackCarousel: FC<FeedbackCarouselProps> = ({ feedbacks }) => {
-  
-
   return (
     <section className="w-full text-white px-10 xl:px-5">
       <Swiper
