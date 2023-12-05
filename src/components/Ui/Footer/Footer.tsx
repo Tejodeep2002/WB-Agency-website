@@ -50,36 +50,70 @@ const Footer = () => {
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Contact
             </section>
-            <section className="w-full max-w-[280px] mt-3 md:mt-5 lg:mt-8">
+            <address className="w-full max-w-[280px] mt-3 md:mt-5 lg:mt-8">
               <ul className="flex flex-col gap-3 md:gap-4 flex-wrap text-secondary">
                 <li>
-                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">Kolkata,Westbengal,India</p>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                    Kolkata, West Bengal, India
+                  </p>
                 </li>
                 <li className="w-full flex gap-2 text-secondary">
                   <span className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
                     <p>Phone :</p>
                   </span>
-                  <ul >
+                  <ul>
                     <li>
-                      <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">+91 - 7044785308</p>
+                      <Link href={"tel:+917044785308"}>
+                        <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                          +91 - 7044785308
+                        </p>
+                      </Link>
                     </li>
                     <li>
-                      <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">+91 - 9674128921</p>
+                      <Link href={"tel:+919674128921"}>
+                        <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                          +91 - 9674128921
+                        </p>
+                      </Link>
                     </li>
                   </ul>
                 </li>
-
-                <li>
-                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">Mail : contact@webflexrr.com</p>
+                <li className="w-full flex gap-2 text-secondary">
+                <span className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                    <p>Mail :</p>
+                  </span>
+                  <Link href={"mailto:contact@webflexrr.com"} target="_blank">
+                    <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                      contact@webflexrr.com
+                    </p>
+                  </Link>
                 </li>
-                <li>
-                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">WhatsApp : +91 - 7044785308</p>
+                <li className="w-full flex gap-2 text-secondary">
+                  <span className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                    <p>WhatsApp :</p>
+                  </span>
+                  <ul>
+                    <li>
+                      <Link href={"https://wa.me/917044785308"} target="_blank">
+                        <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                          +91 - 7044785308
+                        </p>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href={"https://wa.me/919038007312"} target="_blank">
+                        <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                          +91 - 9038007312
+                        </p>
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 {/* <li>
                   <p>Working Hours : 8hrs</p>
                 </li> */}
               </ul>
-            </section>
+            </address>
           </section>
 
           {/* right */}
@@ -128,7 +162,7 @@ const Footer = () => {
       <section className="w-full h-auto border-t border-secondary">
         <section className="w-full max-w-[100rem] h-auto py-4 mx-auto flex flex-col gap-4 lg:flex-row lg:gap-2 item-center justify-between ">
           {/* left */}
-          <section className="w-fit h-auto px-5 hidden lg:flex ">
+          <address className="w-fit h-auto px-5 hidden lg:flex ">
             <ul className="w-fit  flex flex-wrap gap-2 items-center py-auto">
               <li>
                 <Link
@@ -176,9 +210,9 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </section>
+          </address>
           {/* mid */}
-          <section className="w-full lg:w-fit ">
+          <address className="w-full lg:w-fit ">
             <ul className="w-fit flex gap-6 mx-auto">
               <li>
                 <Link
@@ -223,7 +257,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </section>
+          </address>
           {/* right */}
           <section className="px-5 text-center">
             <p>
