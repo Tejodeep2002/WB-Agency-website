@@ -14,7 +14,7 @@ const ServiceSectionItem: FC<ServiceSectionProps> = ({
   image,
 }) => {
   return (
-    <section className=" servicesSections  w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto mb-20  px-5 xl:px-0 flex flex-col gap-10 lg:gap-16 items-center xl:border-x xl:border-grey1 group  ">
+    <section className=" servicesSections  w-full max-w-[30rem] md:w-1/2  xl:w-1/4 mx-auto mb-20  px-5 xl:px-0 flex flex-col gap-10 lg:gap-12 items-center xl:border-x xl:border-grey1 group  ">
       <div className=" w-full h-fit text-center xl:px-11 mx-auto flex flex-col gap-5 md:gap-6 hover:text-primary">
         <Link
           href={`/services/${name.split(" ").join("-").toLowerCase()}`}
@@ -24,7 +24,7 @@ const ServiceSectionItem: FC<ServiceSectionProps> = ({
         </Link>
         <span className="">
           <p>
-            {description.split(" ").splice(0, 12).join(" ").concat(" ....")}
+            {description.split(" ").splice(0, 20).join(" ").concat("....")}
           </p>
         </span>
       </div>

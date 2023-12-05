@@ -4,7 +4,6 @@ import { client, getAllServices } from "@/config/SanityClient";
 import ServiceSection from "@/components/Ui/Hero/ServiceSection";
 
 const Services = async () => {
-  
   const services = await getAllServices();
 
   return (
