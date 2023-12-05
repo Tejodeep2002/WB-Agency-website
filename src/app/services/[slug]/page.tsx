@@ -4,12 +4,22 @@ import MainTitle from "@/components/Ui/MainTitle";
 import Navbar from "@/components/Ui/Navbar/Navbar";
 import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_carousel";
 import { findServiceByName, getAllServices } from "@/config/SanityClient";
+import { Metadata } from "next";
 import React, { FC } from "react";
 
 interface PageProps {
   params: {
     slug: string;
   };
+}
+export async function generateMetadata ({ params }:PageProps):Promise<Metadata>  {
+  const serviceDetails = await findServiceByName(
+    params.slug.split("-").join(" ")
+  );
+  return {
+    title: serviceDetails.name,
+    description:serviceDetails.description
+  }
 }
 
 const page: FC<PageProps> = async ({ params }) => {

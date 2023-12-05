@@ -11,7 +11,7 @@ const Footer = () => {
         <section className="w-full max-w-[100rem] mx-auto flex flex-row flex-wrap lg:flex-row gap-10 lg:gap-0">
           {/* left */}
           <section className="w-full md:w-full lg:w-1/2 h-auto px-5">
-            <div className="w-full max-w-[580px] h-auto flex flex-col gap-10">
+            <div className="w-full max-w-[580px] h-auto px-5 flex flex-col gap-10">
               <Image
                 src={"/logos/logo2.png"}
                 width={"120"}
@@ -28,7 +28,7 @@ const Footer = () => {
                   presence for our clients.
                 </p>
               </div>
-              <div className=" w-full flex flex-wrap gap-5 xl:gap-2">
+              <div className=" w-full flex flex-wrap sm:flex-nowrap gap-5 xl:gap-2">
                 <input
                   type="text"
                   title="Message"
@@ -37,7 +37,7 @@ const Footer = () => {
                 <button
                   type="button"
                   title="button"
-                  className=" w-fit h-fit lg:w-[30%] lg:h-11 py-3 px-3 rounded-full text-[24px] leading-[24px] font-base text-center text-secondary bg-transparent hover:bg-primary after:w-full transition ease-in-out duration-500"
+                  className=" w-fit h-fit lg:w-[30%] lg:h-11 py-3 px-3 rounded-full text-[24px] leading-[24px] font-base text-center text-secondary bg-primary border border-secondary md:bg-transparent md:border-transparent md:hover:border-secondary  md:hover:bg-primary after:w-full transition ease-in-out duration-500"
                 >
                   Subscribe
                 </button>
@@ -50,27 +50,30 @@ const Footer = () => {
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Contact
             </section>
-            <section className="w-full max-w-[280px] mt-8">
-              <ul className="flex flex-col gap-5 flex-wrap text-secondary">
+            <section className="w-full max-w-[280px] mt-3 md:mt-5 lg:mt-8">
+              <ul className="flex flex-col gap-3 md:gap-4 flex-wrap text-secondary">
                 <li>
-                  <p>Kolkata,Westbengal,India</p>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">Kolkata,Westbengal,India</p>
                 </li>
                 <li className="w-full flex gap-2 text-secondary">
-                  <span>
+                  <span className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
                     <p>Phone :</p>
                   </span>
-                  <ul>
+                  <ul >
                     <li>
-                      <p>+91 - 7044785308</p>
+                      <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">+91 - 7044785308</p>
                     </li>
                     <li>
-                      <p>+91 - 9674128921</p>
+                      <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">+91 - 9674128921</p>
                     </li>
                   </ul>
                 </li>
 
                 <li>
-                  <p>Mail : contact@webflexrr.com</p>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">Mail : contact@webflexrr.com</p>
+                </li>
+                <li>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">WhatsApp : +91 - 7044785308</p>
                 </li>
                 {/* <li>
                   <p>Working Hours : 8hrs</p>
@@ -84,22 +87,38 @@ const Footer = () => {
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Services
             </section>
-            <section className="w-full max-w-[280px] mt-8">
-              <ul className="flex flex-col gap-4 flex-wrap ">
+            <section className="w-full max-w-[280px] mt-3 md:mt-5 lg:mt-8">
+              <ul className="flex flex-col gap-3 md:gap-4 flex-wrap cursor-default">
                 <li>
-                  <p>Branding & Identity</p>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                    Branding & Identity
+                  </p>
                 </li>
                 <li>
-                  <p>Content Creation</p>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                    Logo & Graphic designing
+                  </p>
                 </li>
                 <li>
-                  <p>Web Design & Development</p>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                    Content Creation & Video Editing
+                  </p>
+                </li>
+
+                <li>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                    Web Design & Development
+                  </p>
                 </li>
                 <li>
-                  <p>Mobile App Development</p>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                    Mobile App Development
+                  </p>
                 </li>
                 <li>
-                  <p>Digital Marketing</p>
+                  <p className="text-[15px] md:text-base lg:hover:text-primary transition ease-in-out duration-500">
+                    Digital Marketing
+                  </p>
                 </li>
               </ul>
             </section>
@@ -107,10 +126,10 @@ const Footer = () => {
         </section>
       </section>
       <section className="w-full h-auto border-t border-secondary">
-        <section className="w-full max-w-[100rem] h-auto py-4 mx-auto flex flex-col gap-2 lg:flex-row lg:gap-2 item-center justify-between ">
+        <section className="w-full max-w-[100rem] h-auto py-4 mx-auto flex flex-col gap-4 lg:flex-row lg:gap-2 item-center justify-between ">
           {/* left */}
-          <section className="w-fit h-auto hidden lg:flex ">
-            <ul className="w-fit  flex gap-3 items-center py-auto">
+          <section className="w-fit h-auto px-5 hidden lg:flex ">
+            <ul className="w-fit  flex flex-wrap gap-2 items-center py-auto">
               <li>
                 <Link
                   href={"/#home"}
@@ -165,7 +184,7 @@ const Footer = () => {
                 <Link
                   href={"https://twitter.com/WebFlexRR"}
                   target="_blank"
-                  className="w-[35px] h-[35px] text-secondary rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
+                  className="w-[35px] h-[35px]  rounded-full flex items-center justify-center border border-grey1 border-secondary text-secondary bg-primary transition ease-in-out duration-300"
                   aria-label="Twitter"
                 >
                   <BsTwitterX className="w-[14px] h-[14px] " />
@@ -175,7 +194,7 @@ const Footer = () => {
                 <Link
                   href={"https://www.linkedin.com/company/webflexrr"}
                   target="_blank"
-                  className="w-[35px] h-[35px] text-secondary rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
+                  className="w-[35px] h-[35px] rounded-full flex items-center justify-center border border-grey1 border-secondary text-secondary bg-primary transition ease-in-out duration-300"
                   aria-label="Linkedin"
                 >
                   <FaLinkedinIn className="w-[16px] h-[16px] " />
@@ -187,7 +206,7 @@ const Footer = () => {
                     "https://www.facebook.com/profile.php?id=61553639945217"
                   }
                   target="_blank"
-                  className="w-[35px] h-[35px] text-secondary rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
+                  className="w-[35px] h-[35px] rounded-full flex items-center justify-center border border-grey1 border-secondary text-secondary bg-primary transition ease-in-out duration-300"
                   aria-label="Facebook"
                 >
                   <FaFacebookF className="w-[16px] h-[16px]" />
@@ -197,7 +216,7 @@ const Footer = () => {
                 <Link
                   href={"https://www.instagram.com/webflexrr"}
                   target="_blank"
-                  className="w-[35px] h-[35px] text-secondary rounded-full flex items-center justify-center border border-grey1 hover:border-secondary hover:text-secondary hover:bg-primary transition ease-in-out duration-300"
+                  className="w-[35px] h-[35px] rounded-full flex items-center justify-center border border-grey1 border-secondary text-secondary bg-primary transition ease-in-out duration-300"
                   aria-label="Instagram"
                 >
                   <FaInstagram className="w-[17px] h-[17px]" />
@@ -206,9 +225,9 @@ const Footer = () => {
             </ul>
           </section>
           {/* right */}
-          <section className=" text-center">
+          <section className="px-5 text-center">
             <p>
-              Copyright &#169;2023, WebFlexRR Digital Services All Rights
+              Copyright &#169;2023, WebFlexrr Digital Services, All Rights
               Reserved.
             </p>
           </section>
