@@ -46,7 +46,7 @@ const Footer = () => {
           </section>
 
           {/* mid */}
-          <section className="w-full md:w-[40%] lg:w-1/4 h-auto px-5">
+          <section className="w-full md:w-[40%] lg:w-1/4 h-auto pl-10">
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Contact
             </section>
@@ -117,7 +117,7 @@ const Footer = () => {
           </section>
 
           {/* right */}
-          <section className="w-full md:w-[40%] lg:w-1/4 h-auto px-5">
+          <section className="w-full md:w-[40%] lg:w-1/4 h-auto pl-10">
             <section className=" text-[26px] leading-[42px] font-normal text-secondary ">
               Services
             </section>

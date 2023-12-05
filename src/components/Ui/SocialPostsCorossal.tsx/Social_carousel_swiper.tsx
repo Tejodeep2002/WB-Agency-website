@@ -47,7 +47,6 @@ const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {
     return () => ctx.revert();
   }, []);
 
-  
   return (
     <section ref={socialCarousel} className=" w-full h-auto ">
       <section className="w-full h-auto">
@@ -57,7 +56,7 @@ const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {
           modules={[Pagination, Autoplay]}
           autoplay={true}
           breakpoints={{
-            480: {
+            648: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
@@ -66,6 +65,10 @@ const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {
               spaceBetween: 20,
             },
             1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1280: {
               slidesPerView: 4,
               spaceBetween: 20,
             },
@@ -74,12 +77,13 @@ const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {
               spaceBetween: 20,
             },
           }}
-          className=" mySwiper w-full h-[25rem] px-1 cursor-grab"
+          // className=" mySwiper w-full h-[25rem] px-1 cursor-grab"
+          className=" mySwiper w-full h-auto px-1 cursor-grab"
         >
           {posts.map((post) => (
             <SwiperSlide
               key={post._id}
-              className="relative w-full h-full group"
+              className="relative w-full h-full aspect-[1/1] group"
             >
               <Image
                 src={post.image}
@@ -115,7 +119,6 @@ const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {
                   </div>
                 </div>
               </div>
-              {/* </div> */}
             </SwiperSlide>
           ))}
         </Swiper>
