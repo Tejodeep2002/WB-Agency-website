@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import SideBar from "./Sidebar";
 import Image from "next/image";
 import Link from "next/link";
+import { RiWhatsappFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [sideBarHidden, setSideBarHidden] = useState<boolean>(false);
@@ -88,12 +89,25 @@ const Navbar = () => {
               <span className="hidden md:block">Menu</span>
             </button>
 
-            <button className="hidden lg:flex w-fit h-fit py-4 px-7 border border-secondary text-secondary hover:text-primary hover:border-primary transition ease-in-out duration-500">
-              Lets meet Us
-            </button>
+            <Link
+              href={"https://wa.me/917044785308"}
+              target="_blank"
+              className="hidden lg:flex w-fit h-fit py-4 px-7  items-center border border-secondary text-secondary hover:text-primary hover:border-primary transition ease-in-out duration-500"
+            >
+              <RiWhatsappFill className="w-[25px] h-[25px] text-[#25D366] mr-2" />{" "}
+              Lets Contact Us
+            </Link>
           </section>
         </section>
       </header>
+      <Link
+        href={"https://wa.me/917044785308"}
+        target="_blank"
+        className="fixed lg:hidden bottom-5 right-4 flex w-fit h-fit py-2 px-3 z-50 bg-white rounded-full  items-center border border-secondary drop-shadow-lg text-secondary"
+      >
+        <RiWhatsappFill className="w-[30px] h-[30px] text-[#25D366] mr-1" />{" "}
+        Contact
+      </Link>
       <SideBar hidden={sideBarHidden} toggle={() => setSideBarHidden(false)} />
     </>
   );
