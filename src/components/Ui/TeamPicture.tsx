@@ -4,6 +4,8 @@ import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC, useRef } from "react";
+import { BsTwitterX } from "react-icons/bs";
+import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 interface TeamPicture {
   personDetails: any;
@@ -24,7 +26,6 @@ const TeamPicture: FC<TeamPicture> = ({ personDetails }) => {
     return () => ctx.revert();
   }, []);
 
-
   return (
     <div ref={teamProject} className="w-full  h-auto group flex flex-col gap-9">
       <div className="relative w-full h-auto border-4 group-hover:border-primary border-transparent z-10 transition ease-in-out duration-700">
@@ -33,33 +34,31 @@ const TeamPicture: FC<TeamPicture> = ({ personDetails }) => {
           width={"790"}
           height={"920"}
           alt=""
-          className="relative w-full h-full grayscale group-hover:grayscale-0 z-0 transition ease-in-out duration-700"
+          className="relative w-full h-full aspect-[4/5.4] grayscale group-hover:grayscale-0 z-0 transition ease-in-out duration-700"
         />
         <div className="absolute bottom-0 w-full h-16 bg-transparent text-secondary opacity-0 group-hover:opacity-100 translate-y-0 group-hover:-translate-y-4 flex items-center justify-center cursor-pointer transition ease-in-out duration-700">
-          <span className="text-lg">
-            {personDetails.linkedIn ? (
+          <span className="text-lg flex items-center">
+            {personDetails.linkedIn && (
               <>
                 <span className="text-primary"> - </span>
                 <Link
                   href={personDetails.linkedIn}
                   target="_blank"
-                  className="hover:text-primary transition ease-in-out duration-500"
+                  className="w-[34px] h-[34px] mx-2 rounded-full flex items-center justify-center border-2  border-white text-secondary bg-primary cursor-pointer hover:text-[#0077b5] transition ease-in-out duration-500"
                 >
-                  LI
+                  <FaLinkedinIn className="w-[14px] h-[14px] " />
                 </Link>
                 <span className="text-primary"> - </span>
               </>
-            ) : (
-              <></>
             )}
             {personDetails.twitter && (
               <>
                 <Link
                   href={personDetails.twitter}
                   target="_blank"
-                  className="hover:text-primary transition ease-in-out duration-500"
+                  className="w-[34px] h-[34px] mx-2 rounded-full flex items-center justify-center border-2  border-white text-secondary bg-primary cursor-pointer hover:text-black transition ease-in-out duration-500"
                 >
-                  TW
+                  <BsTwitterX className="w-[14px] h-[14px]  " />
                 </Link>
                 <span className="text-primary"> - </span>
               </>
@@ -70,9 +69,9 @@ const TeamPicture: FC<TeamPicture> = ({ personDetails }) => {
                 <Link
                   href={personDetails.youtube}
                   target="_blank"
-                  className="hover:text-primary transition ease-in-out duration-500"
+                  className="w-[34px] h-[34px] mx-2 rounded-full flex items-center justify-center border-2  border-white text-secondary bg-primary cursor-pointer hover:text-[#CD201F] transition ease-in-out duration-500"
                 >
-                  YT
+                  <FaYoutube className="w-[14px] h-[14px] " />
                 </Link>
                 <span className="text-primary"> - </span>
               </>
@@ -83,9 +82,9 @@ const TeamPicture: FC<TeamPicture> = ({ personDetails }) => {
                 <Link
                   href={personDetails.instagram}
                   target="_blank"
-                  className="hover:text-primary transition ease-in-out duration-500"
+                  className="w-[34px] h-[34px] mx-2 rounded-full flex items-center justify-center border-2  border-white text-secondary bg-primary cursor-pointer hover:text-[#d62976] transition ease-in-out duration-500"
                 >
-                  IG
+                  <FaInstagram className="w-[16px] h-[16px]" />
                 </Link>
                 <span className="text-primary"> - </span>
               </>
