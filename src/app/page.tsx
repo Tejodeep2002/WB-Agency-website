@@ -10,6 +10,8 @@ import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_caro
 import OurTeams from "@/components/Pages/Home/OurTeams";
 import ContactUs from "@/components/Pages/Home/ContactUs";
 
+export const dynamic = 'force-dynamic'
+
 export default function Home() {
   return (
     <main className="main relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 scroll-smooth ">
