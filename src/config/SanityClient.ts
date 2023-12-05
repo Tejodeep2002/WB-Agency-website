@@ -7,9 +7,13 @@ export const client = createClient({
   useCdn: true,
 });
 
-export const getAllServices = async () => {
-  return await client.fetch(`*[_type=="service"]`);
-};
+export const getAllServices = async () =>
+  await client.fetch(
+    `*[_type=="service"]{
+      _id,name,description,"image":image.asset->url
+  }`,
+    { cache: "no-store" }
+  );
 
 export const findServiceByName = async (serviceName: string) =>
   await client.fetch(
@@ -38,7 +42,8 @@ export const findServiceByName = async (serviceName: string) =>
       },
       "image":image.asset->url,
       description
-    }`
+    }`,
+    { cache: "no-store" }
   );
 
 export const getAllManagementData = async () =>
@@ -52,7 +57,8 @@ export const getAllManagementData = async () =>
       twitter,
       youtube,
       instagram,
-    }`
+    }`,
+    { cache: "no-store" }
   );
 export const getAllFeedback = async () =>
   await client.fetch(
@@ -64,7 +70,8 @@ export const getAllFeedback = async () =>
       message,
       "image":image.asset->url,
       _type
-    }`
+    }`,
+    { cache: "no-store" }
   );
 export const getAllProjects = async () =>
   await client.fetch(
@@ -77,7 +84,8 @@ export const getAllProjects = async () =>
       previewSpacing,
       preview,
       projectLink
-      }`
+      }`,
+    { cache: "no-store" }
   );
 export const getAllPosts = async () =>
   await client.fetch(
@@ -87,5 +95,6 @@ export const getAllPosts = async () =>
       socialId,
       link,
       "image":image.asset->url,
-    }`
+    }`,
+    { cache: "no-store" }
   );

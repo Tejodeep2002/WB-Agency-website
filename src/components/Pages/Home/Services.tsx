@@ -1,14 +1,11 @@
 import React from "react";
 import Heading from "../../Ui/Heading/Heading";
-import { client } from "@/config/SanityClient";
+import { client, getAllServices } from "@/config/SanityClient";
 import ServiceSection from "@/components/Ui/Hero/ServiceSection";
 
 const Services = async () => {
-  const services = await client.fetch(
-    `*[_type=="service"]{
-      _id,name,description,"image":image.asset->url
-  }`
-  );
+  
+  const services = await getAllServices();
 
   return (
     <section className=" services w-full h-auto " id={"services"}>
