@@ -11,7 +11,7 @@ export default function NotFound() {
     <main className="relative w-full h-full">
       <div
         className="absolute w-full h-full  bg-cover bg-black opacity-10"
-        style={{ backgroundImage: "url('/assets/bg.jpg')" }}
+        style={{ backgroundImage: "url('/assets/background.jpg')" }}
       ></div>
       <section className="relative w-full h-full px-5 flex justify-center items-center">
         <section className="flex flex-col items-center ">

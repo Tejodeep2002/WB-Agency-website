@@ -15,7 +15,6 @@ interface GalleryContentSectionProps {
 const GalleryContentSection: FC<GalleryContentSectionProps> = ({
   projects,
 }) => {
-  const gallery = useRef<HTMLDivElement>(null);
   const gallerySection2 = useRef<HTMLDivElement>(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -65,7 +64,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
           
           <div className="relative w-full h-[24rem] xl:h-full   group md:w-[45%] xl:w-[25%] ">
             <Image
-              src={"/assets/Catelog_Inside Mock Up.jpg"}
+              src={"/assets/catalogue-mockup.jpg"}
               width={"2000"}
               height={"0"}
               alt=""
@@ -76,10 +75,10 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                 href={"/projects"}
                 className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
               >
-                Catelog Design
+                Catalogue Design
               </Link>
               <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
-                A catelog Design shows your product Inventary. 
+                A Catalogue Design shows your product Inventory. 
               </p>
               <section className="w-full flex justify-start">
                 <Link href={"/projects"} className="flex gap-3 text-secondary hover:text-primary">
@@ -102,7 +101,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                 href={"/projects"}
                 className="text-secondary font-bold text-[30px] md:text-[36px] leading-[41.76px] translate-y-[1rem] group-hover:translate-y-0 hover:text-primary text-left transition ease-in-out duration-500"
               >
-                PortFolio Website
+                Portfolio Website
               </Link>
               <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
                 Your portfolio website presents our professional works in a better way.

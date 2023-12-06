@@ -9,7 +9,9 @@ import {
   BsFacebook,
   BsInstagram,
   BsLinkedin,
+  BsPinterest,
   BsTwitterX,
+  BsYoutube,
 } from "react-icons/bs";
 import Link from "next/link";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
@@ -77,7 +79,6 @@ const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {
               spaceBetween: 20,
             },
           }}
-          // className=" mySwiper w-full h-[25rem] px-1 cursor-grab"
           className=" mySwiper w-full h-auto px-1 cursor-grab"
         >
           {posts.map((post) => (
@@ -102,8 +103,12 @@ const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {
                         <BsInstagram className=" w-full h-full text-white" />
                       ) : post.socialMedia === "linkedIn" ? (
                         <BsLinkedin className=" w-full h-full text-white" />
-                      ) : post.socialMedia === "twitter" ? (
+                      ) : post.socialMedia === "x" ? (
                         <BsTwitterX className=" w-full h-full text-white" />
+                      ) : post.socialMedia === "youtube" ? (
+                        <BsYoutube className=" w-full h-full text-white" />
+                      ) :  post.socialMedia === "pinterest" ? (
+                        <BsPinterest className=" w-full h-full text-white" />
                       ) : (
                         <></>
                       )}
