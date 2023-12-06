@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsTwitterX } from "react-icons/bs";
-import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -222,6 +222,16 @@ const Footer = () => {
                   aria-label="Twitter"
                 >
                   <BsTwitterX className="w-[14px] h-[14px] " />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"https://www.youtube.com/@webflexrr"}
+                  target="_blank"
+                  className="w-[35px] h-[35px] rounded-full flex items-center justify-center border border-grey1 border-secondary text-secondary bg-primary transition ease-in-out duration-300"
+                  aria-label="Linkedin"
+                >
+                  <FaYoutube className="w-[16px] h-[16px] " />
                 </Link>
               </li>
               <li>
