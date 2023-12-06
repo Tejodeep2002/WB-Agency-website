@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { Url } from "url";
 
-interface getAllProjectsProps {
+export interface getAllProjectsProps {
   id: number;
   name: string;
   description: string;
@@ -257,10 +257,10 @@ const Project_Section = async () => {
             <section className=" w-full md:w-[37%] lg:w-[33%] h-full">
               <section className=" ">
                 <p>
-                  Diam donec adipiscing tristique risus nec feugiat in
-                  fermentum. Porttitor leo a diam sollicitudin tempor id eu nisl
-                  nunc. Rhoncus mattis rhoncus urna neque viverra justo unc
-                  sodales ut.
+                  Discover the essence of innovation through our diverse
+                  portfolio. Each project at WebFlexrr is a testament to
+                  creativity, precision, and transformative digital solutions.
+                  Explore the journey of success we&apos;ve crafted for our clients.
                 </p>
               </section>
             </section>
@@ -272,9 +272,12 @@ const Project_Section = async () => {
                   <div
                     key={item.id}
                     // className="w-full h-[18rem]  md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 "
-                    className="w-full  aspect-[4/3]  col-span-1 "
+                    className="w-full  aspect-[4/3.3]  col-span-1 "
                   >
-                    <Link href={item.projectLink ? item.projectLink : ""}>
+                    <Link
+                      href={item.projectLink ? item.projectLink : ""}
+                      target="_blank"
+                    >
                       <ProjectItem
                         name={item.name}
                         preview={item.preview}
@@ -287,9 +290,12 @@ const Project_Section = async () => {
                   <div
                     key={item.id}
                     // className="w-full  h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 md:col-span-2 "
-                    className="w-full aspect-[4/3] md:aspect-[16/5.9] col-span-1 md:col-span-2 "
+                    className="w-full aspect-[4/3.3] md:aspect-[16/6.4] col-span-1 md:col-span-2 "
                   >
-                    <Link href={item.projectLink ? item.projectLink : ""}>
+                    <Link
+                      href={item.projectLink ? item.projectLink : ""}
+                      target="_blank"
+                    >
                       <ProjectItem
                         name={item.name}
                         preview={item.preview}
@@ -302,10 +308,13 @@ const Project_Section = async () => {
                   <section
                     key={item.id}
                     // className="w-full h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] grid-cols-1 md:col-span-2  lg:col-span-3"
-                    className="w-full aspect-[4/3] md:aspect-[16/5.9] lg:aspect-[16/4]  grid-cols-1 md:col-span-2  lg:col-span-3"
+                    className="w-full aspect-[4/3.3] md:aspect-[16/6.4] lg:aspect-[16/4]  grid-cols-1 md:col-span-2  lg:col-span-3"
                   >
                     <div className="w-full h-full ">
-                      <Link href={item.projectLink ? item.projectLink : ""}>
+                      <Link
+                        href={item.projectLink ? item.projectLink : ""}
+                        target="_blank"
+                      >
                         <ProjectItem
                           name={item.name}
                           preview={item.preview}
@@ -404,7 +413,6 @@ const Project_Section = async () => {
                 />
               </div> */}
             {/* </section> */}
-          
           </section>
           <section className="w-full h-auto  ">
             {/* <button
