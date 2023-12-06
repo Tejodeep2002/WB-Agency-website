@@ -1,5 +1,5 @@
 import ProjectItem from "@/components/Ui/Projects/ProjectItem";
-import { getAllProjects } from "@/config/SanityClient";
+import getAllProjects from "@/lib/getProjects";
 import Link from "next/link";
 import React from "react";
 import { Url } from "url";

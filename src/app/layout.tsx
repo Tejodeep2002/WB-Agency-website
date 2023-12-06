@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "WebFlexrr Digital Services ",
+    default: "WebFlexrr Digital Services",
     template: `%s | WebFlexrr Digital Services`,
   },
   description:

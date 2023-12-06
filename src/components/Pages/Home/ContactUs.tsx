@@ -4,9 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import Heading from "@/components/Ui/Heading/Heading";
 import PulseCircle from "@/components/Ui/PulseCircle";
-import emailjs from "@emailjs/browser";
 
 const schema = yup.object({
   firstName: yup.string().required("First Name is Required"),

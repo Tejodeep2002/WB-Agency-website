@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "../globals.css";
-import { Suspense } from "react";
-
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -15,10 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <Suspense fallback={<Loading/>}> */}
-
       <body suppressHydrationWarning={true}>{children}</body>
-      {/* </Suspense> */}
     </html>
   );
 }

@@ -3,7 +3,7 @@ import Footer from "@/components/Ui/Footer/Footer";
 import MainTitle from "@/components/Ui/MainTitle";
 import Navbar from "@/components/Ui/Navbar/Navbar";
 import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_carousel";
-import { findServiceByName} from "@/config/SanityClient";
+import { findServiceByName } from "@/lib/getServices";
 import { Metadata } from "next";
 import React, { FC } from "react";
 

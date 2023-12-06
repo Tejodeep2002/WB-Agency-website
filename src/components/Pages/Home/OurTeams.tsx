@@ -1,7 +1,7 @@
 import Heading from "@/components/Ui/Heading/Heading";
 import React from "react";
 import TeamSwiper from "@/components/Ui/Hero/TeamSwiper";
-import { getAllManagementData } from "@/config/SanityClient";
+import getAllManagementData from "@/lib/getManagement";
 
 const OurTeams = async () => {
   const allTeamsDetails = await getAllManagementData();

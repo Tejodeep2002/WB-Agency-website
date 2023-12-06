@@ -5,7 +5,6 @@ import gsap from "gsap";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TextPlugin from "gsap/TextPlugin";
-
 interface HeadingProps {
   heading?: string;
   subHeading: string;
@@ -14,7 +13,7 @@ interface HeadingProps {
 const Heading: FC<HeadingProps> = ({ heading, subHeading }) => {
   const Heading = useRef<HTMLDivElement>(null);
   gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(TextPlugin)
+  gsap.registerPlugin(TextPlugin);
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(Heading.current, {
@@ -29,8 +28,6 @@ const Heading: FC<HeadingProps> = ({ heading, subHeading }) => {
           start: "top 80%",
         },
       });
-   
-      
     });
     return () => ctx.revert();
   }, []);

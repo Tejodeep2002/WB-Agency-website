@@ -16,7 +16,6 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
   projects,
 }) => {
   const gallerySection2 = useRef<HTMLDivElement>(null);
-
   gsap.registerPlugin(ScrollTrigger);
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {

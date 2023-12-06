@@ -2,7 +2,6 @@
 import React, { useEffect, useLayoutEffect, useRef } from "react";
 import { RiTwitterXLine } from "react-icons/ri";
 import { SlSocialInstagram, SlSocialFacebook } from "react-icons/sl";
-import { PiPinterestLogoBold } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiPlay } from "react-icons/bi";
 import Image from "next/image";

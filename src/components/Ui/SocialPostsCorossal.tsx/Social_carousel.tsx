@@ -1,8 +1,9 @@
-import { getAllPosts } from "@/config/SanityClient";
+import getAllPosts from "@/lib/getPosts";
 import Social_carousel_swiper from "./Social_carousel_swiper";
-const Social_carousel = async() => {
-  const posts = await getAllPosts()
-  return <Social_carousel_swiper posts={posts}/>;
+
+const Social_carousel = async () => {
+  const posts = await getAllPosts();
+  return <Social_carousel_swiper posts={posts} />;
 };
 
 export default Social_carousel;
