@@ -1,9 +1,8 @@
 import React from "react";
-import PulseCircle from "../../Ui/PulseCircle";
-
 import Heading from "../../Ui/Heading/Heading";
 import FeedbackCarousel from "@/components/Ui/Hero/FeedbackCarousel";
-import { getAllFeedback } from "@/config/SanityClient";
+import getAllFeedback from "@/lib/getFeedback";
+
 const FeedBack = async () => {
   const feedbacks = await getAllFeedback();
 

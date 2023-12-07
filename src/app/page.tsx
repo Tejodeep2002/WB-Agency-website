@@ -10,7 +10,7 @@ import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_caro
 import OurTeams from "@/components/Pages/Home/OurTeams";
 import ContactUs from "@/components/Pages/Home/ContactUs";
 
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
