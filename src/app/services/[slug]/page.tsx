@@ -16,9 +16,7 @@ interface PageProps {
 export const generateMetadata = async ({
   params,
 }: PageProps): Promise<Metadata> => {
-  const serviceDetails = await findServiceByName(
-    params.slug
-  );
+  const serviceDetails = await findServiceByName(params.slug);
 
   if (!serviceDetails) {
     return {
@@ -30,21 +28,18 @@ export const generateMetadata = async ({
   return {
     title: serviceDetails.name,
     description: serviceDetails.description,
-    alternates:{
-      canonical:`/services/${params.slug}`,
+    alternates: {
+      canonical: `/services/${params.slug}`,
       languages: {
-        'en-US': `/en-US/services/${params.slug}`,
-        'de-DE': `/de-DE/services/${params.slug}`,
+        "en-US": `/en-US/services/${params.slug}`,
+        "de-DE": `/de-DE/services/${params.slug}`,
       },
     },
-   
   };
 };
 
 const page: FC<PageProps> = async ({ params }) => {
-  const serviceDetails = await findServiceByName(
-    params.slug
-  );
+  const serviceDetails = await findServiceByName(params.slug);
 
   return (
     <main className="relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 bg-background2 scroll-smooth">
