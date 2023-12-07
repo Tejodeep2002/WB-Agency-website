@@ -16,10 +16,8 @@ export interface getAllProjectsProps {
 }
 
 const Project_Section = async () => {
-  const projects: getAllProjectsProps[] = await getAllProjects();
-  const sortedProjectList = projects.sort(
-    (a: getAllProjectsProps, b: getAllProjectsProps) => a.id - b.id
-  );
+  const projects = await getAllProjects();
+  const sortedProjectList = projects.sort((a, b) => a.id - b.id);
 
   // const LayoutSort = () => {
   //   let temp: getAllProjectsProps[] = [];
@@ -260,7 +258,8 @@ const Project_Section = async () => {
                   Discover the essence of innovation through our diverse
                   portfolio. Each project at WebFlexrr is a testament to
                   creativity, precision, and transformative digital solutions.
-                  Explore the journey of success we&apos;ve crafted for our clients.
+                  Explore the journey of success we&apos;ve crafted for our
+                  clients.
                 </p>
               </section>
             </section>
@@ -271,7 +270,6 @@ const Project_Section = async () => {
                 item.previewSpacing === 1 ? (
                   <div
                     key={item.id}
-                    // className="w-full h-[18rem]  md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 "
                     className="w-full  aspect-[4/3.3]  col-span-1 "
                   >
                     <Link
@@ -289,7 +287,6 @@ const Project_Section = async () => {
                 ) : item.previewSpacing === 2 ? (
                   <div
                     key={item.id}
-                    // className="w-full  h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] col-span-1 md:col-span-2 "
                     className="w-full aspect-[4/3.3] md:aspect-[16/6.4] col-span-1 md:col-span-2 "
                   >
                     <Link
@@ -307,7 +304,6 @@ const Project_Section = async () => {
                 ) : item.previewSpacing === 3 ? (
                   <section
                     key={item.id}
-                    // className="w-full h-[18rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 2xl:h-[26rem] grid-cols-1 md:col-span-2  lg:col-span-3"
                     className="w-full aspect-[4/3.3] md:aspect-[16/6.4] lg:aspect-[16/4]  grid-cols-1 md:col-span-2  lg:col-span-3"
                   >
                     <div className="w-full h-full ">

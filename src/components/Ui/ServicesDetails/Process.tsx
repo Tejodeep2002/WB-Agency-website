@@ -5,13 +5,11 @@ import Heading from "../Heading/Heading";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
 import { Navigation, Pagination } from "swiper/modules";
 import SwiperButtonComponent from "../SwiperButtonComponent";
-import { imageUrlFor } from "@/config/SanityImageUrl";
 
 interface ProcessProps {
-  process: any;
+  process: ServiceProcedure[];
 }
 const Process: FC<ProcessProps> = ({ process }) => {
   return (

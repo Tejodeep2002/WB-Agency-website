@@ -7,7 +7,7 @@ import Image from "next/image";
 import React, { FC, useRef } from "react";
 
 interface TechnologiesProps {
-  weAreUsing: any[];
+  weAreUsing:ServiceWeAreUsing[];
 }
 const Technologies: FC<TechnologiesProps> = ({ weAreUsing }) => {
   

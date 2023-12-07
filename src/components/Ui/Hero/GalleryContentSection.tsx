@@ -9,7 +9,7 @@ import PulseCircle from "../PulseCircle";
 import { getAllProjectsProps } from "@/components/Pages/Projects/Project_Section";
 
 interface GalleryContentSectionProps {
-  projects: getAllProjectsProps[];
+  projects: getAllProjects[];
 }
 
 const GalleryContentSection: FC<GalleryContentSectionProps> = ({
@@ -60,7 +60,6 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
     <section className="galleryContent w-full h-auto">
       <section className="w-full h-full flex flex-col gap-5 ">
         <section className=" w-full xl:h-[30rem] h-fit flex flex-col sm:flex-row  sm:flex-wrap xl:flex-nowrap md:justify-evenly  gap-5">
-          
           <div className="relative w-full h-[24rem] xl:h-full   group md:w-[45%] xl:w-[25%] ">
             <Image
               src={"/assets/catalogue-mockup.jpg"}
@@ -77,10 +76,13 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                 Catalogue Design
               </Link>
               <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
-                A Catalogue Design shows your product Inventory. 
+                A Catalogue Design shows your product Inventory.
               </p>
               <section className="w-full flex justify-start">
-                <Link href={"/projects"} className="flex gap-3 text-secondary hover:text-primary">
+                <Link
+                  href={"/projects"}
+                  className="flex gap-3 text-secondary hover:text-primary"
+                >
                   <PulseCircle />
                   Read more
                 </Link>
@@ -103,10 +105,14 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                 Portfolio Website
               </Link>
               <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
-                Your portfolio website presents our professional works in a better way.
+                Your portfolio website presents our professional works in a
+                better way.
               </p>
               <section className="w-full flex justify-start">
-                <Link href={"/projects"} className="flex gap-3 text-secondary hover:text-primary">
+                <Link
+                  href={"/projects"}
+                  className="flex gap-3 text-secondary hover:text-primary"
+                >
                   <PulseCircle />
                   Read more
                 </Link>
@@ -182,10 +188,14 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                   Logo Design
                 </Link>
                 <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
-                  A logo makes your brands know to all like &quot;TATA with their Iconic Logo&quot;.
+                  A logo makes your brands know to all like &quot;TATA with
+                  their Iconic Logo&quot;.
                 </p>
                 <section className="w-full flex justify-start">
-                  <Link href={"/projects"} className="flex gap-3 text-secondary">
+                  <Link
+                    href={"/projects"}
+                    className="flex gap-3 text-secondary"
+                  >
                     <PulseCircle />
                     Read more
                   </Link>
@@ -208,10 +218,14 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                   Poster Design
                 </Link>
                 <p className="translate-y-[1rem] text-secondary group-hover:translate-y-0 transition ease-in-out duration-700">
-                  To put your offer to your client, I think you need a poster after all.
+                  To put your offer to your client, I think you need a poster
+                  after all.
                 </p>
                 <section className="w-full flex justify-start">
-                  <Link href={"/projects"} className="flex gap-3 text-secondary">
+                  <Link
+                    href={"/projects"}
+                    className="flex gap-3 text-secondary"
+                  >
                     <PulseCircle />
                     Read more
                   </Link>

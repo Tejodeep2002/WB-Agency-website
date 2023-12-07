@@ -12,19 +12,38 @@ interface PageProps {
     slug: string;
   };
 }
-export async function generateMetadata ({ params }:PageProps):Promise<Metadata>  {
+
+export const generateMetadata = async ({
+  params,
+}: PageProps): Promise<Metadata> => {
   const serviceDetails = await findServiceByName(
-    params.slug.split("-").join(" ")
+    params.slug
   );
+
+  if (!serviceDetails) {
+    return {
+      title: "Not Found",
+      description: "This page is not Found",
+    };
+  }
+
   return {
     title: serviceDetails.name,
-    description:serviceDetails.description
-  }
-}
+    description: serviceDetails.description,
+    alternates:{
+      canonical:`/services/${params.slug}`,
+      languages: {
+        'en-US': `/en-US/services/${params.slug}`,
+        'de-DE': `/de-DE/services/${params.slug}`,
+      },
+    },
+   
+  };
+};
 
 const page: FC<PageProps> = async ({ params }) => {
   const serviceDetails = await findServiceByName(
-    params.slug.split("-").join(" ")
+    params.slug
   );
 
   return (

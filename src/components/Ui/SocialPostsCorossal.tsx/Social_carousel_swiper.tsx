@@ -19,13 +19,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
 interface Social_carousel_swiperProps {
-  posts: {
-    _id: string;
-    socialMedia: string;
-    socialId: string;
-    link: string;
-    image: string;
-  }[];
+  posts: getAllPosts[]
 }
 
 const Social_carousel_swiper: FC<Social_carousel_swiperProps> = ({ posts }) => {

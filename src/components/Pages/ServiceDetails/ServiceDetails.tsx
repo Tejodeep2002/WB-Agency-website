@@ -6,7 +6,7 @@ import PulseCircle from "@/components/Ui/PulseCircle";
 import Technologies from "./Technologies";
 
 interface ServiceDetailsProps {
-  serviceDetails: any;
+  serviceDetails: findServiceByName;
 }
 
 const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {
@@ -36,7 +36,7 @@ const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {
                   src={serviceDetails.image}
                   width={"1000"}
                   height={"0"}
-                  alt={""}
+                  alt={serviceDetails.name}
                   className=" w-full drop-shadow-lg  "
                 />
               </div>
@@ -46,7 +46,7 @@ const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {
           <Core_Services services={serviceDetails.services} />
           <Process process={serviceDetails.procedure} />
         </section>
-      </section>{" "}
+      </section>
     </section>
   );
 };

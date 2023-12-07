@@ -8,7 +8,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 interface TeamPicture {
-  personDetails: any;
+  personDetails: getAllManagementData
 }
 
 const TeamPicture: FC<TeamPicture> = ({ personDetails }) => {

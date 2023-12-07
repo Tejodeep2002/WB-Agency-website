@@ -1,16 +1,13 @@
 "use client";
 import Heading from "@/components/Ui/Heading/Heading";
-import PulseCircle from "@/components/Ui/PulseCircle";
-import { imageUrlFor } from "@/config/SanityImageUrl";
 import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import Link from "next/link";
 import React, { FC, useRef } from "react";
 
 interface CoreServicesProps {
-  services: any;
+  services: ServiceServices[];
 }
 
 const Core_Services: FC<CoreServicesProps> = ({ services }) => {

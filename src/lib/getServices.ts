@@ -1,15 +1,17 @@
 import { client } from "@/config/SanityClient";
 
-export const getAllServices = async () =>
+export const getAllServices = async (): Promise<getAllServices[]> =>
   await client.fetch(
     `*[_type=="service"]{
-      _id,name,description,"image":image.asset->url
+      _id,name,"slug":slug.current,description,"image":image.asset->url,_updatedAt
   }`
   );
 
-export const findServiceByName = async (serviceName: string) =>
+export const findServiceByName = async (
+  serviceName: string
+): Promise<findServiceByName> =>
   await client.fetch(
-    `*[_type=="service" && name match "${serviceName}" ][0]{
+    `*[_type=="service" && slug.current == "${serviceName}"][0]{
       _id,
       procedure[]{
         _key,
@@ -20,6 +22,7 @@ export const findServiceByName = async (serviceName: string) =>
       },
       _type,
       name,
+      "slug":slug.current,
       services[]{
         _type,
         description,
@@ -33,6 +36,7 @@ export const findServiceByName = async (serviceName: string) =>
         _key,
       },
       "image":image.asset->url,
-      description
+      description,
+      _updatedAt
     }`
   );

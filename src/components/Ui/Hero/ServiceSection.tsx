@@ -6,11 +6,7 @@ import gsap from "gsap";
 import ServiceSectionItem from "./ServiceSectionItem";
 
 interface ServiceSectionProps {
-  data: {
-    name: string;
-    description: string;
-    image: string;
-  }[];
+  data: getAllServices[];
 }
 
 const ServiceSection: FC<ServiceSectionProps> = ({ data }) => {
@@ -37,10 +33,11 @@ const ServiceSection: FC<ServiceSectionProps> = ({ data }) => {
   return (
     <section className=" w-full h-auto  xl:mt-10 ">
       <section className="w-full h-full flex flex-col md:flex-row md:flex-wrap gap-10  lg:gap-0  text-secondary border-tertiary ">
-        {data.map((item: any, index: number) => (
+        {data.map((item) => (
           <ServiceSectionItem
             key={item._id}
             name={item.name}
+            slug={item.slug}
             description={item.description}
             image={item.image}
           />

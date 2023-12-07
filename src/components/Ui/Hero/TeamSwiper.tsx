@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import TeamPicture from "../TeamPicture";
 
 interface TeamSwiperProps {
-  allTeamsDetails: any;
+  allTeamsDetails: getAllManagementData[]
 }
 
 const TeamSwiper: FC<TeamSwiperProps> = ({ allTeamsDetails }) => {
@@ -46,7 +46,7 @@ const TeamSwiper: FC<TeamSwiperProps> = ({ allTeamsDetails }) => {
       {/* <SwiperButtonComponent /> 
     </Swiper> */}
       <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-x-5 gap-y-10 ">
-        {allTeamsDetails.map((personDetails: any) => (
+        {allTeamsDetails.map((personDetails) => (
           <TeamPicture personDetails={personDetails} key={personDetails._id} />
         ))}
       </div>

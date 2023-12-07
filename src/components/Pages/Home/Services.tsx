@@ -5,6 +5,7 @@ import { getAllServices } from "@/lib/getServices";
 
 const Services = async () => {
   const services = await getAllServices();
+
   return (
     <section className=" services w-full h-auto " id={"services"}>
       <section className=" w-full h-auto py-20 lg:pt-28">

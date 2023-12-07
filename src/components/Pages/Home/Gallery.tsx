@@ -5,10 +5,10 @@ import { getAllProjectsProps } from "../Projects/Project_Section";
 import getAllProjects from "@/lib/getProjects";
 
 const Gallery = async () => {
-  const projects: getAllProjectsProps[] = await getAllProjects();
-  const sortedProjectList = projects.sort(
-    (a: getAllProjectsProps, b: getAllProjectsProps) => a.id - b.id
-  );
+  const projects = await getAllProjects();
+  const sortedProjectList = projects.sort((a, b) => {
+    return a.id - b.id;
+  });
 
   return (
     <section id="gallery" className="gallery relative w-full h-auto ">
