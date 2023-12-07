@@ -8,7 +8,6 @@ interface ProjectItemProps {
   preview: any;
   category: string;
   projectOwnership: string;
-  
 }
 
 const ProjectItem: FC<ProjectItemProps> = ({
@@ -16,7 +15,6 @@ const ProjectItem: FC<ProjectItemProps> = ({
   preview,
   category,
   projectOwnership,
-  
 }) => {
   return (
     <div className="relative w-full h-full group">

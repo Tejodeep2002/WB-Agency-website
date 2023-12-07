@@ -81,7 +81,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
               <section className="w-full flex justify-start">
                 <Link
                   href={"/projects"}
-                  className="flex gap-3 text-secondary hover:text-primary"
+                  className="flex gap-3 text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   <PulseCircle />
                   Read more
@@ -111,7 +111,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
               <section className="w-full flex justify-start">
                 <Link
                   href={"/projects"}
-                  className="flex gap-3 text-secondary hover:text-primary"
+                  className="flex gap-3 text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   <PulseCircle />
                   Read more
@@ -138,7 +138,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                 It helps you to connects with clients in non Digital form.
               </p>
               <section className="w-full flex justify-start">
-                <Link href={"/projects"} className="flex gap-3 text-secondary">
+                <Link href={"/projects"} className="flex gap-3 text-secondary hover:text-primary transition ease-in-out duration-500">
                   <PulseCircle />
                   Read more
                 </Link>
@@ -165,7 +165,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
               </span>
               <Link
                 href={"/projects"}
-                className="flex items-center gap-2 text-secondary hover:text-primary"
+                className="flex items-center gap-2 text-secondary hover:text-primary transition ease-in-out duration-500"
               >
                 <PulseCircle /> View All
               </Link>
@@ -194,7 +194,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                 <section className="w-full flex justify-start">
                   <Link
                     href={"/projects"}
-                    className="flex gap-3 text-secondary"
+                    className="flex gap-3 text-secondary hover:text-primary transition ease-in-out duration-500"
                   >
                     <PulseCircle />
                     Read more
@@ -224,7 +224,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                 <section className="w-full flex justify-start">
                   <Link
                     href={"/projects"}
-                    className="flex gap-3 text-secondary"
+                    className="flex gap-3 text-secondary hover:text-primary transition ease-in-out duration-500"
                   >
                     <PulseCircle />
                     Read more
