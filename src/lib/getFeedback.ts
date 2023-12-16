@@ -11,7 +11,7 @@ const getAllFeedback = async ():Promise<getAllFeedback[]> =>
       message,
       "image":image.asset->url,
       _type
-    }`
+    }`,{ next: { tags: ['feedback'] }}
   );
 
 export default getAllFeedback;

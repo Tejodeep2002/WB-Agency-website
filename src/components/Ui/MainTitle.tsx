@@ -9,7 +9,7 @@ interface MainTitleProps {
 }
 const MainTitle: FC<MainTitleProps> = ({ heading, picture }) => {
   const pathname = usePathname();
-  const titlePathname = pathname.split("/").join(" / ");
+  const titlePathname = pathname!.split("/").join(" / ");
   return (
     <section className=" relative w-full h-auto">
       <div

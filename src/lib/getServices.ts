@@ -4,7 +4,7 @@ export const getAllServices = async (): Promise<getAllServices[]> =>
   await client.fetch(
     `*[_type=="service"]{
       _id,name,"slug":slug.current,description,"image":image.asset->url,_updatedAt
-  }`
+  }`,{ next: { tags: ['allServices'] }}
   );
 
 export const findServiceByName = async (
@@ -38,5 +38,5 @@ export const findServiceByName = async (
       "image":image.asset->url,
       description,
       _updatedAt
-    }`
+    }`,{ next: { tags: ['findServiceByName'] }}
   );
