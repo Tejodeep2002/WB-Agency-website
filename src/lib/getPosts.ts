@@ -8,7 +8,7 @@ export const getAllPosts = async ():Promise<getAllPosts[]> =>
       socialId,
       link,
       "image":image.asset->url,
-    }`, { next: { tags: ['posts'] } }
+    }`, { next: { tags: ['post'] } }
   );
 
 export default getAllPosts;

@@ -3,7 +3,7 @@ import Footer from "@/components/Ui/Footer/Footer";
 import MainTitle from "@/components/Ui/MainTitle";
 import Navbar from "@/components/Ui/Navbar/Navbar";
 import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_carousel";
-import { findServiceByName } from "@/lib/getServices";
+import { findServiceByName, getAllServices } from "@/lib/getServices";
 import { Metadata } from "next";
 import React, { FC } from "react";
 
@@ -37,6 +37,7 @@ export const generateMetadata = async ({
     },
   };
 };
+
 
 const page: FC<PageProps> = async ({ params }) => {
   const serviceDetails = await findServiceByName(params.slug);

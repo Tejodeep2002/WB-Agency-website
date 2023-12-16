@@ -13,12 +13,14 @@ import { type NextRequest, NextResponse } from "next/server";
 import { parseBody } from "next-sanity/webhook";
 
 export const POST = async (req: NextRequest) => {
-  try {
-    const { isValidSignature, body } = await parseBody(
-      req,
-      process.env.SANITY_REVALIDATE_SECRET
-    );
+  const { isValidSignature, body } = await parseBody(
+    req,
+    process.env.SANITY_REVALIDATE_SECRET
+  );
 
+  console.log(isValidSignature, body)
+
+  try {
     if (!isValidSignature) {
       const message = "Invalid signature";
       return new Response(JSON.stringify({ message, isValidSignature, body }), {
@@ -33,9 +35,8 @@ export const POST = async (req: NextRequest) => {
 
     // If the `_type` is `testimonial`, then all `client.fetch` calls with
     // `{next: {tags: ['testimonial']}}` will be revalidated
-    await revalidateTag(body._type);
-
-    return NextResponse.json({ body });
+    revalidateTag(body._type);
+    return NextResponse.json({ revalidated: true, now: Date.now() })
   } catch (error: any) {
     console.error(error);
     return new Response(error.message, { status: 500 });
