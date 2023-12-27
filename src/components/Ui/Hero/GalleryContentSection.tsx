@@ -60,7 +60,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
     <section className="galleryContent w-full h-auto">
       <section className="w-full h-full flex flex-col gap-5 ">
         <section className=" w-full xl:h-[30rem] h-fit flex flex-col sm:flex-row  sm:flex-wrap xl:flex-nowrap md:justify-evenly  gap-5">
-          <div className="relative w-full h-[24rem] xl:h-full   group md:w-[45%] xl:w-[25%] ">
+          <div className="relative w-full h-[24rem]  xl:h-full   group md:w-[45%] xl:w-[25%] ">
             <Image
               src={"/assets/catalogue-mockup.jpg"}
               width={"2000"}
@@ -172,7 +172,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
             </div>
           </div>
           <section className="galleryContent2 w-full xl:w-1/2 flex flex-wrap md:flex-nowrap gap-5  ">
-            <div className="relative group w-full h-[24rem] xl:h-full md:w-1/2 ">
+            <div className="relative group w-full  aspect-square xl:h-full md:w-1/2 ">
               <Image
                 src={"/assets/logo.png"}
                 width={"2000"}
@@ -202,7 +202,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
                 </section>
               </div>
             </div>
-            <div className="relative group w-full h-[24rem] xl:h-full md:w-1/2 ">
+            <div className="relative group w-full  aspect-square xl:h-full md:w-1/2 ">
               <Image
                 src={"/assets/poster.jpg"}
                 width={"2000"}
