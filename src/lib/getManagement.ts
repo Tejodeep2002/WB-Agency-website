@@ -12,7 +12,7 @@ const getAllManagementData = async (): Promise<getAllManagementData[]> =>
       twitter,
       youtube,
       instagram,
-    }`,{ next: { tags: ['management'] }}
+    }`,{  tags: ['management'] }
   );
 
 export default getAllManagementData;

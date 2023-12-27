@@ -31,8 +31,8 @@ const ServiceSection: FC<ServiceSectionProps> = ({ data }) => {
   }, []);
 
   return (
-    <section className=" w-full h-auto  xl:mt-10 ">
-      <section className="w-full h-full flex flex-col md:flex-row md:flex-wrap gap-10  lg:gap-0  text-secondary border-tertiary ">
+    <section className=" w-full h-auto  xl:mt-10 flex justify-center ">
+      <section className=" w-fit h-full flex flex-col md:flex-row md:flex-wrap justify-center gap-2  lg:gap-4  text-secondary border-tertiary ">
         {data.map((item) => (
           <ServiceSectionItem
             key={item._id}

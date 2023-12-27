@@ -12,7 +12,7 @@ const getAllProjects = async ():Promise<getAllProjects[]> =>
       previewSpacing,
       preview,
       projectLink
-      }`,{ next: { tags: ['project'] }}
+      }`,{  tags: ['project'] }
   );
 
 export default getAllProjects;
