@@ -6,17 +6,15 @@ import Link from "next/link";
 interface ServiceItems {
   image: string;
   title: string;
-  slug:string;
+  slug: string;
 }
 
-const ServiceItems: FC<ServiceItems> = ({ title, image,slug }) => {
-  
-
+const ServiceItems: FC<ServiceItems> = ({ title, image, slug }) => {
   return (
-    <div className="w-full h-full flex flex-col ">
+    <div className="w-full h-full flex flex-col  ">
       <Link
         href={`services/${slug}`}
-        className="relative w-full h-full xl:h-[290px] group z-10 overflow-hidden"
+        className="relative w-full h-full  aspect-[4/3] group z-10 overflow-hidden"
       >
         <Image
           src={image}
