@@ -1,6 +1,6 @@
 import { client } from "@/config/SanityClient";
 
-const getAllFeedback = async ():Promise<getAllFeedback[]> =>
+const getAllFeedback = async (): Promise<getAllFeedback[]> =>
   await client.fetch(
     `*[_type=="feedback" ]{
       _id,
@@ -11,7 +11,9 @@ const getAllFeedback = async ():Promise<getAllFeedback[]> =>
       message,
       "image":image.asset->url,
       _type
-    }`,{ tags: ['feedback'] }
+    }`,
+    {},
+    { cache: "force-cache", next: { tags: ["feedback"] } }
   );
 
 export default getAllFeedback;

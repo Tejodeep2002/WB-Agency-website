@@ -6,16 +6,16 @@ import Link from "next/link";
 interface ServiceItems {
   image: string;
   title: string;
+  slug:string;
 }
 
-const ServiceItems: FC<ServiceItems> = ({ title, image }) => {
-  const url = title.replace(" ", "-");
+const ServiceItems: FC<ServiceItems> = ({ title, image,slug }) => {
+  
 
- 
   return (
     <div className="w-full h-full flex flex-col ">
       <Link
-        href={`services/${url}`}
+        href={`services/${slug}`}
         className="relative w-full h-full xl:h-[290px] group z-10 overflow-hidden"
       >
         <Image

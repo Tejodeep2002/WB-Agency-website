@@ -42,7 +42,7 @@ const Project_Section = async () => {
   //   return temp;
   // };
 
-  // console.log(sortedProjectList);
+
   return (
     <section className="w-full h-auto ">
       <section className=" w-full h-auto  px-5 xl:py-36 xl:pb-20">

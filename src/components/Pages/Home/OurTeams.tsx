@@ -5,7 +5,7 @@ import getAllManagementData from "@/lib/getManagement";
 
 const OurTeams = async () => {
   const allTeamsDetails = await getAllManagementData();
-  console.log(allTeamsDetails)
+
   return (
     <section id={"ourTeam"} className=" relative w-full h-auto bg-background3 ">
       <section className="w-full py-20 lg:py-28 ">

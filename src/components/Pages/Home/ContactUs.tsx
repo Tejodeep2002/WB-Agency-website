@@ -37,8 +37,6 @@ const ContactUs = () => {
   });
 
   const onSubmit = async (data: FormInput) => {
-    console.log("Submit Data", data);
-
     const formData = {
       service_id: `${process.env.NEXT_PUBLIC_YOUR_SERVICE_ID}`,
       template_id: `${process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID}`,
@@ -64,7 +62,6 @@ const ContactUs = () => {
       );
 
       const data = await response.json();
-      console.log(data);
     } catch (error) {
       console.log(error);
     }

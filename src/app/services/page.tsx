@@ -5,7 +5,8 @@ import Navbar from "@/components/Ui/Navbar/Navbar";
 import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/Social_carousel";
 import React from "react";
 
-const Services = () => {
+const Services = async() => {
+  
   return (
     <main className="relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 bg-background2 scroll-smooth">
       <Navbar />

@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-20 h-16  lg:h-24 flex items-center justify-center ">
-        <div className="absolute  w-full h-full  shadow-2xl  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-100 z-0 "></div>
+        <div className="absolute  w-full h-full  shadow-2xl  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-100 z-0 "/>
         <section className=" animate-visible-from-down ease-in-out-expo  w-full max-w-[110rem] px-5  flex justify-between items-center z-10 ">
           <a href={"/"}>
             <Image
@@ -26,7 +26,7 @@ const Navbar = () => {
             <ul className="flex gap-10 text-sm font-medium leading-[25px] tracking-[2.8px] uppercase ">
               <li>
                 <a
-                  href={"/#home"}
+                  href={"/"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   HOME
@@ -34,7 +34,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href={"/#services"}
+                  href={"/services"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   SERVICES
@@ -42,28 +42,28 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href={"/#gallery"}
+                  href={"/our-projects"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
-                  GALLERY
+                  Our Projects
                 </a>
               </li>
               <li>
                 <a
-                  href={"/#ourTeam"}
+                  href={"/our-teams"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
-                  OUR TEAMS
+                  TEAMS
                 </a>
               </li>
-              {/* <li>
+              <li>
                 <Link
-                  href={"/#blog"}
+                  href={"/plans"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
-                  BLOG US
+                  Plans
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <a
                   href={"/#contactUs"}
